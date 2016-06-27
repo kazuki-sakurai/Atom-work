@@ -1,0 +1,10 @@
+add Analysis CMS_1402_0923
+add InputFile /Users/kazuki/Projects/Atom-Events/objects/LHC8_Zee_1e4.hepmc  # Kazuki
+add OutputFile Zee.yaml
+add OutputFile Zee.yoda
+set DoSmearing On
+set DoEfficiencies On
+set SaveHistos On
+set SaveAllProcIds Off
+set MaxEventNumber -1
+launch

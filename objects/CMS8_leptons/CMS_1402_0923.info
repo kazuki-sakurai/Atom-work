@@ -1,0 +1,45 @@
+Name: CMS_1402_0923
+Year: 2014
+Summary: 'Measurement of inclusive W and Z boson production cross sections in pp  collisions at sqrt(s) = 8 TeV'
+Experiment: CMS
+Collider: LHC8
+InspireID: 1280200
+References:
+ - arXiv:1402.0923
+ - CMS-SMP-12-011
+ - CERN-PH-EP-2013-217
+ - Phys. Rev. Lett. 112 (2014), 191802
+ - doi:10.1103/physrevlett.112.191802
+Status: UNVALIDATED
+Authors:
+ - Kazuki Sakurai
+Beams: [ p+, p+ ]
+Energies: [ 8000 ]
+Keywords: [ leptons ]
+Luminosity: [ 18.2 / pb, 0.5 / pb ]
+Description: 'A measurement of total and fiducial inclusive W and Z boson production cross sections in pp collisions at $\sqrt{s}$ = 8 TeV is presented. Electron and muon final states are analyzed in a data sample collected with the CMS detector corresponding to an integrated luminosity of 18.2 +/- 0.5 inverse-picobarns. The measured total inclusive cross sections times branching fractions are $\sigma(pp \to WX) \times B(W \to l\nu)$ = 12.21 +/- 0.03 (stat) +/- 0.24 (syst) +/- 0.32 (lum) nb, and $\sigma(pp \to ZX) \times B(Z \to l^{+}l^{-})$ = 1.15 +/- 0.01 (stat) +/- 0.02 (syst) +/- 0.03 (lum) nb, for the dilepton mass in the range of 60 to 120 GeV. The measured values agree with next-to-next-to-leading-order QCD cross section calculations. Ratios of cross sections are reported with a precision of 2%. This is the first measurement of inclusive W and Z boson production in proton-proton collisions at $\sqrt{s}$ = 8 TeV.'
+BibKey: 'Chatrchyan:2014mua'
+BibTeX: '@article{Chatrchyan:2014mua,
+      author         = "Chatrchyan, Serguei and others",
+      title          = "{Measurement of inclusive W and Z boson production cross
+                        sections in pp collisions at $\sqrt{s}$ = 8 TeV}",
+      collaboration  = "CMS",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "112",
+      year           = "2014",
+      pages          = "191802",
+      doi            = "10.1103/PhysRevLett.112.191802",
+      eprint         = "1402.0923",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-SMP-12-011, CERN-PH-EP-2013-217",
+      SLACcitation   = "%%CITATION = ARXIV:1402.0923;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error
