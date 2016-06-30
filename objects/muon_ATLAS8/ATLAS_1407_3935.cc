@@ -36,7 +36,7 @@ namespace Atom {
             mu.addIso(CALO_ISO_PT,  0.3,  0.15,  0.0, 0.01, CALO_ALL);                        
             mu.addIso(TRACK_ISO_PT, 0.2,  0.10,  0.0, 0.01, CALO_ALL, 0.4);
             mu.setSmearingParams  ( getMuonSim( "Muon_Smear_ID-MS_ATLAS" ) );
-            mu.setEfficiencyParams( getMuonEff( "Muon_Ident_PF_CMS" ) );
+            mu.setEfficiencyParams( getMuonEff( "Muon_Ident_CB-ST_ATLAS" ) );
             addProjection(mu, "Muons");
 
             bookHisto1D("Mmm", 40, 80, 100, "Mmm", "Mmm", "Arbitrary");
