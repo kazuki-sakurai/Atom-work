@@ -1,0 +1,10 @@
+add Analysis ATLAS_1407_3935
+add InputFile /Users/kazuki/Projects/Atom-Events/objects/LHC8_Zmm_1e4.hepmc  
+add OutputFile Zmm.yaml
+add OutputFile Zmm.yoda
+set DoSmearing On
+set DoEfficiencies On
+set SaveHistos On
+set SaveAllProcIds Off
+set MaxEventNumber -1
+launch

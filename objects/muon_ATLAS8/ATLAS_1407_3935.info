@@ -1,0 +1,62 @@
+Name: ATLAS_1407_3935
+Year: 2014
+Summary: 'Measurement of the muon reconstruction performance of the ATLAS detector  using 2011 and 2012 LHC proton-proton collision data'
+Experiment: ATLAS
+Collider: LHC8
+InspireID: 1306491
+References:
+ - arXiv:1407.3935
+ - CERN-PH-EP-2014-151
+ - Eur. Phys. J. C 74 (2014), 3130
+ - doi:10.1140/epjc/s10052-014-3130-x
+Status: UNVALIDATED
+Authors:
+ - Kazuki
+Beams: [ p+, p+ ]
+Energies: [ 8000 ]
+Keywords: [ Leptons ]
+Luminosity: [ 20.3 / fb, 4.5 percent ]
+Description: 'This paper presents the performance of the ATLAS muon reconstruction during
+the LHC run with $pp$ collisions at $\sqrt{s}=7-8$ TeV in 2011-2012, focusing
+mainly on data collected in 2012. Measurements of the reconstruction efficiency
+and of the momentum scale and resolution, based on large reference samples of
+$J/\psi\to \mu\mu$, $Z\to \mu\mu$ and $\Upsilon\to\mu\mu$ decays, are presented
+and compared to Monte Carlo simulations. Corrections to the simulation, to be
+used in physics analysis, are provided. Over most of the covered phase space
+(muon $|\eta|2.7$ and $5 \lesssim p_{\mathrm{T}} \lesssim 100$ GeV) the
+efficiency is above $99\%$ and is measured with per-mille precision. The
+momentum resolution ranges from $1.7\%$ at central rapidity and for transverse
+momentum $p_{\mathrm{T}} \simeq 10$ GeV, to $4\%$ at large rapidity and
+$p_{\mathrm{T}} \simeq 100$ GeV. The momentum scale is known with an
+uncertainty of $0.05\%$ to $0.2\%$ depending on rapidity. A method for the
+recovery of final state radiation from the muons is also presented.'
+BibKey: 'Aad:2014rra'
+BibTeX: '%%% contains utf-8, see: http://inspirehep.net/info/faq/general#utf8
+%%% add \usepackage[utf8]{inputenc} to your latex preamble
+
+@article{Aad:2014rra,
+      author         = "Aad, Georges and others",
+      title          = "{Measurement of the muon reconstruction performance of
+                        the ATLAS detector using 2011 and 2012 LHC proton\textemdashproton
+                        collision data}",
+      collaboration  = "ATLAS",
+      journal        = "Eur. Phys. J.",
+      volume         = "C74",
+      year           = "2014",
+      number         = "11",
+      pages          = "3130",
+      doi            = "10.1140/epjc/s10052-014-3130-x",
+      eprint         = "1407.3935",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-151",
+      SLACcitation   = "%%CITATION = ARXIV:1407.3935;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity
