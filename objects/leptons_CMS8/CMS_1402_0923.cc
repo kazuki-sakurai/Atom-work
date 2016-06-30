@@ -49,7 +49,7 @@ namespace Atom {
             addProjection(mu, "Muons");
 
             bookHisto1D("Mee", 30, 60, 120, "Mee", "Mee", "Arbitrary");
-            bookHisto1D("Mmm", 30, 60, 120, "Mee", "Mee", "Arbitrary");
+            bookHisto1D("Mmm", 30, 60, 120, "Mmm", "Mmm", "Arbitrary");
 
 			// End init section -- do not edit/remove this comment
 		}
