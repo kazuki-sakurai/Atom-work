@@ -1,0 +1,60 @@
+Name: ATLAS_1407_5063
+Year: 2014
+Summary: 'Electron and photon energy calibration with the ATLAS detector using LHC  Run 1 data'
+Experiment: ATLAS
+Collider: LHC7
+InspireID: 1306905
+References:
+ - arXiv:1407.5063
+ - CERN-PH-EP-2014-153
+ - Eur. Phys. J. C  (2014), 74
+ - doi:10.1140/epjc/s10052-014-3071-4
+Status: UNVALIDATED
+Authors:
+ - Kazuki
+Beams: [ p+, p+ ]
+Energies: [ 8000 ]
+Keywords: [ Leptons ]
+Luminosity: [ 25.0 / fb, 4.5 percent ]
+Description: 'This paper presents the electron and photon energy calibration achieved with
+the ATLAS detector using about 25 fb$^{-1}$ of LHC proton--proton collision
+data taken at centre-of-mass energies of $\sqrt{s}$ = 7 and 8 TeV. The
+reconstruction of electron and photon energies is optimised using multivariate
+algorithms. The response of the calorimeter layers is equalised in data and
+simulation, and the longitudinal profile of the electromagnetic showers is
+exploited to estimate the passive material in front of the calorimeter and
+reoptimise the detector simulation. After all corrections, the $Z$ resonance is
+used to set the absolute energy scale. For electrons from $Z$ decays, the
+achieved calibration is typically accurate to 0.05% in most of the detector
+acceptance, rising to 0.2% in regions with large amounts of passive material.
+The remaining inaccuracy is less than 0.2-1% for electrons with a transverse
+energy of 10 GeV, and is on average 0.3% for photons. The detector resolution
+is determined with a relative inaccuracy of less than 10% for electrons and
+photons up to 60 GeV transverse energy, rising to 40% for transverse energies
+above 500 GeV.'
+BibKey: 'Aad:2014nim'
+BibTeX: '@article{Aad:2014nim,
+      author         = "Aad, Georges and others",
+      title          = "{Electron and photon energy calibration with the ATLAS
+                        detector using LHC Run 1 data}",
+      collaboration  = "ATLAS",
+      journal        = "Eur. Phys. J.",
+      volume         = "C74",
+      year           = "2014",
+      number         = "10",
+      pages          = "3071",
+      doi            = "10.1140/epjc/s10052-014-3071-4",
+      eprint         = "1407.5063",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-153",
+      SLACcitation   = "%%CITATION = ARXIV:1407.5063;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error
