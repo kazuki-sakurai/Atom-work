@@ -84,7 +84,7 @@ namespace Atom {
             /// @todo apply projections
 			// const Particles& jets = applyProjection< FastJets >(event, "Jets").particlesByPt(&event);
 			const Particles& mu = applyProjection<IsoMuon>(event, "Muons").particlesByPt();
-			const Particles& ele = applyProjection<IsoMuon>(event, "Electrons").particlesByPt();
+			const Particles& ele = applyProjection<IsoElectron>(event, "Electrons").particlesByPt();
 
 			if( mu.size() == 2 ){
 				
