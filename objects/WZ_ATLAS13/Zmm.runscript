@@ -1,0 +1,10 @@
+add Analysis ATLAS_1603_09222
+add InputFile /Users/spliew/Desktop/tools/Atom_src/Atom-work/objects/WZ_ATLAS13/EventInfo/LHC13-Zmm.hepmc  
+add OutputFile Zmm.yaml
+add OutputFile Zmm.yoda
+set DoSmearing On
+set DoEfficiencies On
+set SaveHistos On
+set SaveAllProcIds Off
+set MaxEventNumber -1
+launch
