@@ -1,0 +1,60 @@
+Name: ATLAS_1603_09222
+Year: 2016
+Summary: 'Measurement of $W^{\pm}$ and $Z$-boson production cross sections in $pp$  collisions at $\sqrt{s}=13$ TeV with the ATLAS detector'
+Experiment: ATLAS
+Collider: LHC13
+InspireID: 1436497
+References:
+ - arXiv:1603.09222
+ - CERN-EP-2016-069
+Status: UNVALIDATED
+Authors:
+ - Seng Pei Liew
+Beams: [ p+, p+ ]
+Energies: [ 13000 ]
+Keywords: [ Leptons ]
+Luminosity: [ 81.0 / pb, 2.1 percent ]
+Description: 'Measurements of the $W^{\pm} \rightarrow \ell^{\pm} \nu$ and $Z \rightarrow
+\ell^+ \ell^-$ production cross sections (where $\ell^{\pm}=e^{\pm},\mu^{\pm}$)
+in proton-proton collisions at $\sqrt{s}=13$ TeV are presented using data
+recorded by the ATLAS experiment at the Large Hadron Collider, corresponding to
+a total integrated luminosity of 81 pb$^{-1}$ The total inclusive
+$W^{\pm}$-boson production cross sections times the single-lepton-flavour
+branching ratios are $\sigma_{W^+}^{tot}= 11.83 \pm 0.02 (stat) \pm 0.32 (sys)
+\pm 0.25 (lumi)$ nb and $\sigma_{W^-}^{tot} = 8.79 \pm 0.02 (stat) \pm 0.24
+(sys) \pm 0.18 (lumi)$ nb for $W^+$ and $W^-$, respectively. The total
+inclusive $Z$-boson production cross section times leptonic branching ratio,
+within the invariant mass window $66  m_{\ell\ell}  116$ GeV, is
+$\sigma_{Z}^{tot} = 1.981 \pm 0.007 (stat) \pm 0.038 (sys) \pm 0.042 (lumi)$
+nb. The $W^+$, $W^-$, and $Z$-boson production cross sections and cross-section
+ratios within a fiducial region defined by the detector acceptance are also
+measured. The cross-section ratios benefit from significant cancellation of
+experimental uncertainties, resulting in $\sigma_{W^+}^{fid}/\sigma_{W^-}^{fid}
+= 1.295 \pm 0.003 (stat) \pm 0.010 (sys)$ and
+$\sigma_{W^{\pm}}^{fid}/\sigma_{Z}^{fid} = 10.31 \pm 0.04 (stat) \pm 0.20
+(sys)$. Theoretical predictions, based on calculations accurate to
+next-to-next-to-leading order for quantum chromodynamics and to next-to-leading
+order for electroweak processes and which employ different parton distribution
+function sets, are compared to these measurements.'
+BibKey: 'Aad:2016naf'
+BibTeX: '@article{Aad:2016naf,
+      author         = "Aad, Georges and others",
+      title          = "{Measurement of $W^{\pm}$ and $Z$-boson production cross
+                        sections in $pp$ collisions at $\sqrt{s}=13$ TeV with the
+                        ATLAS detector}",
+      collaboration  = "ATLAS",
+      year           = "2016",
+      eprint         = "1603.09222",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-EP-2016-069",
+      SLACcitation   = "%%CITATION = ARXIV:1603.09222;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error
