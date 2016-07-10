@@ -1,0 +1,150 @@
+# Atom ver. 0.9 yaml output
+# Contains Cuts and Efficiencies
+Atom Run Info:
+  Processed Files:
+    - /Volumes/BOOTCAMP/LHC13-Zmm.hepmc
+  Processed Events: 30000
+  Used Settings:
+    - Setting Name: ATLAS_1603_09222:CalcCR
+      Description: Compute quantities for Control Regions
+      Value: On
+    - Setting Name: ATLAS_1603_09222:DoEfficiencies
+      Description: Apply parameterized efficiencies for the objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1603_09222:DoSmearing
+      Description: Apply parameterized momentum resolution for the objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1603_09222:DoTagging
+      Description: Use parameterized efficiencies for tagging objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1603_09222:SaveEvents
+      Description: Save event-related information for this analysis
+      Value: On
+    - Setting Name: ATLAS_1603_09222:SaveHistograms
+      Description: Save histograms for this analysis
+      Value: On
+    - Setting Name: ATLAS_1603_09222:SavePassFail
+      Description: Save pass-fail informatio for this analysisn
+      Value: On
+    - Setting Name: ATLAS_1603_09222:SaveProjections
+      Description: Save projection information for this analysis
+      Value: On
+    - Setting Name: AnalysisHandler:IgnoreBeams
+      Description: Ignore beam information in selecting valid analyses for an Atom run
+      Value: Off
+    - Setting Name: DressedLeptons:EoverPRatio
+      Description: Energy over Track momentum ratio cut to define leptonic clusters
+      Value: 1.3
+    - Setting Name: FastJets:DoJES
+      Description: Compute the Jet Energy scale contribution to the jet smearing
+      Value: On
+    - Setting Name: FlagCutSensitivity:Tolerance
+      Description: Threshold for flagging high sensitivity (dlog cut_eff/dlog cut_value) in cut efficiencies
+      Value: 5
+    - Setting Name: FlagLowStatistics:Sigmas
+      Description: Significance threshold for flagging low statistics in numerical quantities
+      Value: 2
+    - Setting Name: FlaggingHandler:DoFlagging
+      Description: Perform the condition-flagging step
+      Value: On
+    - Setting Name: ProjectionHandler:CacheRanges
+      Description: Uses kinematic information to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CacheSaved
+      Description: Uses saved projections from a binary file to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CacheSimulation
+      Description: Uses smearing and efficiency information to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CalcCR
+      Description: Compute quantities (efficiencies, cutflows, histograms) for Control Regions
+      Value: On
+    - Setting Name: ProjectionHandler:DoEfficiencies
+      Description: Enable the use of parameterized efficiencies
+      Value: On
+    - Setting Name: ProjectionHandler:DoSmearing
+      Description: Enable the use of parameterized momentum resolution (smearing)
+      Value: On
+    - Setting Name: ProjectionHandler:DoTagging
+      Description: Enable the use of parameterized efficiencies for tagging
+      Value: On
+    - Setting Name: Run:ListUsedAnalyses
+      Description: Displays the list of valid analyses used in the current run
+      Value: On
+    - Setting Name: Run:NumberOfThreads
+      Description: Maximum number of threads usable in current run
+      Value: 4
+    - Setting Name: Run:ParallelRun
+      Description: Enable multi-threading in calculation. EXPERIMENTAL
+      Value: Off
+    - Setting Name: Run:RefsOutputFile
+      Description: Output file containing citation references for the current Atom run
+      Value: Run01.bib
+    - Setting Name: Run:RunName
+      Description: Name of the current Atom run
+      Value: Run01
+    - Setting Name: Run:SaveReferences
+      Description: Save a file containing the citation references for the current Atom run
+      Value: On
+    - Setting Name: Run:Seed
+      Description: Random seed (default = 0 to be randomly determined.)
+      Value: 0
+    - Setting Name: WriterHandler:SaveAllProcIds
+      Description: Save the information relative to specific process IDs
+      Value: Off
+    - Setting Name: WriterHandler:SaveEvents
+      Description: Save event-by-event particles and vertices information
+      Value: Off
+    - Setting Name: WriterHandler:SaveHistograms
+      Description: Save analyses histograms
+      Value: On
+    - Setting Name: WriterHandler:SaveKinematics
+      Description: Save event-by-event hard process kinematical information
+      Value: Off
+    - Setting Name: WriterHandler:SaveOptions
+      Description: Save run options
+      Value: On
+    - Setting Name: WriterHandler:SavePassFail
+      Description: Save per-analysis event-by-event pass/fail information
+      Value: Off
+    - Setting Name: WriterHandler:SaveProjections
+      Description: Save analysis-by-analysis projections information
+      Value: Off
+Sub Processes Information:
+  []
+Cross Sections:
+  - Process ID: -3
+    Cross Section: 2e+03
+    Cross Section Error: [2.3e+05, 2.3e+05]
+  - Process ID: -2
+    Cross Section: 1e+03
+    Cross Section Error: [2.3e+05, 2.3e+05]
+  - Process ID: -1
+    Cross Section: 0.09026400750141941
+    Cross Section Error: [2.7e+03, 2.7e+03]
+  - Process ID: 0
+    Cross Section: 2708
+    Cross Section Error: [7, 7]
+Analyses:
+  ATLAS_1603_09222:
+    Summary: Measurement of $W^{\pm}$ and $Z$-boson production cross sections in $pp$  collisions at $\sqrt{s}=13$ TeV with the ATLAS detector
+    Experiment: ATLAS
+    Collider: LHC13
+    Year: 2016
+    Description: Measurements of the $W^{\pm} \rightarrow \ell^{\pm} \nu$ and $Z \rightarrow \ell^+ \ell^-$ production cross sections (where $\ell^{\pm}=e^{\pm},\mu^{\pm}$) in proton-proton collisions at $\sqrt{s}=13$ TeV are presented using data recorded by the ATLAS experiment at the Large Hadron Collider, corresponding to a total integrated luminosity of 81 pb$^{-1}$ The total inclusive $W^{\pm}$-boson production cross sections times the single-lepton-flavour branching ratios are $\sigma_{W^+}^{tot}= 11.83 \pm 0.02 (stat) \pm 0.32 (sys) \pm 0.25 (lumi)$ nb and $\sigma_{W^-}^{tot} = 8.79 \pm 0.02 (stat) \pm 0.24 (sys) \pm 0.18 (lumi)$ nb for $W^+$ and $W^-$, respectively. The total inclusive $Z$-boson production cross section times leptonic branching ratio, within the invariant mass window $66  m_{\ell\ell}  116$ GeV, is $\sigma_{Z}^{tot} = 1.981 \pm 0.007 (stat) \pm 0.038 (sys) \pm 0.042 (lumi)$ nb. The $W^+$, $W^-$, and $Z$-boson production cross sections and cross-section ratios within a fiducial region defined by the detector acceptance are also measured. The cross-section ratios benefit from significant cancellation of experimental uncertainties, resulting in $\sigma_{W^+}^{fid}/\sigma_{W^-}^{fid} = 1.295 \pm 0.003 (stat) \pm 0.010 (sys)$ and $\sigma_{W^{\pm}}^{fid}/\sigma_{Z}^{fid} = 10.31 \pm 0.04 (stat) \pm 0.20 (sys)$. Theoretical predictions, based on calculations accurate to next-to-next-to-leading order for quantum chromodynamics and to next-to-leading order for electroweak processes and which employ different parton distribution function sets, are compared to these measurements.
+    RunInfo: ""
+    Status: UNVALIDATED
+    Authors:
+      - Seng Pei Liew
+    References:
+      - arXiv:1603.09222
+      - CERN-EP-2016-069
+    InspireID: 1436497
+    BibKey: Aad:2016naf
+    Luminosity:
+      Value: 81
+      Error: 1.7
+    Efficiencies:
+      []
+    Cuts:
+      []
