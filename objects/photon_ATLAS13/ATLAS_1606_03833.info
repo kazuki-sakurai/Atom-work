@@ -1,0 +1,52 @@
+Name: ATLAS_1606_03833
+Year: 2016
+Summary: 'Search for resonances in diphoton events at $\sqrt{s}$=13 TeV with the  ATLAS detector'
+Experiment: ATLAS
+Collider: LHC13
+InspireID: 1469066
+References:
+ - arXiv:1606.03833
+ - arXiv:1606.03833
+Status: UNVALIDATED
+Authors:
+ - Seng Pei Liew
+Beams: [ p+, p+ ]
+Energies: [ 13000 ]
+Keywords: [ ATOM-OBJECTS ]
+Luminosity: [ 3.2 / fb, 5 percent ]
+Description: 'Searches for new resonances decaying into two photons in the ATLAS experiment
+at the CERN Large Hadron Collider are described. The analysis is based on
+proton--proton collision data corresponding to an integrated luminosity of 3.2
+fb$^{-1}$ at $\sqrt{s} = 13$ TeV recorded in 2015. Two searches are performed,
+one targeted at a spin-2 particle of mass larger than 500 GeV, using
+Randall--Sundrum graviton states as a benchmark model, and one optimized for a
+spin-0 particle of mass larger than 200 GeV. Varying both the mass and the
+decay width, the most significant deviation from the background-only hypothesis
+is observed at a diphoton invariant mass around 750 GeV with local
+significances of 3.8 and 3.9 standard deviations in the searches optimized for
+a spin-2 and spin-0 particle, respectively. The global significances are
+estimated to be 2.1 standard deviations for both analyses. The consistency
+between the data collected at 13 TeV and 8 TeV is also evaluated. Limits on the
+production cross section times branching ratio to two photons for the two
+resonance types are reported.'
+BibKey: 'Aaboud:2016tru'
+BibTeX: '@article{Aaboud:2016tru,
+      author         = "Aaboud, Morad and others",
+      title          = "{Search for resonances in diphoton events at
+                        $\sqrt{s}$=13 TeV with the ATLAS detector}",
+      collaboration  = "ATLAS",
+      year           = "2016",
+      eprint         = "1606.03833",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-EP-2016-120",
+      SLACcitation   = "%%CITATION = ARXIV:1606.03833;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error
