@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[    108166,       2631]
-NotebookOptionsPosition[    107215,       2592]
-NotebookOutlinePosition[    107573,       2608]
-CellTagsIndexPosition[    107530,       2605]
+NotebookDataLength[     58676,       1444]
+NotebookOptionsPosition[     57736,       1405]
+NotebookOutlinePosition[     58094,       1421]
+CellTagsIndexPosition[     58051,       1418]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -52,17 +52,20 @@ Cell[BoxData[{
      RowBox[{
       RowBox[{"NotebookDirectory", "[", "]"}], "<>", "\"\<Zmm.yoda\>\""}], 
      "]"}], ")"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"F1", "=", 
-  RowBox[{"HistogramPlot", "[", 
-   RowBox[{
-    RowBox[{"Zmm", "[", 
-     RowBox[{"[", "1", "]"}], "]"}], ",", 
-    RowBox[{"PlotStyle", "\[Rule]", 
-     RowBox[{"{", "Red", "}"}]}]}], "]"}]}]}], "Input",
+ RowBox[{
+  RowBox[{"ATLAS", "=", 
+   RowBox[{"(", 
+    RowBox[{"GetYodaRaw", "[", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+      "\"\<ATLAS_Zmm.yoda\>\""}], "]"}], ")"}]}], ";"}]}], "Input",
  CellChangeTimes->{{3.676012985745699*^9, 3.676013025000731*^9}, {
   3.676013617569274*^9, 3.6760136191421967`*^9}, {3.676264968577818*^9, 
   3.6762649788598557`*^9}, {3.6767718581891747`*^9, 3.676771873164895*^9}, {
-  3.67677193209837*^9, 3.6767719502982473`*^9}}],
+  3.67677193209837*^9, 3.6767719502982473`*^9}, {3.677648238176847*^9, 
+  3.677648253846629*^9}}],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  InterpretationBox[
@@ -75,146 +78,7 @@ Cell[BoxData[
   Editable->False]], "Print",
  CellChangeTimes->{
   3.676265388089456*^9, 3.6767718587923737`*^9, {3.67677193398333*^9, 
-   3.676771961607102*^9}}],
-
-Cell[BoxData[
- GraphicsBox[{{}, {}, 
-   {RGBColor[1, 0, 0], AbsoluteThickness[1.6], Opacity[1.], 
-    LineBox[CompressedData["
-1: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
-     "]]}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, None},
-  AxesOrigin->{80., 0},
-  DisplayFunction->Identity,
-  Frame->{{True, True}, {True, True}},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  Method->{"DefaultBoundaryStyle" -> Automatic, "ScalingFunctions" -> None},
-  PlotLabel->FormBox["\"/ATLAS_1407_3935/Mmm/0\"", TraditionalForm],
-  PlotRange->{All, All},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.05], 
-     Scaled[0.05]}},
-  Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{{3.676771950847198*^9, 3.676771961662328*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"ATLAS", "=", 
-   RowBox[{"(", 
-    RowBox[{"GetYodaRaw", "[", 
-     RowBox[{
-      RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
-      "\"\<ATLAS_Zmm.yoda\>\""}], "]"}], ")"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{"F2", "=", 
-  RowBox[{"ScatterPlot", "[", 
-   RowBox[{
-    RowBox[{"ATLAS", "[", 
-     RowBox[{"[", "1", "]"}], "]"}], ",", 
-    RowBox[{"PlotStyle", "\[Rule]", 
-     RowBox[{"{", "Black", "}"}]}]}], "]"}]}]}], "Input",
- CellChangeTimes->{{3.676771867138174*^9, 3.6767718994223413`*^9}}],
+   3.676771961607102*^9}, 3.677648250076342*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -227,1220 +91,168 @@ Cell[BoxData[
   1, " Imported ..", "Scatter2D", "..  ", "/REF/ATLAS_1008_2461/d01-x01-y01"],
   
   Editable->False]], "Print",
- CellChangeTimes->{{3.6767718865947523`*^9, 3.6767718998881397`*^9}, 
-   3.676771963369892*^9}],
-
-Cell[BoxData[
- GraphicsBox[{{}, {{}, 
-    {GrayLevel[0], PointSize[0.016666666666666666`], AbsoluteThickness[1.6], 
-     PointBox[CompressedData["
-1:eJw1081LVFEch/GT9IJJkAZTqIs7UIiIOQMRLkKutRbNbMySuJiCOyF0EUHc
-P0BaCQ4u5IDgIsQsRBCkLmQiVjJaWKbWTXtRUhIrxEgq7/dpYDh8OL+5DzNz
-TryprbYlyxhT8++9t0av4KK7t7hTC9FqQjyzKJta+c2S7OCK97KLz4eyJ3u/
-sM9++oNsZTu6LAeyX79CXza3PtK/pOf1fKIvO3Of6bOfXKUvByNr9Jkv+kpf
-NgUb9GX/wjf6cuLJJv26aM1UbdGXw77v9GXnxk/6cqJ5mz7z4Q59uWbsN315
-KNtUqi+nd/fJ5nJk27VfduQTvYdkV269niN78viBo7Ivn8k9Jlu5eSEmB/KP
-dAF9uX3IoZ+KnIqdpC8fXi+iL5+eLaEvVzSW0Zerc5P05eQEDuS6bhzKXXcT
-9OsjP3pXSl+ObRTTl7fGTtGXzWScvhzeLqQvn5v+//3lgeI8+rKNH6F/RZ9v
-4vd25PKlLPrypvtHXU/OrPJ/+7I/z/mwcuI+5ymQTQ7nLZTtPc6radA6xfl2
-ZDvMfXBlp5P74zF/h/vm44fcV4sPcp8DPPiWvhx8eU3/qtw/R182L17RZ7/x
-JX3ZX5+hz3w+tsznZegzf3yaPr75nP41+ewz+vjxJH3ZpLCHH0zQZ77jKX32
-+8bdv4u04qg=
-      
-      "]], {{LineBox[{{71.25, 28457.}, {70.75, 28457.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {71.25, 28457.}], 
-         Offset[{0, -1.5}, {71.25, 28457.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {70.75, 28457.}], 
-         Offset[{0, -1.5}, {70.75, 28457.}]}], 
-       LineBox[{{71., 28457.}, {71., 28457.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {71., 28457.}], Offset[{-1.5, 0}, {71., 28457.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {71., 28457.}], 
-         Offset[{-1.5, 0}, {71., 28457.}]}]}, {
-       LineBox[{{71.75, 29509.}, {71.25, 29509.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {71.75, 29509.}], 
-         Offset[{0, -1.5}, {71.75, 29509.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {71.25, 29509.}], 
-         Offset[{0, -1.5}, {71.25, 29509.}]}], 
-       LineBox[{{71.5, 29509.}, {71.5, 29509.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {71.5, 29509.}], Offset[{-1.5, 0}, {71.5, 29509.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {71.5, 29509.}], 
-         Offset[{-1.5, 0}, {71.5, 29509.}]}]}, {
-       LineBox[{{72.25, 30561.}, {71.75, 30561.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {72.25, 30561.}], 
-         Offset[{0, -1.5}, {72.25, 30561.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {71.75, 30561.}], 
-         Offset[{0, -1.5}, {71.75, 30561.}]}], 
-       LineBox[{{72., 30561.}, {72., 30561.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {72., 30561.}], Offset[{-1.5, 0}, {72., 30561.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {72., 30561.}], 
-         Offset[{-1.5, 0}, {72., 30561.}]}]}, {
-       LineBox[{{72.75, 31993.}, {72.25, 31993.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {72.75, 31993.}], 
-         Offset[{0, -1.5}, {72.75, 31993.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {72.25, 31993.}], 
-         Offset[{0, -1.5}, {72.25, 31993.}]}], 
-       LineBox[{{72.5, 31993.}, {72.5, 31993.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {72.5, 31993.}], Offset[{-1.5, 0}, {72.5, 31993.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {72.5, 31993.}], 
-         Offset[{-1.5, 0}, {72.5, 31993.}]}]}, {
-       LineBox[{{73.25, 33298.}, {72.75, 33298.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {73.25, 33298.}], 
-         Offset[{0, -1.5}, {73.25, 33298.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {72.75, 33298.}], 
-         Offset[{0, -1.5}, {72.75, 33298.}]}], 
-       LineBox[{{73., 33298.}, {73., 33298.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {73., 33298.}], Offset[{-1.5, 0}, {73., 33298.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {73., 33298.}], 
-         Offset[{-1.5, 0}, {73., 33298.}]}]}, {
-       LineBox[{{73.75, 34771.}, {73.25, 34771.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {73.75, 34771.}], 
-         Offset[{0, -1.5}, {73.75, 34771.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {73.25, 34771.}], 
-         Offset[{0, -1.5}, {73.25, 34771.}]}], 
-       LineBox[{{73.5, 34771.}, {73.5, 34771.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {73.5, 34771.}], Offset[{-1.5, 0}, {73.5, 34771.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {73.5, 34771.}], 
-         Offset[{-1.5, 0}, {73.5, 34771.}]}]}, {
-       LineBox[{{74.25, 36034.}, {73.75, 36034.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {74.25, 36034.}], 
-         Offset[{0, -1.5}, {74.25, 36034.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {73.75, 36034.}], 
-         Offset[{0, -1.5}, {73.75, 36034.}]}], 
-       LineBox[{{74., 36034.}, {74., 36034.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {74., 36034.}], Offset[{-1.5, 0}, {74., 36034.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {74., 36034.}], 
-         Offset[{-1.5, 0}, {74., 36034.}]}]}, {
-       LineBox[{{74.75, 38349.}, {74.25, 38349.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {74.75, 38349.}], 
-         Offset[{0, -1.5}, {74.75, 38349.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {74.25, 38349.}], 
-         Offset[{0, -1.5}, {74.25, 38349.}]}], 
-       LineBox[{{74.5, 38349.}, {74.5, 38349.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {74.5, 38349.}], Offset[{-1.5, 0}, {74.5, 38349.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {74.5, 38349.}], 
-         Offset[{-1.5, 0}, {74.5, 38349.}]}]}, {
-       LineBox[{{75.25, 39612.}, {74.75, 39612.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {75.25, 39612.}], 
-         Offset[{0, -1.5}, {75.25, 39612.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {74.75, 39612.}], 
-         Offset[{0, -1.5}, {74.75, 39612.}]}], 
-       LineBox[{{75., 39612.}, {75., 39612.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {75., 39612.}], Offset[{-1.5, 0}, {75., 39612.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {75., 39612.}], 
-         Offset[{-1.5, 0}, {75., 39612.}]}]}, {
-       LineBox[{{75.75, 41928.}, {75.25, 41928.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {75.75, 41928.}], 
-         Offset[{0, -1.5}, {75.75, 41928.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {75.25, 41928.}], 
-         Offset[{0, -1.5}, {75.25, 41928.}]}], 
-       LineBox[{{75.5, 41928.}, {75.5, 41928.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {75.5, 41928.}], Offset[{-1.5, 0}, {75.5, 41928.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {75.5, 41928.}], 
-         Offset[{-1.5, 0}, {75.5, 41928.}]}]}, {
-       LineBox[{{76.25, 44243.}, {75.75, 44243.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {76.25, 44243.}], 
-         Offset[{0, -1.5}, {76.25, 44243.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {75.75, 44243.}], 
-         Offset[{0, -1.5}, {75.75, 44243.}]}], 
-       LineBox[{{76., 44243.}, {76., 44243.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {76., 44243.}], Offset[{-1.5, 0}, {76., 44243.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {76., 44243.}], 
-         Offset[{-1.5, 0}, {76., 44243.}]}]}, {
-       LineBox[{{76.75, 46769.}, {76.25, 46769.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {76.75, 46769.}], 
-         Offset[{0, -1.5}, {76.75, 46769.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {76.25, 46769.}], 
-         Offset[{0, -1.5}, {76.25, 46769.}]}], 
-       LineBox[{{76.5, 46769.}, {76.5, 46769.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {76.5, 46769.}], Offset[{-1.5, 0}, {76.5, 46769.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {76.5, 46769.}], 
-         Offset[{-1.5, 0}, {76.5, 46769.}]}]}, {
-       LineBox[{{77.25, 49547.}, {76.75, 49547.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {77.25, 49547.}], 
-         Offset[{0, -1.5}, {77.25, 49547.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {76.75, 49547.}], 
-         Offset[{0, -1.5}, {76.75, 49547.}]}], 
-       LineBox[{{77., 49547.}, {77., 49547.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {77., 49547.}], Offset[{-1.5, 0}, {77., 49547.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {77., 49547.}], 
-         Offset[{-1.5, 0}, {77., 49547.}]}]}, {
-       LineBox[{{77.75, 52662.}, {77.25, 52662.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {77.75, 52662.}], 
-         Offset[{0, -1.5}, {77.75, 52662.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {77.25, 52662.}], 
-         Offset[{0, -1.5}, {77.25, 52662.}]}], 
-       LineBox[{{77.5, 52662.}, {77.5, 52662.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {77.5, 52662.}], Offset[{-1.5, 0}, {77.5, 52662.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {77.5, 52662.}], 
-         Offset[{-1.5, 0}, {77.5, 52662.}]}]}, {
-       LineBox[{{78.25, 55609.}, {77.75, 55609.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {78.25, 55609.}], 
-         Offset[{0, -1.5}, {78.25, 55609.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {77.75, 55609.}], 
-         Offset[{0, -1.5}, {77.75, 55609.}]}], 
-       LineBox[{{78., 55609.}, {78., 55609.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {78., 55609.}], Offset[{-1.5, 0}, {78., 55609.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {78., 55609.}], 
-         Offset[{-1.5, 0}, {78., 55609.}]}]}, {
-       LineBox[{{78.75, 59608.}, {78.25, 59608.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {78.75, 59608.}], 
-         Offset[{0, -1.5}, {78.75, 59608.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {78.25, 59608.}], 
-         Offset[{0, -1.5}, {78.25, 59608.}]}], 
-       LineBox[{{78.5, 59608.}, {78.5, 59608.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {78.5, 59608.}], Offset[{-1.5, 0}, {78.5, 59608.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {78.5, 59608.}], 
-         Offset[{-1.5, 0}, {78.5, 59608.}]}]}, {
-       LineBox[{{79.25, 64028.}, {78.75, 64028.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {79.25, 64028.}], 
-         Offset[{0, -1.5}, {79.25, 64028.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {78.75, 64028.}], 
-         Offset[{0, -1.5}, {78.75, 64028.}]}], 
-       LineBox[{{79., 64028.}, {79., 64028.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {79., 64028.}], Offset[{-1.5, 0}, {79., 64028.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {79., 64028.}], 
-         Offset[{-1.5, 0}, {79., 64028.}]}]}, {
-       LineBox[{{79.75, 68659.}, {79.25, 68659.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {79.75, 68659.}], 
-         Offset[{0, -1.5}, {79.75, 68659.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {79.25, 68659.}], 
-         Offset[{0, -1.5}, {79.25, 68659.}]}], 
-       LineBox[{{79.5, 68659.}, {79.5, 68659.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {79.5, 68659.}], Offset[{-1.5, 0}, {79.5, 68659.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {79.5, 68659.}], 
-         Offset[{-1.5, 0}, {79.5, 68659.}]}]}, {
-       LineBox[{{80.25, 74973.}, {79.75, 74973.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {80.25, 74973.}], 
-         Offset[{0, -1.5}, {80.25, 74973.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {79.75, 74973.}], 
-         Offset[{0, -1.5}, {79.75, 74973.}]}], 
-       LineBox[{{80., 74973.}, {80., 74973.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {80., 74973.}], Offset[{-1.5, 0}, {80., 74973.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {80., 74973.}], 
-         Offset[{-1.5, 0}, {80., 74973.}]}]}, {
-       LineBox[{{80.75, 80446.}, {80.25, 80446.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {80.75, 80446.}], 
-         Offset[{0, -1.5}, {80.75, 80446.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {80.25, 80446.}], 
-         Offset[{0, -1.5}, {80.25, 80446.}]}], 
-       LineBox[{{80.5, 80446.}, {80.5, 80446.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {80.5, 80446.}], Offset[{-1.5, 0}, {80.5, 80446.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {80.5, 80446.}], 
-         Offset[{-1.5, 0}, {80.5, 80446.}]}]}, {
-       LineBox[{{81.25, 87602.}, {80.75, 87602.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {81.25, 87602.}], 
-         Offset[{0, -1.5}, {81.25, 87602.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {80.75, 87602.}], 
-         Offset[{0, -1.5}, {80.75, 87602.}]}], 
-       LineBox[{{81., 87602.}, {81., 87602.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {81., 87602.}], Offset[{-1.5, 0}, {81., 87602.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {81., 87602.}], 
-         Offset[{-1.5, 0}, {81., 87602.}]}]}, {
-       LineBox[{{81.75, 95811.}, {81.25, 95811.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {81.75, 95811.}], 
-         Offset[{0, -1.5}, {81.75, 95811.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {81.25, 95811.}], 
-         Offset[{0, -1.5}, {81.25, 95811.}]}], 
-       LineBox[{{81.5, 95811.}, {81.5, 95811.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {81.5, 95811.}], Offset[{-1.5, 0}, {81.5, 95811.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {81.5, 95811.}], 
-         Offset[{-1.5, 0}, {81.5, 95811.}]}]}, {
-       LineBox[{{82.25, 105998.}, {81.75, 105998.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {82.25, 105998.}], 
-         Offset[{0, -1.5}, {82.25, 105998.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {81.75, 105998.}], 
-         Offset[{0, -1.5}, {81.75, 105998.}]}], 
-       LineBox[{{82., 105998.}, {82., 105998.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {82., 105998.}], Offset[{-1.5, 0}, {82., 105998.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {82., 105998.}], 
-         Offset[{-1.5, 0}, {82., 105998.}]}]}, {
-       LineBox[{{82.75, 117701.}, {82.25, 117701.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {82.75, 117701.}], 
-         Offset[{0, -1.5}, {82.75, 117701.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {82.25, 117701.}], 
-         Offset[{0, -1.5}, {82.25, 117701.}]}], 
-       LineBox[{{82.5, 117701.}, {82.5, 117701.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {82.5, 117701.}], 
-         Offset[{-1.5, 0}, {82.5, 117701.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {82.5, 117701.}], 
-         Offset[{-1.5, 0}, {82.5, 117701.}]}]}, {
-       LineBox[{{83.25, 131382.}, {82.75, 131382.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {83.25, 131382.}], 
-         Offset[{0, -1.5}, {83.25, 131382.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {82.75, 131382.}], 
-         Offset[{0, -1.5}, {82.75, 131382.}]}], 
-       LineBox[{{83., 131382.}, {83., 131382.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {83., 131382.}], Offset[{-1.5, 0}, {83., 131382.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {83., 131382.}], 
-         Offset[{-1.5, 0}, {83., 131382.}]}]}, {
-       LineBox[{{83.75, 147379.}, {83.25, 147379.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {83.75, 147379.}], 
-         Offset[{0, -1.5}, {83.75, 147379.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {83.25, 147379.}], 
-         Offset[{0, -1.5}, {83.25, 147379.}]}], 
-       LineBox[{{83.5, 147379.}, {83.5, 147379.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {83.5, 147379.}], 
-         Offset[{-1.5, 0}, {83.5, 147379.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {83.5, 147379.}], 
-         Offset[{-1.5, 0}, {83.5, 147379.}]}]}, {
-       LineBox[{{84.25, 168596.}, {83.75, 168596.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {84.25, 168596.}], 
-         Offset[{0, -1.5}, {84.25, 168596.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {83.75, 168596.}], 
-         Offset[{0, -1.5}, {83.75, 168596.}]}], 
-       LineBox[{{84., 168596.}, {84., 168596.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {84., 168596.}], Offset[{-1.5, 0}, {84., 168596.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {84., 168596.}], 
-         Offset[{-1.5, 0}, {84., 168596.}]}]}, {
-       LineBox[{{84.75, 193475.}, {84.25, 193475.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {84.75, 193475.}], 
-         Offset[{0, -1.5}, {84.75, 193475.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {84.25, 193475.}], 
-         Offset[{0, -1.5}, {84.25, 193475.}]}], 
-       LineBox[{{84.5, 193475.}, {84.5, 193475.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {84.5, 193475.}], 
-         Offset[{-1.5, 0}, {84.5, 193475.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {84.5, 193475.}], 
-         Offset[{-1.5, 0}, {84.5, 193475.}]}]}, {
-       LineBox[{{85.25, 224205.}, {84.75, 224205.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {85.25, 224205.}], 
-         Offset[{0, -1.5}, {85.25, 224205.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {84.75, 224205.}], 
-         Offset[{0, -1.5}, {84.75, 224205.}]}], 
-       LineBox[{{85., 224205.}, {85., 224205.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {85., 224205.}], Offset[{-1.5, 0}, {85., 224205.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {85., 224205.}], 
-         Offset[{-1.5, 0}, {85., 224205.}]}]}, {
-       LineBox[{{85.75, 262513.}, {85.25, 262513.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {85.75, 262513.}], 
-         Offset[{0, -1.5}, {85.75, 262513.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {85.25, 262513.}], 
-         Offset[{0, -1.5}, {85.25, 262513.}]}], 
-       LineBox[{{85.5, 262513.}, {85.5, 262513.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {85.5, 262513.}], 
-         Offset[{-1.5, 0}, {85.5, 262513.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {85.5, 262513.}], 
-         Offset[{-1.5, 0}, {85.5, 262513.}]}]}, {
-       LineBox[{{86.25, 312397.}, {85.75, 312397.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {86.25, 312397.}], 
-         Offset[{0, -1.5}, {86.25, 312397.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {85.75, 312397.}], 
-         Offset[{0, -1.5}, {85.75, 312397.}]}], 
-       LineBox[{{86., 312397.}, {86., 312397.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {86., 312397.}], Offset[{-1.5, 0}, {86., 312397.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {86., 312397.}], 
-         Offset[{-1.5, 0}, {86., 312397.}]}]}, {
-       LineBox[{{86.75, 374489.}, {86.25, 374489.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {86.75, 374489.}], 
-         Offset[{0, -1.5}, {86.75, 374489.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {86.25, 374489.}], 
-         Offset[{0, -1.5}, {86.25, 374489.}]}], 
-       LineBox[{{86.5, 374489.}, {86.5, 374489.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {86.5, 374489.}], 
-         Offset[{-1.5, 0}, {86.5, 374489.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {86.5, 374489.}], 
-         Offset[{-1.5, 0}, {86.5, 374489.}]}]}, {
-       LineBox[{{87.25, 452157.}, {86.75, 452157.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {87.25, 452157.}], 
-         Offset[{0, -1.5}, {87.25, 452157.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {86.75, 452157.}], 
-         Offset[{0, -1.5}, {86.75, 452157.}]}], 
-       LineBox[{{87., 452157.}, {87., 452157.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {87., 452157.}], Offset[{-1.5, 0}, {87., 452157.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {87., 452157.}], 
-         Offset[{-1.5, 0}, {87., 452157.}]}]}, {
-       LineBox[{{87.75, 546874.}, {87.25, 546874.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {87.75, 546874.}], 
-         Offset[{0, -1.5}, {87.75, 546874.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {87.25, 546874.}], 
-         Offset[{0, -1.5}, {87.25, 546874.}]}], 
-       LineBox[{{87.5, 546874.}, {87.5, 546874.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {87.5, 546874.}], 
-         Offset[{-1.5, 0}, {87.5, 546874.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {87.5, 546874.}], 
-         Offset[{-1.5, 0}, {87.5, 546874.}]}]}, {
-       LineBox[{{88.25, 658219.}, {87.75, 658219.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {88.25, 658219.}], 
-         Offset[{0, -1.5}, {88.25, 658219.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {87.75, 658219.}], 
-         Offset[{0, -1.5}, {87.75, 658219.}]}], 
-       LineBox[{{88., 658219.}, {88., 658219.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {88., 658219.}], Offset[{-1.5, 0}, {88., 658219.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {88., 658219.}], 
-         Offset[{-1.5, 0}, {88., 658219.}]}]}, {
-       LineBox[{{88.75, 783877.}, {88.25, 783877.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {88.75, 783877.}], 
-         Offset[{0, -1.5}, {88.75, 783877.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {88.25, 783877.}], 
-         Offset[{0, -1.5}, {88.25, 783877.}]}], 
-       LineBox[{{88.5, 783877.}, {88.5, 783877.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {88.5, 783877.}], 
-         Offset[{-1.5, 0}, {88.5, 783877.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {88.5, 783877.}], 
-         Offset[{-1.5, 0}, {88.5, 783877.}]}]}, {
-       LineBox[{{89.25, 911639.}, {88.75, 911639.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {89.25, 911639.}], 
-         Offset[{0, -1.5}, {89.25, 911639.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {88.75, 911639.}], 
-         Offset[{0, -1.5}, {88.75, 911639.}]}], 
-       LineBox[{{89., 911639.}, {89., 911639.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {89., 911639.}], Offset[{-1.5, 0}, {89., 911639.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {89., 911639.}], 
-         Offset[{-1.5, 0}, {89., 911639.}]}]}, {
-       LineBox[{{89.75, 1.027615*^6}, {89.25, 1.027615*^6}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {89.75, 1.027615*^6}], 
-         Offset[{0, -1.5}, {89.75, 1.027615*^6}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {89.25, 1.027615*^6}], 
-         Offset[{0, -1.5}, {89.25, 1.027615*^6}]}], 
-       LineBox[{{89.5, 1.027615*^6}, {89.5, 1.027615*^6}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {89.5, 1.027615*^6}], 
-         Offset[{-1.5, 0}, {89.5, 1.027615*^6}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {89.5, 1.027615*^6}], 
-         Offset[{-1.5, 0}, {89.5, 1.027615*^6}]}]}, {
-       LineBox[{{90.25, 1.118543*^6}, {89.75, 1.118543*^6}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {90.25, 1.118543*^6}], 
-         Offset[{0, -1.5}, {90.25, 1.118543*^6}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {89.75, 1.118543*^6}], 
-         Offset[{0, -1.5}, {89.75, 1.118543*^6}]}], 
-       LineBox[{{90., 1.118543*^6}, {90., 1.118543*^6}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {90., 1.118543*^6}], 
-         Offset[{-1.5, 0}, {90., 1.118543*^6}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {90., 1.118543*^6}], 
-         Offset[{-1.5, 0}, {90., 1.118543*^6}]}]}, {
-       LineBox[{{90.75, 1.164849*^6}, {90.25, 1.164849*^6}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {90.75, 1.164849*^6}], 
-         Offset[{0, -1.5}, {90.75, 1.164849*^6}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {90.25, 1.164849*^6}], 
-         Offset[{0, -1.5}, {90.25, 1.164849*^6}]}], 
-       LineBox[{{90.5, 1.164849*^6}, {90.5, 1.164849*^6}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {90.5, 1.164849*^6}], 
-         Offset[{-1.5, 0}, {90.5, 1.164849*^6}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {90.5, 1.164849*^6}], 
-         Offset[{-1.5, 0}, {90.5, 1.164849*^6}]}]}, {
-       LineBox[{{91.25, 1.152852*^6}, {90.75, 1.152852*^6}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {91.25, 1.152852*^6}], 
-         Offset[{0, -1.5}, {91.25, 1.152852*^6}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {90.75, 1.152852*^6}], 
-         Offset[{0, -1.5}, {90.75, 1.152852*^6}]}], 
-       LineBox[{{91., 1.152852*^6}, {91., 1.152852*^6}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {91., 1.152852*^6}], 
-         Offset[{-1.5, 0}, {91., 1.152852*^6}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {91., 1.152852*^6}], 
-         Offset[{-1.5, 0}, {91., 1.152852*^6}]}]}, {
-       LineBox[{{91.75, 1.085076*^6}, {91.25, 1.085076*^6}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {91.75, 1.085076*^6}], 
-         Offset[{0, -1.5}, {91.75, 1.085076*^6}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {91.25, 1.085076*^6}], 
-         Offset[{0, -1.5}, {91.25, 1.085076*^6}]}], 
-       LineBox[{{91.5, 1.085076*^6}, {91.5, 1.085076*^6}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {91.5, 1.085076*^6}], 
-         Offset[{-1.5, 0}, {91.5, 1.085076*^6}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {91.5, 1.085076*^6}], 
-         Offset[{-1.5, 0}, {91.5, 1.085076*^6}]}]}, {
-       LineBox[{{92.25, 978783.}, {91.75, 978783.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {92.25, 978783.}], 
-         Offset[{0, -1.5}, {92.25, 978783.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {91.75, 978783.}], 
-         Offset[{0, -1.5}, {91.75, 978783.}]}], 
-       LineBox[{{92., 978783.}, {92., 978783.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {92., 978783.}], Offset[{-1.5, 0}, {92., 978783.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {92., 978783.}], 
-         Offset[{-1.5, 0}, {92., 978783.}]}]}, {
-       LineBox[{{92.75, 849547.}, {92.25, 849547.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {92.75, 849547.}], 
-         Offset[{0, -1.5}, {92.75, 849547.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {92.25, 849547.}], 
-         Offset[{0, -1.5}, {92.25, 849547.}]}], 
-       LineBox[{{92.5, 849547.}, {92.5, 849547.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {92.5, 849547.}], 
-         Offset[{-1.5, 0}, {92.5, 849547.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {92.5, 849547.}], 
-         Offset[{-1.5, 0}, {92.5, 849547.}]}]}, {
-       LineBox[{{93.25, 712313.}, {92.75, 712313.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {93.25, 712313.}], 
-         Offset[{0, -1.5}, {93.25, 712313.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {92.75, 712313.}], 
-         Offset[{0, -1.5}, {92.75, 712313.}]}], 
-       LineBox[{{93., 712313.}, {93., 712313.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {93., 712313.}], Offset[{-1.5, 0}, {93., 712313.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {93., 712313.}], 
-         Offset[{-1.5, 0}, {93., 712313.}]}]}, {
-       LineBox[{{93.75, 582656.}, {93.25, 582656.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {93.75, 582656.}], 
-         Offset[{0, -1.5}, {93.75, 582656.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {93.25, 582656.}], 
-         Offset[{0, -1.5}, {93.25, 582656.}]}], 
-       LineBox[{{93.5, 582656.}, {93.5, 582656.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {93.5, 582656.}], 
-         Offset[{-1.5, 0}, {93.5, 582656.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {93.5, 582656.}], 
-         Offset[{-1.5, 0}, {93.5, 582656.}]}]}, {
-       LineBox[{{94.25, 466680.}, {93.75, 466680.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {94.25, 466680.}], 
-         Offset[{0, -1.5}, {94.25, 466680.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {93.75, 466680.}], 
-         Offset[{0, -1.5}, {93.75, 466680.}]}], 
-       LineBox[{{94., 466680.}, {94., 466680.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {94., 466680.}], Offset[{-1.5, 0}, {94., 466680.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {94., 466680.}], 
-         Offset[{-1.5, 0}, {94., 466680.}]}]}, {
-       LineBox[{{94.75, 373647.}, {94.25, 373647.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {94.75, 373647.}], 
-         Offset[{0, -1.5}, {94.75, 373647.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {94.25, 373647.}], 
-         Offset[{0, -1.5}, {94.25, 373647.}]}], 
-       LineBox[{{94.5, 373647.}, {94.5, 373647.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {94.5, 373647.}], 
-         Offset[{-1.5, 0}, {94.5, 373647.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {94.5, 373647.}], 
-         Offset[{-1.5, 0}, {94.5, 373647.}]}]}, {
-       LineBox[{{95.25, 297579.}, {94.75, 297579.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {95.25, 297579.}], 
-         Offset[{0, -1.5}, {95.25, 297579.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {94.75, 297579.}], 
-         Offset[{0, -1.5}, {94.75, 297579.}]}], 
-       LineBox[{{95., 297579.}, {95., 297579.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {95., 297579.}], Offset[{-1.5, 0}, {95., 297579.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {95., 297579.}], 
-         Offset[{-1.5, 0}, {95., 297579.}]}]}, {
-       LineBox[{{95.75, 238644.}, {95.25, 238644.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {95.75, 238644.}], 
-         Offset[{0, -1.5}, {95.75, 238644.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {95.25, 238644.}], 
-         Offset[{0, -1.5}, {95.25, 238644.}]}], 
-       LineBox[{{95.5, 238644.}, {95.5, 238644.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {95.5, 238644.}], 
-         Offset[{-1.5, 0}, {95.5, 238644.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {95.5, 238644.}], 
-         Offset[{-1.5, 0}, {95.5, 238644.}]}]}, {
-       LineBox[{{96.25, 191580.}, {95.75, 191580.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {96.25, 191580.}], 
-         Offset[{0, -1.5}, {96.25, 191580.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {95.75, 191580.}], 
-         Offset[{0, -1.5}, {95.75, 191580.}]}], 
-       LineBox[{{96., 191580.}, {96., 191580.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {96., 191580.}], Offset[{-1.5, 0}, {96., 191580.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {96., 191580.}], 
-         Offset[{-1.5, 0}, {96., 191580.}]}]}, {
-       LineBox[{{96.75, 154535.}, {96.25, 154535.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {96.75, 154535.}], 
-         Offset[{0, -1.5}, {96.75, 154535.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {96.25, 154535.}], 
-         Offset[{0, -1.5}, {96.25, 154535.}]}], 
-       LineBox[{{96.5, 154535.}, {96.5, 154535.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {96.5, 154535.}], 
-         Offset[{-1.5, 0}, {96.5, 154535.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {96.5, 154535.}], 
-         Offset[{-1.5, 0}, {96.5, 154535.}]}]}, {
-       LineBox[{{97.25, 128015.}, {96.75, 128015.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {97.25, 128015.}], 
-         Offset[{0, -1.5}, {97.25, 128015.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {96.75, 128015.}], 
-         Offset[{0, -1.5}, {96.75, 128015.}]}], 
-       LineBox[{{97., 128015.}, {97., 128015.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {97., 128015.}], Offset[{-1.5, 0}, {97., 128015.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {97., 128015.}], 
-         Offset[{-1.5, 0}, {97., 128015.}]}]}, {
-       LineBox[{{97.75, 106125.}, {97.25, 106125.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {97.75, 106125.}], 
-         Offset[{0, -1.5}, {97.75, 106125.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {97.25, 106125.}], 
-         Offset[{0, -1.5}, {97.25, 106125.}]}], 
-       LineBox[{{97.5, 106125.}, {97.5, 106125.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {97.5, 106125.}], 
-         Offset[{-1.5, 0}, {97.5, 106125.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {97.5, 106125.}], 
-         Offset[{-1.5, 0}, {97.5, 106125.}]}]}, {
-       LineBox[{{98.25, 89496.}, {97.75, 89496.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {98.25, 89496.}], 
-         Offset[{0, -1.5}, {98.25, 89496.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {97.75, 89496.}], 
-         Offset[{0, -1.5}, {97.75, 89496.}]}], 
-       LineBox[{{98., 89496.}, {98., 89496.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {98., 89496.}], Offset[{-1.5, 0}, {98., 89496.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {98., 89496.}], 
-         Offset[{-1.5, 0}, {98., 89496.}]}]}, {
-       LineBox[{{98.75, 76531.}, {98.25, 76531.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {98.75, 76531.}], 
-         Offset[{0, -1.5}, {98.75, 76531.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {98.25, 76531.}], 
-         Offset[{0, -1.5}, {98.25, 76531.}]}], 
-       LineBox[{{98.5, 76531.}, {98.5, 76531.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {98.5, 76531.}], Offset[{-1.5, 0}, {98.5, 76531.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {98.5, 76531.}], 
-         Offset[{-1.5, 0}, {98.5, 76531.}]}]}, {
-       LineBox[{{99.25, 65712.}, {98.75, 65712.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {99.25, 65712.}], 
-         Offset[{0, -1.5}, {99.25, 65712.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {98.75, 65712.}], 
-         Offset[{0, -1.5}, {98.75, 65712.}]}], 
-       LineBox[{{99., 65712.}, {99., 65712.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {99., 65712.}], Offset[{-1.5, 0}, {99., 65712.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {99., 65712.}], 
-         Offset[{-1.5, 0}, {99., 65712.}]}]}, {
-       LineBox[{{99.75, 56661.}, {99.25, 56661.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {99.75, 56661.}], 
-         Offset[{0, -1.5}, {99.75, 56661.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {99.25, 56661.}], 
-         Offset[{0, -1.5}, {99.25, 56661.}]}], 
-       LineBox[{{99.5, 56661.}, {99.5, 56661.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {99.5, 56661.}], Offset[{-1.5, 0}, {99.5, 56661.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {99.5, 56661.}], 
-         Offset[{-1.5, 0}, {99.5, 56661.}]}]}, {
-       LineBox[{{100.25, 50768.}, {99.75, 50768.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {100.25, 50768.}], 
-         Offset[{0, -1.5}, {100.25, 50768.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {99.75, 50768.}], 
-         Offset[{0, -1.5}, {99.75, 50768.}]}], 
-       LineBox[{{100., 50768.}, {100., 50768.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {100., 50768.}], Offset[{-1.5, 0}, {100., 50768.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {100., 50768.}], 
-         Offset[{-1.5, 0}, {100., 50768.}]}]}, {
-       LineBox[{{100.75, 44453.}, {100.25, 44453.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {100.75, 44453.}], 
-         Offset[{0, -1.5}, {100.75, 44453.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {100.25, 44453.}], 
-         Offset[{0, -1.5}, {100.25, 44453.}]}], 
-       LineBox[{{100.5, 44453.}, {100.5, 44453.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {100.5, 44453.}], 
-         Offset[{-1.5, 0}, {100.5, 44453.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {100.5, 44453.}], 
-         Offset[{-1.5, 0}, {100.5, 44453.}]}]}, {
-       LineBox[{{101.25, 40033.}, {100.75, 40033.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {101.25, 40033.}], 
-         Offset[{0, -1.5}, {101.25, 40033.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {100.75, 40033.}], 
-         Offset[{0, -1.5}, {100.75, 40033.}]}], 
-       LineBox[{{101., 40033.}, {101., 40033.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {101., 40033.}], Offset[{-1.5, 0}, {101., 40033.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {101., 40033.}], 
-         Offset[{-1.5, 0}, {101., 40033.}]}]}, {
-       LineBox[{{101.75, 35824.}, {101.25, 35824.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {101.75, 35824.}], 
-         Offset[{0, -1.5}, {101.75, 35824.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {101.25, 35824.}], 
-         Offset[{0, -1.5}, {101.25, 35824.}]}], 
-       LineBox[{{101.5, 35824.}, {101.5, 35824.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {101.5, 35824.}], 
-         Offset[{-1.5, 0}, {101.5, 35824.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {101.5, 35824.}], 
-         Offset[{-1.5, 0}, {101.5, 35824.}]}]}, {
-       LineBox[{{102.25, 32456.}, {101.75, 32456.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {102.25, 32456.}], 
-         Offset[{0, -1.5}, {102.25, 32456.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {101.75, 32456.}], 
-         Offset[{0, -1.5}, {101.75, 32456.}]}], 
-       LineBox[{{102., 32456.}, {102., 32456.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {102., 32456.}], Offset[{-1.5, 0}, {102., 32456.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {102., 32456.}], 
-         Offset[{-1.5, 0}, {102., 32456.}]}]}, {
-       LineBox[{{102.75, 29720.}, {102.25, 29720.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {102.75, 29720.}], 
-         Offset[{0, -1.5}, {102.75, 29720.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {102.25, 29720.}], 
-         Offset[{0, -1.5}, {102.25, 29720.}]}], 
-       LineBox[{{102.5, 29720.}, {102.5, 29720.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {102.5, 29720.}], 
-         Offset[{-1.5, 0}, {102.5, 29720.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {102.5, 29720.}], 
-         Offset[{-1.5, 0}, {102.5, 29720.}]}]}, {
-       LineBox[{{103.25, 27320.}, {102.75, 27320.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {103.25, 27320.}], 
-         Offset[{0, -1.5}, {103.25, 27320.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {102.75, 27320.}], 
-         Offset[{0, -1.5}, {102.75, 27320.}]}], 
-       LineBox[{{103., 27320.}, {103., 27320.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {103., 27320.}], Offset[{-1.5, 0}, {103., 27320.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {103., 27320.}], 
-         Offset[{-1.5, 0}, {103., 27320.}]}]}, {
-       LineBox[{{103.75, 24479.}, {103.25, 24479.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {103.75, 24479.}], 
-         Offset[{0, -1.5}, {103.75, 24479.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {103.25, 24479.}], 
-         Offset[{0, -1.5}, {103.25, 24479.}]}], 
-       LineBox[{{103.5, 24479.}, {103.5, 24479.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {103.5, 24479.}], 
-         Offset[{-1.5, 0}, {103.5, 24479.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {103.5, 24479.}], 
-         Offset[{-1.5, 0}, {103.5, 24479.}]}]}, {
-       LineBox[{{104.25, 23195.}, {103.75, 23195.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {104.25, 23195.}], 
-         Offset[{0, -1.5}, {104.25, 23195.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {103.75, 23195.}], 
-         Offset[{0, -1.5}, {103.75, 23195.}]}], 
-       LineBox[{{104., 23195.}, {104., 23195.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {104., 23195.}], Offset[{-1.5, 0}, {104., 23195.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {104., 23195.}], 
-         Offset[{-1.5, 0}, {104., 23195.}]}]}, {
-       LineBox[{{104.75, 21300.}, {104.25, 21300.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {104.75, 21300.}], 
-         Offset[{0, -1.5}, {104.75, 21300.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {104.25, 21300.}], 
-         Offset[{0, -1.5}, {104.25, 21300.}]}], 
-       LineBox[{{104.5, 21300.}, {104.5, 21300.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {104.5, 21300.}], 
-         Offset[{-1.5, 0}, {104.5, 21300.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {104.5, 21300.}], 
-         Offset[{-1.5, 0}, {104.5, 21300.}]}]}, {
-       LineBox[{{105.25, 19827.}, {104.75, 19827.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {105.25, 19827.}], 
-         Offset[{0, -1.5}, {105.25, 19827.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {104.75, 19827.}], 
-         Offset[{0, -1.5}, {104.75, 19827.}]}], 
-       LineBox[{{105., 19827.}, {105., 19827.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {105., 19827.}], Offset[{-1.5, 0}, {105., 19827.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {105., 19827.}], 
-         Offset[{-1.5, 0}, {105., 19827.}]}]}, {
-       LineBox[{{105.75, 18354.}, {105.25, 18354.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {105.75, 18354.}], 
-         Offset[{0, -1.5}, {105.75, 18354.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {105.25, 18354.}], 
-         Offset[{0, -1.5}, {105.25, 18354.}]}], 
-       LineBox[{{105.5, 18354.}, {105.5, 18354.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {105.5, 18354.}], 
-         Offset[{-1.5, 0}, {105.5, 18354.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {105.5, 18354.}], 
-         Offset[{-1.5, 0}, {105.5, 18354.}]}]}, {
-       LineBox[{{106.25, 17512.}, {105.75, 17512.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {106.25, 17512.}], 
-         Offset[{0, -1.5}, {106.25, 17512.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {105.75, 17512.}], 
-         Offset[{0, -1.5}, {105.75, 17512.}]}], 
-       LineBox[{{106., 17512.}, {106., 17512.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {106., 17512.}], Offset[{-1.5, 0}, {106., 17512.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {106., 17512.}], 
-         Offset[{-1.5, 0}, {106., 17512.}]}]}, {
-       LineBox[{{106.75, 16459.}, {106.25, 16459.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {106.75, 16459.}], 
-         Offset[{0, -1.5}, {106.75, 16459.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {106.25, 16459.}], 
-         Offset[{0, -1.5}, {106.25, 16459.}]}], 
-       LineBox[{{106.5, 16459.}, {106.5, 16459.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {106.5, 16459.}], 
-         Offset[{-1.5, 0}, {106.5, 16459.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {106.5, 16459.}], 
-         Offset[{-1.5, 0}, {106.5, 16459.}]}]}, {
-       LineBox[{{107.25, 15407.}, {106.75, 15407.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {107.25, 15407.}], 
-         Offset[{0, -1.5}, {107.25, 15407.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {106.75, 15407.}], 
-         Offset[{0, -1.5}, {106.75, 15407.}]}], 
-       LineBox[{{107., 15407.}, {107., 15407.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {107., 15407.}], Offset[{-1.5, 0}, {107., 15407.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {107., 15407.}], 
-         Offset[{-1.5, 0}, {107., 15407.}]}]}, {
-       LineBox[{{107.75, 14565.}, {107.25, 14565.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {107.75, 14565.}], 
-         Offset[{0, -1.5}, {107.75, 14565.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {107.25, 14565.}], 
-         Offset[{0, -1.5}, {107.25, 14565.}]}], 
-       LineBox[{{107.5, 14565.}, {107.5, 14565.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {107.5, 14565.}], 
-         Offset[{-1.5, 0}, {107.5, 14565.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {107.5, 14565.}], 
-         Offset[{-1.5, 0}, {107.5, 14565.}]}]}, {
-       LineBox[{{108.25, 13933.}, {107.75, 13933.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {108.25, 13933.}], 
-         Offset[{0, -1.5}, {108.25, 13933.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {107.75, 13933.}], 
-         Offset[{0, -1.5}, {107.75, 13933.}]}], 
-       LineBox[{{108., 13933.}, {108., 13933.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {108., 13933.}], Offset[{-1.5, 0}, {108., 13933.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {108., 13933.}], 
-         Offset[{-1.5, 0}, {108., 13933.}]}]}, {
-       LineBox[{{108.75, 12671.}, {108.25, 12671.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {108.75, 12671.}], 
-         Offset[{0, -1.5}, {108.75, 12671.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {108.25, 12671.}], 
-         Offset[{0, -1.5}, {108.25, 12671.}]}], 
-       LineBox[{{108.5, 12671.}, {108.5, 12671.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {108.5, 12671.}], 
-         Offset[{-1.5, 0}, {108.5, 12671.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {108.5, 12671.}], 
-         Offset[{-1.5, 0}, {108.5, 12671.}]}]}, {
-       LineBox[{{109.25, 12460.}, {108.75, 12460.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {109.25, 12460.}], 
-         Offset[{0, -1.5}, {109.25, 12460.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {108.75, 12460.}], 
-         Offset[{0, -1.5}, {108.75, 12460.}]}], 
-       LineBox[{{109., 12460.}, {109., 12460.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {109., 12460.}], Offset[{-1.5, 0}, {109., 12460.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {109., 12460.}], 
-         Offset[{-1.5, 0}, {109., 12460.}]}]}, {
-       LineBox[{{109.75, 11618.}, {109.25, 11618.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {109.75, 11618.}], 
-         Offset[{0, -1.5}, {109.75, 11618.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {109.25, 11618.}], 
-         Offset[{0, -1.5}, {109.25, 11618.}]}], 
-       LineBox[{{109.5, 11618.}, {109.5, 11618.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {109.5, 11618.}], 
-         Offset[{-1.5, 0}, {109.5, 11618.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {109.5, 11618.}], 
-         Offset[{-1.5, 0}, {109.5, 11618.}]}]}, {
-       LineBox[{{110.25, 10987.}, {109.75, 10987.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {110.25, 10987.}], 
-         Offset[{0, -1.5}, {110.25, 10987.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {109.75, 10987.}], 
-         Offset[{0, -1.5}, {109.75, 10987.}]}], 
-       LineBox[{{110., 10987.}, {110., 10987.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {110., 10987.}], Offset[{-1.5, 0}, {110., 10987.}]}],
-        LineBox[{
-        Offset[{1.5, 0}, {110., 10987.}], 
-         Offset[{-1.5, 0}, {110., 10987.}]}]}, {
-       LineBox[{{110.75, 10566.}, {110.25, 10566.}}], 
-       LineBox[{
-        Offset[{0, 1.5}, {110.75, 10566.}], 
-         Offset[{0, -1.5}, {110.75, 10566.}]}], 
-       LineBox[{
-        Offset[{0, 1.5}, {110.25, 10566.}], 
-         Offset[{0, -1.5}, {110.25, 10566.}]}], 
-       LineBox[{{110.5, 10566.}, {110.5, 10566.}}], 
-       LineBox[{
-        Offset[{1.5, 0}, {110.5, 10566.}], 
-         Offset[{-1.5, 0}, {110.5, 10566.}]}], 
-       LineBox[{
-        Offset[{1.5, 0}, {110.5, 10566.}], 
-         Offset[{-1.5, 0}, {110.5, 10566.}]}]}}}, {}}, {}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, None},
-  AxesOrigin->{70.38281250000001, 0},
-  DisplayFunction->Identity,
-  Frame->{{True, True}, {True, True}},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  Method->{},
-  PlotRange->{{71., 110.5}, {0, 1.164849*^6}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.02], 
-     Scaled[0.05]}},
-  Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.676771900002573*^9, 3.676771963486178*^9}]
+ CellChangeTimes->{
+  3.676265388089456*^9, 3.6767718587923737`*^9, {3.67677193398333*^9, 
+   3.676771961607102*^9}, 3.677648250131068*^9}]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"F1", "=", 
+   RowBox[{"HistogramPlot", "[", 
+    RowBox[{
+     RowBox[{"Zmm", "[", 
+      RowBox[{"[", "1", "]"}], "]"}], ",", 
+     RowBox[{"HistScale", "\[Rule]", "2.4"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", "Red", "}"}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"F2", "=", 
+   RowBox[{"ScatterPlot", "[", 
+    RowBox[{
+     RowBox[{"ATLAS", "[", 
+      RowBox[{"[", "1", "]"}], "]"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", "Black", "}"}]}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"Show", "[", 
   RowBox[{"{", 
-   RowBox[{"F1", ",", "F2"}], "}"}], "]"}]], "Input",
- CellChangeTimes->{{3.67677190541298*^9, 3.676771908764559*^9}}],
+   RowBox[{"F1", ",", "F2"}], "}"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.676771867138174*^9, 3.6767718994223413`*^9}, {
+  3.677648230048648*^9, 3.677648288495531*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"OptionValue", "::", "nodef"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Unknown option \[NoBreak]\\!\\(\\\"PlotStyle\\\"\\)\
+\[NoBreak] for \[NoBreak]\\!\\(HistogramPlot\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/OptionValue\\\", ButtonNote -> \
+\\\"OptionValue::nodef\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.6776482557000313`*^9, 3.677648289264381*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"OptionValue", "::", "nodef"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Unknown option \[NoBreak]\\!\\(\\\"PlotStyle\\\"\\)\
+\[NoBreak] for \[NoBreak]\\!\\(HistogramPlot\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/OptionValue\\\", ButtonNote -> \
+\\\"OptionValue::nodef\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.6776482557000313`*^9, 3.677648289312606*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Rescaling Histogram y-Axis with \"\>", "\[InvisibleSpace]", 
+   "2.4`"}],
+  SequenceForm["Rescaling Histogram y-Axis with ", 2.4],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.677648269403747*^9, 3.677648289317066*^9}}],
 
 Cell[BoxData[
  GraphicsBox[{{{}, {}, 
     {RGBColor[1, 0, 0], AbsoluteThickness[1.6], Opacity[1.], 
      LineBox[CompressedData["
-1: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
+1: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
+LYJZr2ivrKyA/wfvJV7H
       "]]}}, {{}, {{}, 
      {GrayLevel[0], PointSize[0.016666666666666666`], AbsoluteThickness[1.6], 
       PointBox[CompressedData["
@@ -2586,7 +1398,8 @@ JX3ZX5+hz3w+tsznZegzf3yaPr75nP41+ewz+vjxJH3ZpLCHH0zQZ77jKX32
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{
-  3.676771909094672*^9, {3.676771954587945*^9, 3.676771965610505*^9}}]
+  3.676771900002573*^9, 3.676771963486178*^9, {3.67764825589158*^9, 
+   3.6776482894374437`*^9}}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -2612,18 +1425,18 @@ Cell[422, 15, 141, 2, 62, "Subchapter"],
 Cell[566, 19, 508, 11, 30, "Text"],
 Cell[1077, 32, 478, 10, 28, "Input"],
 Cell[CellGroupData[{
-Cell[1580, 46, 731, 18, 46, "Input"],
-Cell[2314, 66, 470, 11, 22, "Print"],
-Cell[2787, 79, 6429, 116, 245, "Output"]
+Cell[1580, 46, 773, 19, 46, "Input"],
+Cell[CellGroupData[{
+Cell[2378, 69, 492, 11, 22, "Print"],
+Cell[2873, 82, 522, 13, 22, "Print"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9253, 200, 547, 16, 46, "Input"],
-Cell[9803, 218, 478, 12, 22, "Print"],
-Cell[10284, 232, 44739, 1106, 231, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[55060, 1343, 171, 4, 28, "Input"],
-Cell[55234, 1349, 51953, 1239, 279, "Output"]
+Cell[3444, 101, 810, 23, 63, "Input"],
+Cell[4257, 126, 518, 10, 24, "Message"],
+Cell[4778, 138, 518, 10, 24, "Message"],
+Cell[5299, 150, 275, 6, 22, "Print"],
+Cell[5577, 158, 52131, 1243, 276, "Output"]
 }, Open  ]]
 }, Open  ]]
 }

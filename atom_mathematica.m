@@ -310,9 +310,11 @@ the file
    
    );
 
-HistogramPlot[histo_, HistogramOptions___] := 
+Options[HistogramPlot] = {HistScale -> 1};
+
+HistogramPlot[histo_, opts:OptionsPattern[] ] := 
   Module[{high, low, plotInput, HistData, HistTitle, overFlow, 
-    underFlow, Nbins, HistTitleString}, 
+    underFlow, Nbins, HistTitleString,histScaleIntern}, 
    HistTitle = 
     Select[histo, 
      If[Head[#[[1]]] == String, StringMatchQ[#[[1]], "Path=" ~~ ___], 
@@ -328,8 +330,49 @@ HistogramPlot[histo_, HistogramOptions___] :=
      " needs a different plot function"];
     Return[];
     ];
-   
-   
+
+  histScaleIntern =OptionValue[ HistScale ];
+   If[ OptionValue[ HistScale ] != 1 , Print["Rescaling Histogram y-Axis with ", histScaleIntern]];
+   HistTitleString = StringSplit[HistTitle[[1, 1]], "="][[2]];
+   underFlow = 
+    Select[histo, 
+     If[Head[#[[1]]] == String, 
+       StringMatchQ[#[[1]], "Underflow" ~~ ___], False] &];(*TODO:
+   Implement,need example*)
+   overFlow = 
+    Select[histo, 
+     If[Head[#[[1]]] == String, 
+       StringMatchQ[#[[1]], "Overflow" ~~ ___], False] &];(*TODO:
+   Implement,need example*)
+   HistData = Select[histo, NumericQ[#[[1]]] &];
+   plotInput = {#[[3]] * histScaleIntern, #[[1]] <= x < #[[2]]} & /@ HistData;
+   low = First[HistData][[1]];
+   high = Last[HistData][[2]];
+   Nbins = Length[HistData];
+   Plot[Piecewise[plotInput], {x, low, high}, Evaluate[ FilterRules[{opts},Options[Plot] ] ], 
+    PlotRange -> All, Exclusions -> None, PlotPoints -> 3 (Nbins), 
+    Frame -> True, PlotLabel -> HistTitleString]
+   ];
+
+HistogramLogPlot[histo_,HistogramOptions___] := 
+  Module[{high, low, plotInput, HistData, HistTitle, overFlow, 
+    underFlow, Nbins, HistTitleString}, 
+   HistTitle = 
+    Select[histo, 
+     If[Head[#[[1]]] == String, StringMatchQ[#[[1]], "Path=" ~~ ___], 
+       False] &];
+   HistType = 
+    Select[histo, 
+     If[Head[#[[1]]] == String, StringMatchQ[#[[1]], "Type=" ~~ ___], 
+       False] &];
+   HistType = StringSplit[HistType[[1, 1]], "="][[2]];
+
+   If [HistType !=  "Histo1D", 
+    Print[ "Not a histogram. ", HistType , 
+     " needs a different plot function"];
+    Return[];
+    ];
+
    HistTitleString = StringSplit[HistTitle[[1, 1]], "="][[2]];
    underFlow = 
     Select[histo, 
@@ -344,12 +387,55 @@ HistogramPlot[histo_, HistogramOptions___] :=
    HistData = Select[histo, NumericQ[#[[1]]] &];
    plotInput = {#[[3]], #[[1]] <= x < #[[2]]} & /@ HistData;
    low = First[HistData][[1]];
-   high = Last[HistData][[1]];
+   high = Last[HistData][[2]];
    Nbins = Length[HistData];
-   Plot[Piecewise[plotInput], {x, low, high}, HistogramOptions, 
+   LogPlot[Piecewise[plotInput], {x, low, high}, HistogramOptions, 
     PlotRange -> All, Exclusions -> None, PlotPoints -> 3 (Nbins), 
     Frame -> True, PlotLabel -> HistTitleString]
    ];
+
+Histogram2DPlot[histo_, HistogramOptions___] :=
+
+  Module[{ldp, HistData, HistTitle, overFlow, underFlow, Nbins, 
+    HistTitleString}, 
+   HistTitle = 
+    Select[histo, 
+     If[Head[#[[1]]] == String, StringMatchQ[#[[1]], "Path=" ~~ ___], 
+       False] &];
+   HistType = 
+    Select[histo, 
+     If[Head[#[[1]]] == String, StringMatchQ[#[[1]], "Type=" ~~ ___], 
+       False] &];
+   HistType = StringSplit[HistType[[1, 1]], "="][[2]];
+   If[HistType != "Histo2D", 
+    Print["Not a histogram. ", HistType, 
+     " needs a different plot function"];
+    Return[];];
+
+   HistTitleString = StringSplit[HistTitle[[1, 1]], "="][[2]];
+
+   (*TODO:Implement,need o/uflow example*)
+
+   underFlow = 
+    Select[histo, 
+     If[Head[#[[1]]] == String, 
+       StringMatchQ[#[[1]], "Underflow" ~~ ___], False] &];
+   overFlow = 
+    Select[histo, 
+     If[Head[#[[1]]] == String, 
+       StringMatchQ[#[[1]], "Overflow" ~~ ___], False] &];
+
+(*TODO:
+   Implement,need example*)
+
+   HistData = Select[histo, NumericQ[#[[1]]] &];
+
+   ldp = {(#[[1]] + #[[2]])/2, (#[[3]] + #[[4]])/2, #[[5]]} & /@ 
+     HistData;
+   ListDensityPlot[ldp, InterpolationOrder -> 0, 
+    PlotLabel -> HistTitleString, HistogramOptions]
+   ];
+
 
 Needs["ErrorBarPlots`"];
 
