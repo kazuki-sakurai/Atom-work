@@ -35,10 +35,14 @@ namespace Atom {
 	//photon
 
             IsoPhoton gam( Range(PT > 25.) & Range(abseta, 0.0, 2.37) - Range(abseta, 1.37, 1.52) );
-            gam.addIso(CALO_ISO_PT,  0.4,  0.022,  2.45, 0.01, CALO_ALL);                        
-            gam.addIso(TRACK_ISO_PT, 0.2,  0.10,  0.0, 0.01, CALO_ALL, 0.4);
-
+            gam.addIso(CALO_ISO_ET,  0.4,  0.022, 2.45, 0.1, CALO_ALL);                        
+            gam.addIso(TRACK_ISO_PT, 0.2,  0.05,  0.0, 0.0, CALO_ALL, 1.0);
+            gam.setSmearingParams( getPhotonSim( "Photon_Smear_2013_ATLAS" ) );
+            gam.setEfficiencyParams( getPhotonEff( "Photon_Ident_Tight_2011_ATLAS" ) );
             addProjection(gam,"Photon");
+
+            bookHisto1D("Mgg", 16, 960, 1040, "Mgg", "Mgg", "Arbitrary");
+
 			// Projection booking section -- do not edit/remove this comment
             /// @todo define projections (see examples and manual)
 			// FastJets jets(fsbase, hadRange & jet_range, muDetRange, FastJets::ANTIKT, 0.6 );
@@ -72,7 +76,13 @@ namespace Atom {
 			// Projection application section -- do not edit/remove this comment
             /// @todo apply projections
 			// const Particles& jets = applyProjection< FastJets >(event, "Jets").particlesByPt(&event);
+			const Particles& photon = applyProjection<IsoPhoton>(event, "Photon").particlesByPt();
 
+			if(photon.size() == 2){
+			    double minv = (photon[0].momentum() + photon[1].momentum()).mass();   
+			    if (photon[0].Et()> 0.4*minv && photon[1].Et()> 0.3*minv) fillPlot("Mgg", minv);            
+
+			}
 			// Analysis body section -- do not edit/remove this comment
             /// @todo apply cuts
 			// if(!cut(jets.size(), CUT_GT, 2, "CutNJets")) {
@@ -102,7 +112,7 @@ namespace Atom {
 			// Histogram normalization section -- do not edit/remove this comment
 			/// @todo normalize the histograms
 			// scale("Mjj");
-
+			scale("Mgg",1.);
 			// End finalize section -- do not edit/remove this comment
 		}
 

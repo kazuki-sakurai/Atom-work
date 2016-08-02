@@ -1,0 +1,10 @@
+add Analysis ATLAS_1606_03833
+add InputFile /Users/spliew/Desktop/tools/pythia8209/examples/hepmcout_rs.hepmc 
+add OutputFile rs.yaml
+add OutputFile rs.yoda
+set DoSmearing On
+set DoEfficiencies On
+set SaveHistos On
+set SaveAllProcIds Off
+set MaxEventNumber -1
+launch

@@ -1,0 +1,150 @@
+# Atom ver. 0.9 yaml output
+# Contains Cuts and Efficiencies
+Atom Run Info:
+  Processed Files:
+    - /Users/spliew/Desktop/tools/pythia8209/examples/hepmcout_rs.hepmc
+  Processed Events: 10000
+  Used Settings:
+    - Setting Name: ATLAS_1606_03833:CalcCR
+      Description: Compute quantities for Control Regions
+      Value: On
+    - Setting Name: ATLAS_1606_03833:DoEfficiencies
+      Description: Apply parameterized efficiencies for the objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1606_03833:DoSmearing
+      Description: Apply parameterized momentum resolution for the objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1606_03833:DoTagging
+      Description: Use parameterized efficiencies for tagging objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1606_03833:SaveEvents
+      Description: Save event-related information for this analysis
+      Value: On
+    - Setting Name: ATLAS_1606_03833:SaveHistograms
+      Description: Save histograms for this analysis
+      Value: On
+    - Setting Name: ATLAS_1606_03833:SavePassFail
+      Description: Save pass-fail informatio for this analysisn
+      Value: On
+    - Setting Name: ATLAS_1606_03833:SaveProjections
+      Description: Save projection information for this analysis
+      Value: On
+    - Setting Name: AnalysisHandler:IgnoreBeams
+      Description: Ignore beam information in selecting valid analyses for an Atom run
+      Value: Off
+    - Setting Name: DressedLeptons:EoverPRatio
+      Description: Cut on Energy over Track momentum ratio to define leptonic clusters
+      Value: 1.3
+    - Setting Name: FastJets:DoJES
+      Description: Compute the Jet Energy scale contribution to the jet smearing
+      Value: On
+    - Setting Name: FlagCutSensitivity:Tolerance
+      Description: Threshold for flagging high sensitivity (dlog cut_eff/dlog cut_value) in cut efficiencies
+      Value: 5
+    - Setting Name: FlagLowStatistics:Sigmas
+      Description: Significance threshold for flagging low statistics in numerical quantities
+      Value: 2
+    - Setting Name: FlaggingHandler:DoFlagging
+      Description: Perform the condition-flagging step
+      Value: On
+    - Setting Name: ProjectionHandler:CacheRanges
+      Description: Uses kinematic information to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CacheSaved
+      Description: Uses saved projections from a binary file to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CacheSimulation
+      Description: Uses smearing and efficiency information to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CalcCR
+      Description: Compute quantities (efficiencies, cutflows, histograms) for Control Regions
+      Value: On
+    - Setting Name: ProjectionHandler:DoEfficiencies
+      Description: Enable the use of parameterized efficiencies
+      Value: On
+    - Setting Name: ProjectionHandler:DoSmearing
+      Description: Enable the use of parameterized momentum resolution (smearing)
+      Value: On
+    - Setting Name: ProjectionHandler:DoTagging
+      Description: Enable the use of parameterized efficiencies for tagging
+      Value: On
+    - Setting Name: Run:ListUsedAnalyses
+      Description: Displays the list of valid analyses used in the current run
+      Value: On
+    - Setting Name: Run:NumberOfThreads
+      Description: Maximum number of threads usable in current run
+      Value: 4
+    - Setting Name: Run:ParallelRun
+      Description: Enable multi-threading in calculation. EXPERIMENTAL
+      Value: Off
+    - Setting Name: Run:RefsOutputFile
+      Description: Output file containing citation references for the current Atom run
+      Value: Run01.bib
+    - Setting Name: Run:RunName
+      Description: Name of the current Atom run
+      Value: Run01
+    - Setting Name: Run:SaveReferences
+      Description: Save a file containing the citation references for the current Atom run
+      Value: On
+    - Setting Name: Run:Seed
+      Description: Random seed (default = 0 to be randomly determined.)
+      Value: 0
+    - Setting Name: WriterHandler:SaveAllProcIds
+      Description: Save the information relative to specific process IDs
+      Value: Off
+    - Setting Name: WriterHandler:SaveEvents
+      Description: Save event-by-event particles and vertices information
+      Value: Off
+    - Setting Name: WriterHandler:SaveHistograms
+      Description: Save analyses histograms
+      Value: On
+    - Setting Name: WriterHandler:SaveKinematics
+      Description: Save event-by-event hard process kinematical information
+      Value: Off
+    - Setting Name: WriterHandler:SaveOptions
+      Description: Save run options
+      Value: On
+    - Setting Name: WriterHandler:SavePassFail
+      Description: Save per-analysis event-by-event pass/fail information
+      Value: Off
+    - Setting Name: WriterHandler:SaveProjections
+      Description: Save analysis-by-analysis projections information
+      Value: Off
+Sub Processes Information:
+  []
+Cross Sections:
+  - Process ID: -1
+    Cross Section: 1.210697648697937e-06
+    Cross Section Error: [0.012, 0.012]
+  - Process ID: 0
+    Cross Section: 0.01211
+    Cross Section Error: [8.3e-05, 8.3e-05]
+  - Process ID: 5001
+    Cross Section: 0.01
+    Cross Section Error: [0.45, 0.45]
+  - Process ID: 5002
+    Cross Section: 0.002
+    Cross Section Error: [0.45, 0.45]
+Analyses:
+  ATLAS_1606_03833:
+    Summary: Search for resonances in diphoton events at $\sqrt{s}$=13 TeV with the  ATLAS detector
+    Experiment: ATLAS
+    Collider: LHC13
+    Year: 2016
+    Description: Searches for new resonances decaying into two photons in the ATLAS experiment at the CERN Large Hadron Collider are described. The analysis is based on proton--proton collision data corresponding to an integrated luminosity of 3.2 fb$^{-1}$ at $\sqrt{s} = 13$ TeV recorded in 2015. Two searches are performed, one targeted at a spin-2 particle of mass larger than 500 GeV, using Randall--Sundrum graviton states as a benchmark model, and one optimized for a spin-0 particle of mass larger than 200 GeV. Varying both the mass and the decay width, the most significant deviation from the background-only hypothesis is observed at a diphoton invariant mass around 750 GeV with local significances of 3.8 and 3.9 standard deviations in the searches optimized for a spin-2 and spin-0 particle, respectively. The global significances are estimated to be 2.1 standard deviations for both analyses. The consistency between the data collected at 13 TeV and 8 TeV is also evaluated. Limits on the production cross section times branching ratio to two photons for the two resonance types are reported.
+    RunInfo: ""
+    Status: UNVALIDATED
+    Authors:
+      - Seng Pei Liew
+    References:
+      - arXiv:1606.03833
+      - arXiv:1606.03833
+    InspireID: 1469066
+    BibKey: Aaboud:2016tru
+    Luminosity:
+      Value: 3.2e+03
+      Error: 1.6e+02
+    Efficiencies:
+      []
+    Cuts:
+      []

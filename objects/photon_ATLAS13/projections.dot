@@ -1,0 +1,143 @@
+digraph G {
+0[label="ATLAS_1606_03833(0x7fa3714c62f0)", taillabel="0"];
+1[label="FinalState(0x7fa37150a1a0)", taillabel="0"];
+2[label="VetoedFinalState(0x7fa37150aed0)", taillabel="0"];
+3[label="ChargedFinalState(0x7fa37150c8f0)", taillabel="0"];
+4[label="MergedFinalState(0x7fa37150e070)", taillabel="0"];
+5[label="IdentifiedFinalState(0x7fa37150d510)", taillabel="0"];
+6[label="DressedPhotons(0x7fa371509320)", taillabel="0"];
+7[label="IsoPhoton(0x7fa371502420)", taillabel="0"];
+2->1 [label="FS"];
+3->1 [label="FS"];
+4->2 [label="FS_0"];
+4->3 [label="FS_1"];
+5->1 [label="FS"];
+6->5 [label="Photons"];
+7->6 [label="gFS"];
+7->2 [label="cFS"];
+7->3 [label="tFS"];
+7->4 [label="aFS"];
+0->7 [label="Photon"];
+}
+digraph G {
+0[label="ChargedFinalState(0x7fa37150c8f0)", taillabel="0"];
+}
+digraph G {
+0[label="ChargedFinalState(0x7fa37150c8f0)", taillabel="0"];
+}
+digraph G {
+0[label="MergedFinalState(0x7fa37150e070)", taillabel="0"];
+}
+digraph G {
+0[label="MergedFinalState(0x7fa37150e070)", taillabel="0"];
+}
+digraph G {
+0[label="IsoPhoton(0x7fa371502420)", taillabel="0"];
+}
+digraph G {
+0[label="IsoPhoton(0x7fa371502420)", taillabel="0"];
+}
+digraph G {
+0[label="DressedPhotons(0x7fa371509320)", taillabel="0"];
+}
+digraph G {
+0[label="DressedPhotons(0x7fa371509320)", taillabel="0"];
+}
+digraph G {
+0[label="VetoedFinalState(0x7fa37150aed0)", taillabel="0"];
+}
+digraph G {
+0[label="VetoedFinalState(0x7fa37150aed0)", taillabel="0"];
+}
+digraph G {
+0[label="FinalState(0x7fa37150a1a0)", taillabel="0"];
+}
+digraph G {
+0[label="FinalState(0x7fa37150a1a0)", taillabel="0"];
+}
+digraph G {
+0[label="IdentifiedFinalState(0x7fa37150d510)", taillabel="0"];
+}
+digraph G {
+0[label="IdentifiedFinalState(0x7fa37150d510)", taillabel="0"];
+}
+digraph G {
+0[label="ATLAS_1606_03833(0x7fa3714c62f0)", taillabel="0"];
+1[label="FinalState(0x7fa37150a1a0)", taillabel="0"];
+2[label="VetoedFinalState(0x7fa37150aed0)", taillabel="0"];
+3[label="ChargedFinalState(0x7fa37150c8f0)", taillabel="0"];
+4[label="MergedFinalState(0x7fa37150e070)", taillabel="0"];
+5[label="IdentifiedFinalState(0x7fa37150d510)", taillabel="0"];
+6[label="DressedPhotons(0x7fa371509320)", taillabel="0"];
+7[label="IsoPhoton(0x7fa371502420)", taillabel="0"];
+2->1 [label="FS"];
+3->1 [label="FS"];
+4->2 [label="FS_0"];
+4->3 [label="FS_1"];
+5->1 [label="FS"];
+6->5 [label="Photons"];
+7->6 [label="gFS"];
+7->2 [label="cFS"];
+7->3 [label="tFS"];
+7->4 [label="aFS"];
+0->7 [label="Photon"];
+}
+digraph G {
+0[label="ATLAS_1606_03833(0x7fa3714c62f0)", taillabel="0"];
+1[label="FinalState(0x7fa37150a1a0)", taillabel="0"];
+2[label="VetoedFinalState(0x7fa37150aed0)", taillabel="0"];
+3[label="ChargedFinalState(0x7fa37150c8f0)", taillabel="0"];
+4[label="MergedFinalState(0x7fa37150e070)", taillabel="0"];
+5[label="IdentifiedFinalState(0x7fa37150d510)", taillabel="0"];
+6[label="DressedPhotons(0x7fa371509320)", taillabel="0"];
+7[label="IsoPhoton(0x7fa371502420)", taillabel="0"];
+2->1 [label="FS"];
+3->1 [label="FS"];
+4->2 [label="FS_0"];
+4->3 [label="FS_1"];
+5->1 [label="FS"];
+6->5 [label="Photons"];
+7->6 [label="gFS"];
+7->2 [label="cFS"];
+7->3 [label="tFS"];
+7->4 [label="aFS"];
+0->7 [label="Photon"];
+}
+digraph G {
+ struct4 [shape=record, label="IsoPhoton (0x7fa371502420)"];
+ struct3 [shape=record, label="DressedPhotons (0x7fa371509320) | MergedFinalState (0x7fa37150e070)"];
+ struct2 [shape=record, label="VetoedFinalState (0x7fa37150aed0) | ChargedFinalState (0x7fa37150c8f0) | IdentifiedFinalState (0x7fa37150d510)"];
+ struct1 [shape=record, label="FinalState (0x7fa37150a1a0)"];
+ struct4 -> struct3;
+ struct3 -> struct2;
+ struct2 -> struct1;
+}
+digraph G {
+ struct4 [shape=record, label="IsoPhoton (0x7fa371502420)"];
+ struct3 [shape=record, label="DressedPhotons (0x7fa371509320) | MergedFinalState (0x7fa37150e070)"];
+ struct2 [shape=record, label="VetoedFinalState (0x7fa37150aed0) | ChargedFinalState (0x7fa37150c8f0) | IdentifiedFinalState (0x7fa37150d510)"];
+ struct1 [shape=record, label="FinalState (0x7fa37150a1a0)"];
+ struct4 -> struct3;
+ struct3 -> struct2;
+ struct2 -> struct1;
+}
+digraph G {
+ struct5 [shape=record, label="IsoPhoton (0x7fa371502420)"];
+ struct4 [shape=record, label="DressedPhotons (0x7fa371509320)"];
+ struct3 [shape=record, label="IdentifiedFinalState (0x7fa37150d510) | MergedFinalState (0x7fa37150e070)"];
+ struct2 [shape=record, label="VetoedFinalState (0x7fa37150aed0) | ChargedFinalState (0x7fa37150c8f0)"];
+ struct1 [shape=record, label="FinalState (0x7fa37150a1a0)"];
+ struct5 -> struct4;
+ struct4 -> struct3;
+ struct3 -> struct2;
+ struct2 -> struct1;
+}
+digraph G {
+ struct4 [shape=record, label="IsoPhoton (0x7fa371502420)"];
+ struct3 [shape=record, label="DressedPhotons (0x7fa371509320) | MergedFinalState (0x7fa37150e070)"];
+ struct2 [shape=record, label="VetoedFinalState (0x7fa37150aed0) | ChargedFinalState (0x7fa37150c8f0) | IdentifiedFinalState (0x7fa37150d510)"];
+ struct1 [shape=record, label="FinalState (0x7fa37150a1a0)"];
+ struct4 -> struct3;
+ struct3 -> struct2;
+ struct2 -> struct1;
+}
