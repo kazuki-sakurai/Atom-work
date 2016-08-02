@@ -1,0 +1,11 @@
+add Analysis ATLAS_1410_7238
+add InputFile /Users/kazuki/Projects/Atom-Events/objects/LHC7-WW.hepmc
+add OutputFile WW.yaml
+add OutputFile WW_off.yoda
+set DoSmearing Off
+set DoEfficiencies On
+set SaveHistos On
+set SaveAllProcIds Off
+set MaxEventNumber 50000
+show Options
+launch

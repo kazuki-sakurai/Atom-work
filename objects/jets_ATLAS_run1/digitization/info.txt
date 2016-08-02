@@ -1,0 +1,5 @@
+Object name:  Jet_Smear_LCW_JES_8tev_ATLAS
+Paper:  http://cds.cern.ch/record/2044941/files/ATLAS-CONF-2015-037.pdf
+twiki:  https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2015-037
+
+

@@ -1,0 +1,45 @@
+Name: ATLAS_1410_7238
+Year: 2014
+Summary: 'Measurement of the WW+WZ cross section and limits on anomalous triple  gauge couplings using final states with one lepton, missing transverse  momentum, and two jets with the ATLAS detector at sqrt(s) = 7 TeV'
+Experiment: ATLAS
+Collider: LHC7
+InspireID: 1324374
+References:
+ - arXiv:1410.7238
+ - J. High Energy Phys. 01 (2015), 049
+ - doi:10.1007/jhep01(2015)049
+Status: UNVALIDATED
+Authors:
+ - Kazuki
+Beams: [ p+, p+ ]
+Energies: [ 7000 ]
+Keywords: [ Jets ]
+Luminosity: [ 4.6 / fb, 0.1 / fb  ]
+Description: 'The production of a W boson decaying to e/nu or mu/nu in association with a W or Z boson decaying to two jets is studied using 4.6/fb of proton-proton collision data at sqrt(s) = 7 TeV recorded with the ATLAS  detector at the LHC.  The combined WW+WZ cross section is measured with a significance of 3.4 sigma and is found to be 68 +- 7 (stat.) +- 19 (syst.) pb, in agreement with the Standard Model expectation of  61.1 +- 2.2 pb. The distribution of the transverse momentum of the dijet system is used to set limits on anomalous contributions to the triple gauge coupling vertices and on parameters of an effective-field-theory model.'
+BibKey: 'Aad:2014mda'
+BibTeX: '@article{Aad:2014mda,
+      author         = "Aad, Georges and others",
+      title          = "{Measurement of the WW+WZ cross section and limits on
+                        anomalous triple gauge couplings using final states with
+                        one lepton, missing transverse momentum, and two jets with
+                        the ATLAS detector at sqrt(s) = 7 TeV}",
+      collaboration  = "ATLAS",
+      journal        = "JHEP",
+      volume         = "01",
+      year           = "2015",
+      pages          = "049",
+      doi            = "10.1007/JHEP01(2015)049",
+      eprint         = "1410.7238",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-244",
+      SLACcitation   = "%%CITATION = ARXIV:1410.7238;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error
