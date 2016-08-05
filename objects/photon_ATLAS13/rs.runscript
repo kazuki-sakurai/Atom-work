@@ -1,8 +1,8 @@
 add Analysis ATLAS_1606_03833
 add InputFile /Users/spliew/Desktop/tools/pythia8209/examples/hepmcout_rs.hepmc 
-add OutputFile rs.yaml
-add OutputFile rs.yoda
-set DoSmearing On
+add OutputFile rs_nosmear.yaml
+add OutputFile rs_nosmear.yoda
+set DoSmearing Off
 set DoEfficiencies On
 set SaveHistos On
 set SaveAllProcIds Off
