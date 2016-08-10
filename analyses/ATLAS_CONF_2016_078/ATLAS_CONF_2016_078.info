@@ -1,0 +1,35 @@
+Name: ATLAS_CONF_2016_078
+Year: 2016
+Summary: 'Further searches for squarks and gluinos in final states with jets and missing transverse momentum at $\sqrt{s}$ =13 TeV with the ATLAS detector'
+Experiment: ATLAS
+Collider: LHC13
+InspireID: 1480058
+References:
+ - ATLAS-CONF-2016-078
+Status: UNVALIDATED
+Authors:
+ - Kazuki Sakurai
+Beams: [ p+, p+ ]
+Energies: [ 13000 ]
+Keywords: [ JETS, MET ]
+Luminosity: [ 13.3 / fb, 4.5 percent ]
+Description: 'Two selection strategies to search for the supersymmetric partners of quarks and gluons (squarks and gluinos) in final states containing hadronic jets, missing transverse momentum but no electrons or muons are presented. The data used for both approaches were recorded in 2015 and 2016 by the ATLAS experiment in $\sqrt{s}$=13TeV proton--proton collisions at the Large Hadron Collider, corresponding to an integrated luminosity of 13.3 fb$^{-1}$. The results are interpreted in the context of various simplified models where squarks and gluinos are pair-produced and the neutralino is the lightest supersymmetric particle. An exclusion limit at the 95% confidence level on the mass of the gluino is set at 1.86 TeV for a simplified model incorporating only a gluino octet and the lightest neutralino, assuming the lightest neutralino is massless. For a simplified model involving the strong production of mass-degenerate first- and second-generation squarks, squark masses below 1.35 TeV are excluded for a massless lightest neutralino. These limits substantially extend the region of supersymmetric parameter space excluded by previous measurements with the ATLAS detector.'
+BibKey: 'ATLAS:2016kts'
+BibTeX: '@article{ATLAS:2016kts,
+      author         = "The ATLAS collaboration",
+      title          = "{Further searches for squarks and gluinos in final states
+                        with jets and missing transverse momentum at $\sqrt{s}$
+                        =13 TeV with the ATLAS detector}",
+      collaboration  = "ATLAS",
+      year           = "2016",
+      reportNumber   = "ATLAS-CONF-2016-078",
+      SLACcitation   = "%%CITATION = ATLAS-CONF-2016-078;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error
