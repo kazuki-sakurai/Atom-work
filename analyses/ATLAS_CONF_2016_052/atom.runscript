@@ -1,0 +1,11 @@
+add Analysis ATLAS_CONF_2016_052
+add InputFile /Users/kazuki/Projects/mcpp/lhc_chi2/MCsim/LHC-MSSM.hepmc
+# add OutputFile Zee.yaml
+# add OutputFile Zee.yoda
+set DoSmearing On
+set DoEfficiencies On
+set SaveHistos On
+set SaveAllProcIds Off
+set MaxEventNumber -1
+show Options
+launch
