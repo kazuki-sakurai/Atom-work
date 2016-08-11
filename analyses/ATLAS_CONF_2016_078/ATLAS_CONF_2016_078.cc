@@ -73,10 +73,10 @@ namespace Atom {
             met.setSmearingParams( getMETSim( "MissingET_Smear_ETOnly_Grid_PlaceHolder" ) );
             addProjection(met, "MissingEt");
 
-			Sphericity sphr(jets_clean);
+            Sphericity sphr(jets_clean);
             addProjection(sphr, "Sphericity");
 
-			// Projection booking section -- do not edit/remove this comment
+            // Projection booking section -- do not edit/remove this comment
             /// @todo define projections (see examples and manual)
 			// FastJets jets(fsbase, hadRange & jet_range, muDetRange, FastJets::ANTIKT, 0.6 );
 			// addProjection(jets, "Jets");
