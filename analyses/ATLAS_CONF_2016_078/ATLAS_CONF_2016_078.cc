@@ -292,24 +292,24 @@ namespace Atom {
         if( cut( maxetaj12, CUT_LT, 1.2, "|eta(j1,2)| < 1.2: 2j-(1200, 2000)" ) ){
           if( cut( dPhiMin_123, CUT_GT, 0.8, "dPhiMin_123 > 0.8: 2j-(1200, 2000)" ) ){
             if( cut( dPhiMin_4, CUT_GT, 0.4, "dPhiMin(i>3) > 0.4: 2j-(1200, 2000)" ) ){
-            // 2j-1200
-            if( cut( MET/sqrt(H_T), CUT_GT, 16., "MET/sqrt(HT) > 16: 2j-1200" ) ){
-              if( cut( meff_inc, CUT_GT, 1200., "meff_inc > 1200: 2j-1200" ) ){
-                pass("2j-1200");
+              // 2j-1200
+              if( cut( MET/sqrt(H_T), CUT_GT, 16., "MET/sqrt(HT) > 16: 2j-1200" ) ){
+                if( cut( meff_inc, CUT_GT, 1200., "meff_inc > 1200: 2j-1200" ) ){
+                  pass("2j-1200");
+                }
               }
-            }
-            // 2j-1600                        
-            if( cut( MET/sqrt(H_T), CUT_GT, 18., "MET/sqrt(HT) > 18: 2j-1600" ) ){
-              if( cut( meff_inc, CUT_GT, 1600., "meff_inc > 1600: 2j-1600" ) ){
-                pass("2j-1600");
+              // 2j-1600                        
+              if( cut( MET/sqrt(H_T), CUT_GT, 18., "MET/sqrt(HT) > 18: 2j-1600" ) ){
+                if( cut( meff_inc, CUT_GT, 1600., "meff_inc > 1600: 2j-1600" ) ){
+                  pass("2j-1600");
+                }
               }
-            }
-            // 2j-2000                        
-            if( cut( MET/sqrt(H_T), CUT_GT, 20., "MET/sqrt(HT) > 20: 2j-2000" ) ){
-              if( cut( meff_inc, CUT_GT, 2000., "meff_inc > 2000: 2j-2000" ) ){
-                pass("2j-2000");
+              // 2j-2000                        
+              if( cut( MET/sqrt(H_T), CUT_GT, 20., "MET/sqrt(HT) > 20: 2j-2000" ) ){
+                if( cut( meff_inc, CUT_GT, 2000., "meff_inc > 2000: 2j-2000" ) ){
+                  pass("2j-2000");
+                }
               }
-            }
             }
           }
         }
