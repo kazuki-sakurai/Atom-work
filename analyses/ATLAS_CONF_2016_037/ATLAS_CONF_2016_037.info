@@ -1,0 +1,38 @@
+Name: ATLAS_CONF_2016_037
+Year: 2016
+Summary: 'Search for supersymmetry with two same-sign leptons or three leptons using 13.2 fb$^{-1}$ of $\sqrt{s} = 13$ TeV $pp$ collision data collected by the ATLAS detector'
+Experiment: ATLAS
+Collider: LHC13
+InspireID: 1479668
+References:
+ - ATLAS-CONF-2016-037
+Status: UNVALIDATED
+Authors:
+ - Kazuki
+Beams: [ p+, p+ ]
+Energies: [ 13000 ]
+Keywords: [ SAME-SIGN, LEPTONS, JETS, MET ]
+Luminosity: [ 13.2 / fb, 2.9 percent ]
+Description: 'This note presents a search for strongly produced supersymmetric particles using signatures involving multiple energetic jets and either two isolated same-sign leptons ($e$ or $\mu$) or at least three isolated leptons. The analysis also utilises other observables, such as $b$-tagged jets or missing transverse momentum, to extend its sensitivity. A data sample of proton-proton collisions at $\sqrt{s}= 13$ TeV recorded with the ATLAS detector at the Large Hadron Collider in 2015 and 2016, corresponding to a total integrated luminosity of 13.2 fb$^{-1}$, is used for the search. No significant excess over the Standard Model expectation is observed. The results are interpreted in several simplified supersymmetric models featuring $R$-parity conservation and $R$-parity violation, extending the exclusion limits from previous searches.'
+BibKey: 'ATLAS:2016kjm'
+BibTeX: '%%% contains utf-8, see: http://inspirehep.net/info/faq/general#utf8
+%%% add \usepackage[utf8]{inputenc} to your latex preamble
+
+@article{ATLAS:2016kjm,
+      author         = "The ATLAS collaboration",
+      title          = "{Search for supersymmetry with two same-sign leptons or
+                        three leptons using 13.2 fb$^{-1}$ of $\sqrt{s} = 13$
+                        TeV $pp$ collision data collected by the ATLAS detector}",
+      collaboration  = "ATLAS",
+      year           = "2016",
+      reportNumber   = "ATLAS-CONF-2016-037",
+      SLACcitation   = "%%CITATION = ATLAS-CONF-2016-037;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error
