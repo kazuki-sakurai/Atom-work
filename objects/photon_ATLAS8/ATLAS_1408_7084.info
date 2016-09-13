@@ -1,0 +1,43 @@
+Name: ATLAS_1408_7084
+Year: 2014
+Summary: 'Measurement of Higgs boson production in the diphoton decay channel in  $pp$ collisions at center-of-mass energies of 7 and 8 TeV with the ATLAS  detector'
+Experiment: ATLAS
+Collider: LHC8
+InspireID: 1309113
+References:
+ - arXiv:1408.7084
+ - CERN-PH-EP-2014-198
+ - Phys. Rev. D 90 (2014), 112015
+ - doi:10.1103/physrevd.90.112015
+ - doi:10.1103/physrevd.90.095009
+Status: UNVALIDATED
+Authors:
+ - Seng Pei Liew
+Beams: [ p+, p+ ]
+Energies: [ 8000 ]
+Keywords: [ <Add list of keywords here separated by a comma> ]
+Luminosity: [ 5.4 / fb, <insert luminosity error here, e.g. 4.5 percent or 0.1 / fb > ]
+Description: 'A measurement of the production processes of the recently discovered Higgs boson is performed in the two-photon final state using 5.4 fb$^{-1}$ of proton-proton collisions data at $\sqrt{s}=7$ TeV and 20.3 fb$^{-1}$ at $\sqrt{s}=8$ TeV collected by the ATLAS detector at the Large Hadron Collider. The number of observed Higgs boson decays to diphotons divided by the corresponding Standard Model prediction, called the signal strength, is found to be $\mu = 1.17 \pm 0.27$ at the value of the Higgs boson mass measured by ATLAS, $m_{H}$ = 125.4 GeV. The analysis is optimized to measure the signal strengths for individual Higgs boson production processes at this value of $m_{H}$. They are found to be $\mu_{\mathrm{ggF}} = 1.32 \pm 0.38$, $\mu_{\mathrm{VBF}} = 0.8 \pm 0.7$, $\mu_{\mathrm{WH}} = 1.0 \pm 1.6 $, $\mu_{\mathrm{ZH}} = 0.1 ^{+3.7}_{-0.1} $, $\mu_{\mathrm{t\bar{t}H}} = 1.6 ^{+2.7}_{-1.8} $, for Higgs boson production through gluon fusion, vector-boson fusion, and in association with a $W$ or $Z$ boson or a top-quark pair, respectively. Compared with the previously published ATLAS analysis, the results reported here also benefit from a new energy calibration procedure for photons and the subsequent reduction of the systematic uncertainty on the diphoton mass resolution. No significant deviations from the predictions of the Standard Model are found.'
+BibKey: 'Cheung:2014noa'
+BibTeX: '@article{Cheung:2014noa,
+      author         = "Cheung, Kingman and Lee, Jae Sik and Tseng, Po-Yan",
+      title          = "{Higgs precision analysis updates 2014}",
+      journal        = "Phys. Rev.",
+      volume         = "D90",
+      year           = "2014",
+      pages          = "095009",
+      doi            = "10.1103/PhysRevD.90.095009",
+      eprint         = "1407.8236",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "CNU-HEP-14-03",
+      SLACcitation   = "%%CITATION = ARXIV:1407.8236;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error

@@ -1,0 +1,35 @@
+Name: ATLAS_CONF_2016_054
+Year: 2016
+Summary: 'Search for squarks and gluinos in events with an isolated lepton, jets and missing transverse momentum at $\sqrt{s}$ = 13 TeV with the ATLAS detector'
+Experiment: ATLAS
+Collider: LHC13
+InspireID: 1480034
+References:
+ - ATLAS-CONF-2016-054
+Status: UNVALIDATED
+Authors:
+ - Seng Pei Liew
+Beams: [ p+, p+ ]
+Energies: [ 13000 ]
+Keywords: [ MET, JETS, LEPTONS, SEMI-LEPTONIC ]
+Luminosity: [ 14.8 / fb, 3.0 percent ]
+Description: 'The results of a search for squarks and gluinos in final states with an isolated electron or muon, multiple jets and large missing transverse momentum using proton--proton collision data at a centre-of-mass energy of $\sqrt{s}$ = 13 TeV are presented. The dataset used was recorded in 2015 and 2016 by the ATLAS experiment at the Large Hadron Collider and corresponds to an integrated luminosity of 14.8 fb$^{-1}$.'
+BibKey: 'ATLAS:2016lsr'
+BibTeX: '@article{ATLAS:2016lsr,
+      author         = "The ATLAS collaboration",
+      title          = "{Search for squarks and gluinos in events with an
+                        isolated lepton, jets and missing transverse momentum at
+                        $\sqrt{s}$ = 13 TeV with the ATLAS detector}",
+      collaboration  = "ATLAS",
+      year           = "2016",
+      reportNumber   = "ATLAS-CONF-2016-054",
+      SLACcitation   = "%%CITATION = ATLAS-CONF-2016-054;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error
