@@ -26,6 +26,16 @@ namespace Atom {
 		/// @name Analysis methods
 		//@{
 
+		double get_thrust(FourMomentum p1, FourMomentum p2){
+			FourMomentum pplus = p1+p2;
+			FourMomentum pminus = p1-p2;
+			Vector3 pp = Vector3(pplus.px(),pplus.py(),0);
+			Vector3 pm = Vector3(pminus.px(),pminus.py(),0);
+			double cross =  abs(pp.x()*pm.y()-pp.y()*pm.x());
+			double pmsqrt = sqrt(pm.x()*pm.x()+pm.y()*pm.y());
+			return cross/pmsqrt;
+		}
+
 		/// Book histograms and initialise projections before the run
 		void init() {
 
@@ -34,14 +44,19 @@ namespace Atom {
 
 	//photon
 
-            IsoPhoton gam( Range(ET > 25.) & Range(abseta, 0.0, 2.37) - Range(abseta, 1.37, 1.56) );
-            gam.addIso(CALO_ISO_ET,  0.4,  0.0, 6, 0.0, CALO_ALL);                        
+            IsoPhoton gam( Range(PT > 25.) & Range(abseta, 0.0, 2.37) - Range(abseta, 1.37, 1.56) );
+          //  gam.addIso(CALO_ISO_ET,  0.4,  0.0, 6, 0.0, CALO_ALL);                        
+          //  gam.addIso(TRACK_ISO_PT, 0.2,  0.0,  2.6, 0.0, CALO_ALL, 1.0);
+            gam.addIso(CALO_ISO_ET,  0.4,  0.0, 2.45, 0.0, CALO_ALL);                        
             gam.addIso(TRACK_ISO_PT, 0.2,  0.0,  2.6, 0.0, CALO_ALL, 1.0);
             gam.setSmearingParams( getPhotonSim( "Photon_Smear_2013_ATLAS" ) );
             gam.setEfficiencyParams( getPhotonEff( "Photon_Ident_Tight_2011_ATLAS" ) );
+
+        //    addProjection(Thrust(gam),"Thrust");
             addProjection(gam,"Photon");
 
-            bookHisto1D("Mgg", 16, 960, 1040, "Mgg", "Mgg", "Arbitrary");
+            bookHisto1D("central_highpt", 67, 108, 141.5, "Mgg", "Mgg", "Arbitrary");
+            bookHisto1D("forward_lowpt", 67, 108, 141.5, "Mgg", "Mgg", "Arbitrary");
 
 			// Projection booking section -- do not edit/remove this comment
             /// @todo define projections (see examples and manual)
@@ -73,11 +88,20 @@ namespace Atom {
 		/// param[in]   event    the event to be analyzed
 		void analyze(const Event& event) {
 			const Particles& photon = applyProjection<IsoPhoton>(event, "Photon").particlesByPt();
-
+			// const Thrust& thrust = applyProjection<Thrust>(event, "Thrust");
+			if(photon.size()> 0) 				cout << "found photon" << "\n";      
 			if(photon.size() == 2){
+			//	cout << "found photon" << "\n";
 			    double minv = (photon[0].momentum() + photon[1].momentum()).mass();   
-			    if (photon[0].Et()> 0.35*minv && photon[1].Et()> 0.25*minv) fillPlot("Mgg", minv);            
-
+			    if (photon[0].Et()> 0.35*minv && photon[1].Et()> 0.25*minv) {
+			    	double ptt = get_thrust(photon[0].momentum(),photon[1].momentum());
+			    	if (ptt > 70 && photon[0].momentum().abseta() < 0.95 && photon[1].momentum().abseta() < 0.95){
+			    	fillPlot("central_highpt", minv);      
+			    }
+			    if (ptt <= 70 && photon[0].momentum().abseta() >= 0.95 && photon[1].momentum().abseta() >= 0.95){
+			    	fillPlot("forward_lowpt", minv);      
+			    }
+			    }
 			}
 			// Projection application section -- do not edit/remove this comment
             /// @todo apply projections
@@ -112,7 +136,8 @@ namespace Atom {
 			// Histogram normalization section -- do not edit/remove this comment
 			/// @todo normalize the histograms
 			// scale("Mjj");
-
+			scale("central_highpt",1);
+			scale("forward_lowpt",1);
 			// End finalize section -- do not edit/remove this comment
 		}
 

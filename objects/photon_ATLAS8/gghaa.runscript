@@ -1,0 +1,10 @@
+add Analysis ATLAS_1408_7084
+add InputFile /Users/spliew/Desktop/hepmcout_gghaa.hepmc 
+add OutputFile gghaa.yaml
+add OutputFile gghaa.yoda
+set DoSmearing On
+set DoEfficiencies On
+set SaveHistos On
+set SaveAllProcIds Off
+set MaxEventNumber -1
+launch

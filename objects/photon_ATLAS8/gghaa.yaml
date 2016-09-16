@@ -1,0 +1,150 @@
+# Atom ver. 0.9 yaml output
+# Contains Cuts and Efficiencies
+Atom Run Info:
+  Processed Files:
+    - /Users/spliew/Desktop/hepmcout_gghaa.hepmc
+  Processed Events: 3000
+  Used Settings:
+    - Setting Name: ATLAS_1408_7084:CalcCR
+      Description: Compute quantities for Control Regions
+      Value: On
+    - Setting Name: ATLAS_1408_7084:DoEfficiencies
+      Description: Apply parameterized efficiencies for the objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1408_7084:DoSmearing
+      Description: Apply parameterized momentum resolution for the objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1408_7084:DoTagging
+      Description: Use parameterized efficiencies for tagging objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1408_7084:SaveEvents
+      Description: Save event-related information for this analysis
+      Value: On
+    - Setting Name: ATLAS_1408_7084:SaveHistograms
+      Description: Save histograms for this analysis
+      Value: On
+    - Setting Name: ATLAS_1408_7084:SavePassFail
+      Description: Save pass-fail informatio for this analysisn
+      Value: On
+    - Setting Name: ATLAS_1408_7084:SaveProjections
+      Description: Save projection information for this analysis
+      Value: On
+    - Setting Name: AnalysisHandler:IgnoreBeams
+      Description: Ignore beam information in selecting valid analyses for an Atom run
+      Value: Off
+    - Setting Name: DressedLeptons:EoverPRatio
+      Description: Cut on Energy over Track momentum ratio to define leptonic clusters
+      Value: 1.3
+    - Setting Name: FastJets:DoJES
+      Description: Compute the Jet Energy scale contribution to the jet smearing
+      Value: On
+    - Setting Name: FlagCutSensitivity:Tolerance
+      Description: Threshold for flagging high sensitivity (dlog cut_eff/dlog cut_value) in cut efficiencies
+      Value: 5
+    - Setting Name: FlagLowStatistics:Sigmas
+      Description: Significance threshold for flagging low statistics in numerical quantities
+      Value: 2
+    - Setting Name: FlaggingHandler:DoFlagging
+      Description: Perform the condition-flagging step
+      Value: On
+    - Setting Name: ProjectionHandler:CacheRanges
+      Description: Uses kinematic information to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CacheSaved
+      Description: Uses saved projections from a binary file to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CacheSimulation
+      Description: Uses smearing and efficiency information to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CalcCR
+      Description: Compute quantities (efficiencies, cutflows, histograms) for Control Regions
+      Value: On
+    - Setting Name: ProjectionHandler:DoEfficiencies
+      Description: Enable the use of parameterized efficiencies
+      Value: On
+    - Setting Name: ProjectionHandler:DoSmearing
+      Description: Enable the use of parameterized momentum resolution (smearing)
+      Value: On
+    - Setting Name: ProjectionHandler:DoTagging
+      Description: Enable the use of parameterized efficiencies for tagging
+      Value: On
+    - Setting Name: Run:ListUsedAnalyses
+      Description: Displays the list of valid analyses used in the current run
+      Value: On
+    - Setting Name: Run:NumberOfThreads
+      Description: Maximum number of threads usable in current run
+      Value: 4
+    - Setting Name: Run:ParallelRun
+      Description: Enable multi-threading in calculation. EXPERIMENTAL
+      Value: Off
+    - Setting Name: Run:RefsOutputFile
+      Description: Output file containing citation references for the current Atom run
+      Value: Run01.bib
+    - Setting Name: Run:RunName
+      Description: Name of the current Atom run
+      Value: Run01
+    - Setting Name: Run:SaveReferences
+      Description: Save a file containing the citation references for the current Atom run
+      Value: On
+    - Setting Name: Run:Seed
+      Description: Random seed (default = 0 to be randomly determined.)
+      Value: 0
+    - Setting Name: WriterHandler:SaveAllProcIds
+      Description: Save the information relative to specific process IDs
+      Value: Off
+    - Setting Name: WriterHandler:SaveEvents
+      Description: Save event-by-event particles and vertices information
+      Value: Off
+    - Setting Name: WriterHandler:SaveHistograms
+      Description: Save analyses histograms
+      Value: On
+    - Setting Name: WriterHandler:SaveKinematics
+      Description: Save event-by-event hard process kinematical information
+      Value: Off
+    - Setting Name: WriterHandler:SaveOptions
+      Description: Save run options
+      Value: On
+    - Setting Name: WriterHandler:SavePassFail
+      Description: Save per-analysis event-by-event pass/fail information
+      Value: Off
+    - Setting Name: WriterHandler:SaveProjections
+      Description: Save analysis-by-analysis projections information
+      Value: Off
+Sub Processes Information:
+  []
+Cross Sections:
+  - Process ID: -1
+    Cross Section: 1.449802152704965e-05
+    Cross Section Error: [0.043, 0.043]
+  - Process ID: 0
+    Cross Section: 0.0435
+    Cross Section Error: [0.00059, 0.00059]
+  - Process ID: 902
+    Cross Section: 0.043
+    Cross Section Error: [0.043, 0.043]
+Analyses:
+  ATLAS_1408_7084:
+    Summary: Measurement of Higgs boson production in the diphoton decay channel in  $pp$ collisions at center-of-mass energies of 7 and 8 TeV with the ATLAS  detector
+    Experiment: ATLAS
+    Collider: LHC8
+    Year: 2014
+    Description: A measurement of the production processes of the recently discovered Higgs boson is performed in the two-photon final state using 5.4 fb$^{-1}$ of proton-proton collisions data at $\sqrt{s}=7$ TeV and 20.3 fb$^{-1}$ at $\sqrt{s}=8$ TeV collected by the ATLAS detector at the Large Hadron Collider. The number of observed Higgs boson decays to diphotons divided by the corresponding Standard Model prediction, called the signal strength, is found to be $\mu = 1.17 \pm 0.27$ at the value of the Higgs boson mass measured by ATLAS, $m_{H}$ = 125.4 GeV. The analysis is optimized to measure the signal strengths for individual Higgs boson production processes at this value of $m_{H}$. They are found to be $\mu_{\mathrm{ggF}} = 1.32 \pm 0.38$, $\mu_{\mathrm{VBF}} = 0.8 \pm 0.7$, $\mu_{\mathrm{WH}} = 1.0 \pm 1.6 $, $\mu_{\mathrm{ZH}} = 0.1 ^{+3.7}_{-0.1} $, $\mu_{\mathrm{t\bar{t}H}} = 1.6 ^{+2.7}_{-1.8} $, for Higgs boson production through gluon fusion, vector-boson fusion, and in association with a $W$ or $Z$ boson or a top-quark pair, respectively. Compared with the previously published ATLAS analysis, the results reported here also benefit from a new energy calibration procedure for photons and the subsequent reduction of the systematic uncertainty on the diphoton mass resolution. No significant deviations from the predictions of the Standard Model are found.
+    RunInfo: ""
+    Status: UNVALIDATED
+    Authors:
+      - Seng Pei Liew
+    References:
+      - arXiv:1408.7084
+      - CERN-PH-EP-2014-198
+      - Phys. Rev. D 90 (2014), 112015
+      - doi:10.1103/physrevd.90.112015
+      - doi:10.1103/physrevd.90.095009
+    InspireID: 1309113
+    BibKey: Cheung:2014noa
+    Luminosity:
+      Value: 2.03e+04
+      Error: 5.7e+02
+    Efficiencies:
+      []
+    Cuts:
+      []
