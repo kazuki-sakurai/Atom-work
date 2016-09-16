@@ -47,8 +47,8 @@ namespace Atom {
             IsoPhoton gam( Range(PT > 25.) & Range(abseta, 0.0, 2.37) - Range(abseta, 1.37, 1.56) );
           //  gam.addIso(CALO_ISO_ET,  0.4,  0.0, 6, 0.0, CALO_ALL);                        
           //  gam.addIso(TRACK_ISO_PT, 0.2,  0.0,  2.6, 0.0, CALO_ALL, 1.0);
-            gam.addIso(CALO_ISO_ET,  0.4,  0.0, 2.45, 0.0, CALO_ALL);                        
-            gam.addIso(TRACK_ISO_PT, 0.2,  0.0,  2.6, 0.0, CALO_ALL, 1.0);
+            gam.addIso(CALO_ISO_ET,  0.4,  0.0, 6, 0.01, CALO_ALL);                        
+            gam.addIso(TRACK_ISO_PT, 0.2,  0.0,  2.6, 0.01, CALO_ALL, 1.0);
             gam.setSmearingParams( getPhotonSim( "Photon_Smear_2013_ATLAS" ) );
             gam.setEfficiencyParams( getPhotonEff( "Photon_Ident_Tight_2011_ATLAS" ) );
 
@@ -89,7 +89,7 @@ namespace Atom {
 		void analyze(const Event& event) {
 			const Particles& photon = applyProjection<IsoPhoton>(event, "Photon").particlesByPt();
 			// const Thrust& thrust = applyProjection<Thrust>(event, "Thrust");
-			if(photon.size()> 0) 				cout << "found photon" << "\n";      
+			//if(photon.size()> 0) 				cout << "found photon" << "\n";      
 			if(photon.size() == 2){
 			//	cout << "found photon" << "\n";
 			    double minv = (photon[0].momentum() + photon[1].momentum()).mass();   

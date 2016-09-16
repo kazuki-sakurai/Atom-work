@@ -1,5 +1,5 @@
 add Analysis ATLAS_1408_7084
-add InputFile /Users/spliew/Desktop/hepmcout_gghaa.hepmc 
+add InputFile /Users/spliew/Desktop/tools/pythia8209/examples/hepmcout_gghaa.hepmc 
 add OutputFile gghaa.yaml
 add OutputFile gghaa.yoda
 set DoSmearing On

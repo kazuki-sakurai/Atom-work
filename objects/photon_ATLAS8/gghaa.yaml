@@ -2,8 +2,8 @@
 # Contains Cuts and Efficiencies
 Atom Run Info:
   Processed Files:
-    - /Users/spliew/Desktop/hepmcout_gghaa.hepmc
-  Processed Events: 3000
+    - /Users/spliew/Desktop/tools/pythia8209/examples/hepmcout_gghaa.hepmc
+  Processed Events: 10000
   Used Settings:
     - Setting Name: ATLAS_1408_7084:CalcCR
       Description: Compute quantities for Control Regions
@@ -114,11 +114,11 @@ Sub Processes Information:
   []
 Cross Sections:
   - Process ID: -1
-    Cross Section: 1.449802152704965e-05
+    Cross Section: 4.276166419691901e-06
     Cross Section Error: [0.043, 0.043]
   - Process ID: 0
-    Cross Section: 0.0435
-    Cross Section Error: [0.00059, 0.00059]
+    Cross Section: 0.04276
+    Cross Section Error: [0.00032, 0.00032]
   - Process ID: 902
     Cross Section: 0.043
     Cross Section Error: [0.043, 0.043]
