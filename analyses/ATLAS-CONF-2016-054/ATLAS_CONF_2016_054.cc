@@ -220,8 +220,9 @@ namespace Atom {
       				pass("GG4J-low-x");
       			}
       		}
-      		if (leps[0].pT() > 35 and jets[0].pT()> 400 and jets[1].pT() > 30 and jets[2].pT() > 30 and jets[2].pT() < 100 and mT > 475 and MET > 250 and meff_inc > 1600 and MET/meff_inc > 0.3)
+      		if (leps[0].pT() > 35 and jets[0].pT()> 400 and jets[1].pT() > 30 and jets[2].pT() > 30 and jets[2].pT() < 100 and mT > 475 and MET > 250 and meff_inc > 1600 and MET/meff_inc > 0.3){
       	pass("GG4J-high-x");
+                  }
       	}
       				
       	//SS4j
