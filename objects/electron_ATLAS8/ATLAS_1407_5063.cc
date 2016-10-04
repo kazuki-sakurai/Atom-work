@@ -20,7 +20,7 @@ namespace Atom {
 
 		ATLAS_1407_5063()
 			: Analysis("ATLAS_1407_5063") {
-			setNeedsCrossSection(true);
+			//setNeedsCrossSection(true);
 		}
 
 		/// @name Analysis methods
@@ -34,8 +34,8 @@ namespace Atom {
 
             // electrons
             IsoElectron ele0( Range(PT > 27.) & Range(abseta < 2.47) );
-            ele0.addIso(CALO_ISO_PT,  0.3,  0.18,  0.0, 0.01, CALO_ALL);                        
-            ele0.addIso(TRACK_ISO_PT, 0.2,  0.10,  0.0, 0.01, CALO_ALL, 0.4);
+            ele0.addConeIso(CALO_ISO_PT,  0.3,  0.18,  0.0, 0.01, CALO_ALL);                        
+            ele0.addConeIso(TRACK_ISO_PT, 0.2,  0.10,  0.0, 0.01, CALO_ALL, 0.4);
             ele0.setSmearingParams  ( getElectronSim( "Electron_Smear_run1_ATLAS" ) );
             ele0.setEfficiencyParams( getElectronEff( "Electron_Ident_Medium_2012_ATLAS" ) );
 
@@ -91,9 +91,9 @@ namespace Atom {
 		void finalize() {
 			// Histogram normalization section -- do not edit/remove this comment
 			/// @todo normalize the histograms
-            scale("Mee");
-            scale("Mee_eta");
-            scale("Mee_eta_inc");
+            scaleToLumi("Mee");
+            scaleToLumi("Mee_eta");
+            scaleToLumi("Mee_eta_inc");
 
 			// End finalize section -- do not edit/remove this comment
 		}

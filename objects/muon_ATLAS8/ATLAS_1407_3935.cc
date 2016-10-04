@@ -20,7 +20,7 @@ namespace Atom {
 
 		ATLAS_1407_3935()
 			: Analysis("ATLAS_1407_3935") {
-			setNeedsCrossSection(true);
+			//setNeedsCrossSection(true);
 		}
 
 		/// @name Analysis methods
@@ -33,8 +33,8 @@ namespace Atom {
 
             // muons
             IsoMuon mu( Range(PT > 20.) & Range(abseta < 2.7) );
-            mu.addIso(CALO_ISO_PT,  0.3,  0.15,  0.0, 0.01, CALO_ALL);                        
-            mu.addIso(TRACK_ISO_PT, 0.2,  0.10,  0.0, 0.01, CALO_ALL, 0.4);
+            mu.addConeIso(CALO_ISO_PT,  0.3,  0.15,  0.0, 0.01, CALO_ALL);                        
+            mu.addConeIso(TRACK_ISO_PT, 0.2,  0.10,  0.0, 0.01, CALO_ALL, 0.4);
             mu.setSmearingParams  ( getMuonSim( "Muon_Smear_ID-MS_ATLAS" ) );
             mu.setEfficiencyParams( getMuonEff( "Muon_Ident_CB-ST_ATLAS" ) );
             addProjection(mu, "Muons");
@@ -66,7 +66,7 @@ namespace Atom {
 		void finalize() {
 			// Histogram normalization section -- do not edit/remove this comment
 			/// @todo normalize the histograms
-            scale("Mmm");
+            scaleToLumi("Mmm");
 
 			// End finalize section -- do not edit/remove this comment
 		}

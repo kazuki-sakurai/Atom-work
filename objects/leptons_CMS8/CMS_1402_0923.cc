@@ -20,7 +20,7 @@ namespace Atom {
 
 		CMS_1402_0923()
 			: Analysis("CMS_1402_0923") {
-			setNeedsCrossSection(true);
+			//setNeedsCrossSection(true);
 		}
 
 		/// @name Analysis methods
@@ -34,22 +34,22 @@ namespace Atom {
 
             // electrons
             IsoElectron ele( Range(PT > 25.) & Range(abseta, 0.0, 2.5) - Range(abseta, 1.44, 1.57) );
-            ele.addIso(CALO_ISO_PT,  0.4,  0.15,  0.0, 0.01, CALO_ALL);                        
-            ele.addIso(TRACK_ISO_PT, 0.2,  0.10,  0.0, 0.01, CALO_ALL, 0.4);
+            ele.addConeIso(CALO_ISO_PT,  0.4,  0.15,  0.0, 0.01, CALO_ALL);                        
+            ele.addConeIso(TRACK_ISO_PT, 0.2,  0.10,  0.0, 0.01, CALO_ALL, 0.4);
             ele.setSmearingParams  ( getElectronSim( "Electron_Smear_Ceffective_CMS" ) );
             ele.setEfficiencyParams( getElectronEff( "Electron_Ident_mediumWP_CMS" ) );
             addProjection(ele, "Electrons");
 
             // muons
             IsoMuon mu( Range(PT > 25.) & Range(abseta < 2.1) );
-            mu.addIso(CALO_ISO_PT,  0.4,  0.15,  0.0, 0.01, CALO_ALL);                        
-            mu.addIso(TRACK_ISO_PT, 0.2,  0.10,  0.0, 0.01, CALO_ALL, 0.4);
+            mu.addConeIso(CALO_ISO_PT,  0.4,  0.15,  0.0, 0.01, CALO_ALL);                        
+            mu.addConeIso(TRACK_ISO_PT, 0.2,  0.10,  0.0, 0.01, CALO_ALL, 0.4);
             mu.setSmearingParams  ( getMuonSim( "Muon_Smear_SIDRA_CMS" ) );
             mu.setEfficiencyParams( getMuonEff( "Muon_Ident_PF_CMS" ) );
             addProjection(mu, "Muons");
 
-            bookHisto1D("Mee", 30, 60, 120, "Mee", "Mee", "Arbitrary");
-            bookHisto1D("Mmm", 30, 60, 120, "Mmm", "Mmm", "Arbitrary");
+            bookHisto1D("Mee", 60, 60, 120, "Mee", "Mee", "Arbitrary");
+            bookHisto1D("Mmm", 60, 60, 120, "Mmm", "Mmm", "Arbitrary");
 
 			// End init section -- do not edit/remove this comment
 		}
@@ -109,8 +109,8 @@ namespace Atom {
 			// Histogram normalization section -- do not edit/remove this comment
 			/// @todo normalize the histograms
 			// scale("Mjj");
-            scale("Mee");
-            scale("Mmm");
+            scaleToLumi("Mee");
+            scaleToLumi("Mmm");
 
 			// End finalize section -- do not edit/remove this comment
 		}
