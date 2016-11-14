@@ -1,0 +1,45 @@
+Name: ATLAS_CONF_2016_098
+Year: 2016
+Summary: Search for new phenomena in events containing a same-flavour opposite-sign dilepton pair, jets, and large missing transverse momentum in $\sqrt{s}=13$ TeV
+    $pp$ collisions with the ATLAS detector
+Experiment: ATLAS
+Collider: LHC
+Beams: [p+, p+]
+Energies: [13000.0]
+Luminosity: [[14.7 / fb, <Insert luminosity error here>]]
+Keywords: [<Add list of keywords here separated by a comma>]
+Status: UNVALIDATED
+InspireID: 1487585
+Authors:
+- Kazuki
+Description: 'Two searches for new phenomena in final states containing a same-flavour opposite-sign lepton (electron or muon) pair, jets, and large missing transverse
+    momentum are presented. These searches make use of proton--proton collision data, collected during 2015 and 2016 at a centre-of-mass energy $\sqrt{s}=13$ TeV
+    by the ATLAS detector at the Large Hadron Collider, which correspond to an integrated luminosity of 14.7 fb$^{-1}$. Both searches target the pair production of
+    supersymmetric particles, squarks or gluinos, which decay to final states containing a same-flavour opposite-sign lepton pair via one of two mechanisms: a leptonically
+    decaying $Z$ boson in the final state, leading to a peak in the dilepton invariant mass distribution around the $Z$ boson mass; and decays of neutralinos (e.g.
+    $\tilde{\chi}_2^0 \rightarrow \ell^+\ell^- \tilde{\chi}_1^0$), yielding a kinematic endpoint in the dilepton invariant-mass spectrum. The data are found to be
+    consistent with the Standard Model expectation. Results are interpreted in simplified models of gluino (squark)-pair production, and provide sensitivity to gluinos
+    (squarks) with masses as large as 1.7 TeV (980 GeV).'
+References:
+- ATLAS-CONF-2016-098
+BibKey: ATLAS:2016jpd
+BibTeX: |-
+    @article{ATLAS:2016jpd,
+          author         = "The ATLAS collaboration",
+          title          = "{Search for new phenomena in events containing a
+                            same-flavour opposite-sign dilepton pair, jets, and large
+                            missing transverse momentum in $\sqrt{s}=13$ TeV $pp$
+                            collisions with the ATLAS detector}",
+          collaboration  = "ATLAS",
+          year           = "2016",
+          reportNumber   = "ATLAS-CONF-2016-098",
+          SLACcitation   = "%%CITATION = ATLAS-CONF-2016-098;%%"
+    }
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibKey: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+- Fill Keywords (a non-exaustive list can be found in share/Atom/keyword_list.txt)
+- Implement analysis
+- Validate analysis
+- Fill the remaining information in the .info file
+- Add the reference for the implementation of this analysis once done

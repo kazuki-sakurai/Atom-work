@@ -1,0 +1,40 @@
+Name: ATLAS_CONF_2016_093
+Year: 2016
+Summary: Search for electroweak production of supersymmetric particles in final states with tau leptons in $\sqrt{s} =$ 13TeV pp collisions with the ATLAS detector
+Experiment: ATLAS
+Collider: LHC
+Beams: [p+, p+]
+Energies: [13000.0]
+Luminosity: [[14.8 / fb, <Insert luminosity error here>]]
+Keywords: [<Add list of keywords here separated by a comma>]
+Status: UNVALIDATED
+InspireID: 1484570
+Authors:
+- Kazuki
+Description: 'A search for the electroweak production of charginos and neutralinos in final states with at least two hadronically decaying tau leptons is presented.
+    The analysis uses a dataset of proton$-$proton collisions corresponding to an integrated luminosity of 14.8 fb$^{-1}$, recorded with the ATLAS detector at the
+    Large Hadron Collider at a centre-of-mass energy of $\sqrt{s} =$ 13 TeV. No significant deviation from the Standard Model expectation is observed. Limits are
+    derived in scenarios of $\tilde\chi^+_1 \tilde\chi^-_1$ pair production and $\tilde\chi^\pm_1 \tilde\chi^0_2$ and $\tilde\chi^+_1 \tilde\chi^-_1$ associated production.
+    Common $\tilde\chi^\pm_1$-$\tilde\chi^0_2$ masses up to 580 and 700 GeV respectively are excluded at 95 % confidence level assuming a massless $\tilde\chi^0_1$.'
+References:
+- ATLAS-CONF-2016-093
+BibKey: ATLAS:2016ety
+BibTeX: |-
+    @article{ATLAS:2016ety,
+          author         = "The ATLAS collaboration",
+          title          = "{Search for electroweak production of supersymmetric
+                            particles in final states with tau leptons in $\sqrt{s} =$
+                            13TeV pp collisions with the ATLAS detector}",
+          collaboration  = "ATLAS",
+          year           = "2016",
+          reportNumber   = "ATLAS-CONF-2016-093",
+          SLACcitation   = "%%CITATION = ATLAS-CONF-2016-093;%%"
+    }
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibKey: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+- Fill Keywords (a non-exaustive list can be found in share/Atom/keyword_list.txt)
+- Implement analysis
+- Validate analysis
+- Fill the remaining information in the .info file
+- Add the reference for the implementation of this analysis once done
