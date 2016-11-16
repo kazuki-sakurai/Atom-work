@@ -126,7 +126,7 @@ namespace Atom {
 		void analyze(const Event& event) {
 
       const Particles& jets = applyProjection<NearIsoParticle>(event, "Jets").particlesByPt();
-      const Particles& large_jets = applyProjection<FastJets>(event, "Large_Jets").particlesByPt();      
+      //const Particles& large_jets = applyProjection<FastJets>(event, "Large_Jets").particlesByPt();      
       const Particles& leps = applyProjection<NearIsoParticle>(event, "Signal_Leptons").particlesByPt();
       const Particles& leps_cand = applyProjection<MergedFinalState>(event, "Candidate_Leptons").particlesByPt();            
       const HeavyFlavorJets& bjproj = applyProjection<HeavyFlavorJets>(event, "BJets");
