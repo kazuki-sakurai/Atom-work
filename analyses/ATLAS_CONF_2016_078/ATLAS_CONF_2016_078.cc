@@ -21,7 +21,6 @@ namespace Atom {
 
     ATLAS_CONF_2016_078()
       : Analysis("ATLAS_CONF_2016_078") {
-      setNeedsCrossSection(true);
     }
 
     /// @name Analysis methods
@@ -43,18 +42,18 @@ namespace Atom {
       jets.setEfficiencyParams( getJetEff( "Jet_Ident_PlaceHolder" ) );
 
       HeavyFlavorJets bjets(jets, Range(PT > 50. & abseta < 2.5));
-      bjets.setTaggingEfficiency( *getBJetEff("BJet_Ident_MV1_ATLAS") );
+      bjets.setTaggingParams( getBJetTag("BJet_Ident_MV1_ATLAS") );
       bjets.setCurrentWorkingPoint( 0.77 );
       addProjection(bjets, "BJets");
 
       IsoMuon mu_base(Range(PT > 10. & abseta < 2.5));
-      mu_base.addIso(TRACK_ISO_PT, 0.2,  0.18,  0.0, 0.01, CALO_ALL);
+      mu_base.addConeIso(TRACK_ISO_PT, 0.2,  0.18,  0.0, 0.01, CALO_ALL);
       mu_base.setSmearingParams  ( getMuonSim( "Muon_Smear_ID-MS_ATLAS" ) );
       mu_base.setEfficiencyParams( getMuonEff( "Muon_Ident_CB-ST_ATLAS" ) );
 
       
       IsoElectron ele_base( Range(PT > 10. & abseta < 2.47) );
-      ele_base.addIso(TRACK_ISO_PT, 0.2,  0.18,  0.0, 0.01, CALO_ALL);
+      ele_base.addConeIso(TRACK_ISO_PT, 0.2,  0.18,  0.0, 0.01, CALO_ALL);
       ele_base.setSmearingParams  ( getElectronSim( "Electron_Smear_run1_ATLAS" ) );
       ele_base.setEfficiencyParams( getElectronEff( "Electron_Ident_Loose_2012_ATLAS" ) );
 
@@ -73,10 +72,10 @@ namespace Atom {
       met.setSmearingParams( getMETSim( "MissingET_Smear_ETOnly_Grid_PlaceHolder" ) );
       addProjection(met, "MissingEt");
 
-      Sphericity sphr(fsbase);
+      //Sphericity sphr(fsbase);
       //Sphericity sphr(jets_clean);
       //Sphericity sphr;      
-      addProjection(sphr, "Sphericity");
+      //addProjection(sphr, "Sphericity");
 
       // Projection booking section -- do not edit/remove this comment
       /// @todo define projections (see examples and manual)
@@ -219,7 +218,7 @@ namespace Atom {
       double MET = met.pT();
       int Njet = jets.size();
       //double aplanarity = spher.aplanarity();
-      double aplanarity = 0;
+      double aplanarity = 1;
       //cout << aplanarity << endl;
 
       double meff_Nj[6] = {};
@@ -451,7 +450,7 @@ namespace Atom {
             if( cut( dPhiMin_4, CUT_GT, 0.2, "dPhiMin(i>3) > 0.2: 6j-1800" ) ){
               if( cut( aplanarity, CUT_GT, 0.08, "aplanarity > 0.08: 6j-1800" ) ){                      
                 if( cut( MET/meff_Nj[5], CUT_GT, 0.2, "MET/meffNj > 0.2: 6j-1800" ) ){
-                  fillPlot("Meff-6j-1000", meff_inc);                                      
+                  fillPlot("Meff-6j-1800", meff_inc);                                      
                   if( cut( meff_inc, CUT_GT, 1800., "meff_inc > 1800: 6j-1800" ) ){
                     pass("6j-1800");
                   }
@@ -484,11 +483,11 @@ namespace Atom {
       // Histogram normalization section -- do not edit/remove this comment
       /// @todo normalize the histograms
       // scale("Mjj");
-      scale("Meff-2j-800");
-      scale("Meff-2j-1600");
-      scale("Meff-4j-1000");
-      scale("Meff-4j-2200");
-      scale("Meff-6j-1800");
+      // scale("Meff-2j-800");
+      // scale("Meff-2j-1600");
+      // scale("Meff-4j-1000");
+      // scale("Meff-4j-2200");
+      // scale("Meff-6j-1800");
       // End finalize section -- do not edit/remove this comment
     }
 

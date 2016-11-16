@@ -127,8 +127,8 @@ namespace Atom {
 
       const Particles& jets = applyProjection<NearIsoParticle>(event, "Jets").particlesByPt();
       //const Particles& large_jets = applyProjection<FastJets>(event, "Large_Jets").particlesByPt();      
-      const Particles& leps = applyProjection<NearIsoParticle>(event, "Signal_Leptons").particlesByPt();
-      const Particles& leps_cand = applyProjection<MergedFinalState>(event, "Candidate_Leptons").particlesByPt();            
+      const Particles& leps = applyProjection<NearIsoParticle>(event, "Leptons").particlesByPt();
+      //const Particles& leps_cand = applyProjection<MergedFinalState>(event, "Candidate_Leptons").particlesByPt();            
       const HeavyFlavorJets& bjproj = applyProjection<HeavyFlavorJets>(event, "BJets");
       const Particles& bjets = bjproj.getTaggedJets(); 
       const Particles& untagged_jets = bjproj.getUntaggedJets(); 
@@ -170,9 +170,11 @@ namespace Atom {
       }  
 
       bool SS_lepton = false;
-      for(int i=0; i<leps.size()-1; i++){
-        for(int j=i+1; j<leps.size(); j++){
-          if( leps[j].pT() > 20. && leps[i].pdgId()*leps[j].pdgId() > 0 ) SS_lepton = true; 
+      if(leps.size() > 1){
+        for(int i=0; i<leps.size()-1; i++){
+          for(int j=i+1; j<leps.size(); j++){
+            if( leps[j].pT() > 20. && leps[i].pdgId()*leps[j].pdgId() > 0 ) SS_lepton = true; 
+          }
         }
       }
 
@@ -232,9 +234,11 @@ namespace Atom {
 
       //SR-DD
       bool DD_lepton = false;
-      for(int i=0; i<leps.size()-1; i++){
-        for(int j=i+1; j<leps.size(); j++){
-          if( leps[j].pT() > 20. && leps[i].pdgId() > 0 && leps[j].pdgId() > 0 ) DD_lepton = true; 
+      if(leps.size() > 1){      
+        for(int i=0; i<leps.size()-1; i++){
+          for(int j=i+1; j<leps.size(); j++){
+            if( leps[j].pT() > 20. && leps[i].pdgId() > 0 && leps[j].pdgId() > 0 ) DD_lepton = true; 
+          }
         }
       }
 
