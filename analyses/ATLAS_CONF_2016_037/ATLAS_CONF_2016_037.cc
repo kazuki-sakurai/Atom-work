@@ -20,7 +20,7 @@ namespace Atom {
 
 		ATLAS_CONF_2016_037()
 			: Analysis("ATLAS_CONF_2016_037") {
-			setNeedsCrossSection(true);
+			//setNeedsCrossSection(true);
 		}
 
 		/// @name Analysis methods
@@ -42,13 +42,13 @@ namespace Atom {
       jets.setEfficiencyParams( getJetEff( "Jet_Ident_PlaceHolder" ) );
 
       IsoMuon mu_base(Range(PT > 10. & abseta < 2.5));
-      mu_base.addIso(TRACK_ISO_PT, 0.3,  0.06,  0.0, 0.01, CALO_ALL);
+      mu_base.addConeIso(TRACK_ISO_PT, 0.3,  0.06,  0.0, 0.01, CALO_ALL);
       mu_base.setSmearingParams  ( getMuonSim( "Muon_Smear_ID-MS_ATLAS" ) );
       mu_base.setEfficiencyParams( getMuonEff( "Muon_Ident_CB-ST_ATLAS" ) );
 
       IsoElectron ele_base( Range(PT > 10.) & Range(abseta, 0., 2.47) - Range(abseta, 1.52, 1.37) );      
-      ele_base.addIso(TRACK_ISO_PT, 0.2,  0.06,  0.0, 0.01, CALO_ALL);
-      ele_base.addIso(CALO_ISO_ET, 0.2,  0.06,  0.0, 0.01, CALO_ALL);      
+      ele_base.addConeIso(TRACK_ISO_PT, 0.2,  0.06,  0.0, 0.01, CALO_ALL);
+      ele_base.addConeIso(CALO_ISO_ET, 0.2,  0.06,  0.0, 0.01, CALO_ALL);      
       ele_base.setSmearingParams  ( getElectronSim( "Electron_Smear_run1_ATLAS" ) );
       ele_base.setEfficiencyParams( getElectronEff( "Electron_Ident_Medium_2012_ATLAS" ) );
 
@@ -58,7 +58,7 @@ namespace Atom {
       addProjection(jets_clean, "Jets");
 
       HeavyFlavorJets bjets(jets_clean, Range(abseta < 2.5));
-      bjets.setTaggingEfficiency( *getBJetEff("BJet_Ident_MV1_ATLAS") );
+      bjets.setTaggingParams( getBJetTag("BJet_Ident_MV1_ATLAS") );
       bjets.setCurrentWorkingPoint( 0.7 );
       addProjection(bjets, "BJets");
 
