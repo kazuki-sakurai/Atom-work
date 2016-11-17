@@ -6,12 +6,12 @@ Experiment: ATLAS
 Collider: LHC
 Beams: [p+, p+]
 Energies: [13000.0]
-Luminosity: [[14.7 / fb, <Insert luminosity error here>]]
-Keywords: [<Add list of keywords here separated by a comma>]
+Luminosity: [[14.7 / fb, 2.9 percent ]]
+Keywords: [ JETS, MET, ON-Z, EDGE, LEPTONS ]
 Status: UNVALIDATED
 InspireID: 1487585
 Authors:
-- Kazuki
+- Kazuki Sakurai
 Description: 'Two searches for new phenomena in final states containing a same-flavour opposite-sign lepton (electron or muon) pair, jets, and large missing transverse
     momentum are presented. These searches make use of proton--proton collision data, collected during 2015 and 2016 at a centre-of-mass energy $\sqrt{s}=13$ TeV
     by the ATLAS detector at the Large Hadron Collider, which correspond to an integrated luminosity of 14.7 fb$^{-1}$. Both searches target the pair production of
