@@ -64,7 +64,7 @@ namespace Atom {
       ele_clean.addFilter(jets_clean, 0.4);
 
       NearIsoParticle mu_clean(mu);
-      mu_clean.addFilter(jets_clean, 0.2);
+      mu_clean.addFilter( bjets, 0.2);
 
       NearIsoParticle signal_jets(jets_clean);
       signal_jets.addFilter(mu_clean, 0.2);
