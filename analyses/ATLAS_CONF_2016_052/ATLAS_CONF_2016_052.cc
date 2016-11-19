@@ -20,7 +20,6 @@ namespace Atom {
 
 		ATLAS_CONF_2016_052()
 			: Analysis("ATLAS_CONF_2016_052") {
-			setNeedsCrossSection(true);
 		}
 
 		/// @name Analysis methods
@@ -48,17 +47,17 @@ namespace Atom {
       jets.setEfficiencyParams( getJetEff( "Jet_Ident_PlaceHolder" ) );
 
       HeavyFlavorJets bjets(jets, Range(PT > 20. & abseta < 2.5));
-      bjets.setTaggingEfficiency( *getBJetEff("BJet_Ident_MV1_ATLAS") );
+      bjets.setTaggingParams( getBJetTag("BJet_Ident_MV1_ATLAS") );
       bjets.setCurrentWorkingPoint( 0.77 );
       addProjection(bjets, "BJets");
 
       IsoMuon mu(Range(PT > 20. & abseta < 2.5));
-      mu.addIso(TRACK_ISO_PT, 0.2,  0.15,  0.0, 0.01, CALO_ALL);
+      mu.addConeIso(TRACK_ISO_PT, 0.2,  0.15,  0.0, 0.01, CALO_ALL);
       mu.setSmearingParams  ( getMuonSim( "Muon_Smear_ID-MS_ATLAS" ) );
       mu.setEfficiencyParams( getMuonEff( "Muon_Ident_CB-ST_ATLAS" ) );
       
       IsoElectron ele_base( Range(PT > 20. & abseta < 2.47) );
-      ele_base.addIso(TRACK_ISO_PT, 0.2,  0.15,  0.0, 0.01, CALO_ALL);
+      ele_base.addConeIso(TRACK_ISO_PT, 0.2,  0.15,  0.0, 0.01, CALO_ALL);
       ele_base.setSmearingParams  ( getElectronSim( "Electron_Smear_run1_ATLAS" ) );
 			NearIsoParticle ele_cand(ele_base);
       ele_cand.setEfficiencyParams( getElectronEff( "Electron_Ident_Loose_2012_ATLAS" ) );
@@ -94,7 +93,7 @@ namespace Atom {
 			bookEfficiency("SR-Gbb-A");
 			bookEfficiency("SR-Gbb-B");
 			bookEfficiency("SR-Gtt-0L-A");
-			bookEfficiency("SR-Gtt-0L-A");
+			bookEfficiency("SR-Gtt-0L-B");
 			bookEfficiency("SR-Gtt-1L-A");
 			bookEfficiency("SR-Gtt-1L-B");
 			bookEfficiency("SR-Gtt-1L-C");
@@ -119,7 +118,7 @@ namespace Atom {
       bookCut("MET > 400: SR-Gtt-0L(base)");
       bookCut("meff_inc > 2000: SR-Gtt-0L-A");
       bookCut("M_J > 200: SR-Gtt-0L-A");
-      bookCut("meff_inc > 1250: SR-Gtt-0L-A");
+      bookCut("meff_inc > 1250: SR-Gtt-0L-B");
       bookCut("Nlep(sig) >= 1: SR-Gtt-1L(base)");
       bookCut("Njet >= 6: SR-Gtt-1L(base)");
       bookCut("Nb >= 3: SR-Gtt-1L(A-B)");
@@ -267,8 +266,8 @@ namespace Atom {
 										}
 									}
 									// Gtt-0L-B
-									if( cut( meff_inc, CUT_GT, 1250, "meff_inc > 1250: SR-Gtt-0L-A" ) ){
-										pass("SR-Gtt-0L-A");
+									if( cut( meff_inc, CUT_GT, 1250, "meff_inc > 1250: SR-Gtt-0L-B" ) ){
+										pass("SR-Gtt-0L-B");
 									}
 								}
 							}
