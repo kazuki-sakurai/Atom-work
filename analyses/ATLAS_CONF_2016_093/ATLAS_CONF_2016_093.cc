@@ -10,6 +10,7 @@
 #include "Atom/Analysis.hh"
 // use the stock set or include only the projections you use from "include/Atom/Projections/" directory if compiling takes too long
 #include "Atom/Tools/CommonProjections.hh"
+#include "Rivet/Tools/RivetMT2.hh"
 
 using namespace std;
 
@@ -101,15 +102,22 @@ namespace Atom {
 
       // Efficiency booking section -- do not edit/remove this comment
       /// @todo book the efficiencies
+
       // bookEfficiency("SR1");
-      // bookEfficiency("SR2","Description of signal region 2 efficiency");
-      // bookEfficiency("CR1","Control region 1", true);
+      bookEfficiency("SR-C1C1");
+      bookEfficiency("SR-C1N2");
 
       // Cuts booking section -- do not edit/remove this comment
       /// @todo book the cuts
-      // bookCut("CutNJets");
-      // bookCut("CutPTJ1","description goes here");
-      // bookCut("CutEtaJet","this is a control region cut", true);
+      bookCut("pT(tau1) > 35");
+      bookCut("pT(tau2) > 25");
+      bookCut("ditau+MET trigger");
+      bookCut(">= 1 OS tah pair");
+      bookCut("bjet veto");
+      bookCut("Z veto");
+      bookCut("MET > 150");
+      bookCut("mT2 > 70");
+      bookCut("lepton veto: SR-C1C1");
 
       // End init section -- do not edit/remove this comment
     }
@@ -130,29 +138,59 @@ namespace Atom {
       double MET = met.pT();
 
       cout << taus.size() <<"  "<< bjets.size() << endl;
-      // Projection application section -- do not edit/remove this comment
-      /// @todo apply projections
-      // const Particles& jets = applyProjection< FastJets >(event, "Jets").particlesByPt(&event);
 
-      // Analysis body section -- do not edit/remove this comment
-      /// @todo apply cuts
-      // if(!cut(jets.size(), CUT_GT, 2, "CutNJets")) {
-      // 	vetoEvent;
-      // }
+      if( taus.size() < 2 ) vetoEvent;
 
-      // if(!cut(jets[0].pT(), CUT_GT, 50., "CutPTJ1")) {
-      // 	vetoEvent;
-      // }
+      bool pass_trigger = false;
+      if( cut( taus[0].pT(), CUT_GT, 35., "pT(tau1) > 35" ) ){
+        if( cut( taus[1].pT(), CUT_GT, 25., "pT(tau2) > 25" ) ){
+          if( cut( MET, CUT_GT, 50., "ditau+MET trigger" ) ){
+            pass_trigger = true;
+          }
+        }
+      }
 
-      // if(!cut(fabs(jets[0].eta()), CUT_OUT, make_pair(0.3,0.8), "CutEtaJet")) {
-      // 	vetoEvent;
-      // }
+      double min_diff_Mtata_mZtau = 10000.;
+      double min_M_taptam = 10000.;
+      int N_OStaupairs = 0; 
+      for(int i=0; i<taus.size()-1; i++){
+        for(int j=i+1; j<taus.size(); j++){
+          if( taus[i].charge() * taus[j].charge() < 0 ){
+            N_OStaupairs++;
+            double mdm = (taus[i].momentum() + taus[j].momentum()).mass();
+            if( mdm < min_M_taptam ){
+              min_M_taptam = mdm;
+            }
+            if( fabs(mdm - 79.) < min_diff_Mtata_mZtau ){
+              min_diff_Mtata_mZtau = mdm;
+            }            
+          }
+        }
+      }
 
-      /// @todo fill efficiencies
-      // pass("SR1");
+      if( cut( N_OStaupairs, CUT_GE, 1, ">= 1 OS tah pair" ) ){
+        if( cut( bjets.size(), CUT_EQ, 0, "bjet veto" ) ){
+          if( cut( min_diff_Mtata_mZtau, CUT_GT, 10., "Z veto" ) ){
+            if( cut( MET, CUT_GT, 150., "MET > 150" ) ){
 
-      /// @todo fill histograms 
-      // fillPlot("Meff", meff);
+
+              double minv = 0;
+              double mt2max = -1000.;
+              for(int i=0; i<taus.size()-1; i++){
+                for(int j=i+1; j<taus.size(); j++){
+                  double mt2 = Rivet::mT2::mT2(taus[i].momentum(), taus[j].momentum(), met, minv);
+                  if(mt2 > mt2max) mt2max = mt2;
+                }
+              }
+
+              if( cut( mt2max, CUT_GT, 70., "mT2 > 70" ) ){
+                pass("SR-C1N2");                
+                if( cut( leps.size(), CUT_EQ, 0, "lepton veto: SR-C1C1" ) ) pass("SR-C1C1");
+              }
+            }
+          }
+        }
+      }
 
       // End analyze section -- do not edit/remove this comment
     }
