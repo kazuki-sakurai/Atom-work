@@ -5,12 +5,12 @@ Experiment: ATLAS
 Collider: LHC
 Beams: [p+, p+]
 Energies: [13000.0]
-Luminosity: [[14.8 / fb, <Insert luminosity error here>]]
-Keywords: [<Add list of keywords here separated by a comma>]
+Luminosity: [[14.8 / fb, 2.9 percent ]]
+Keywords: [ MET, TAUS ]
 Status: UNVALIDATED
 InspireID: 1484570
 Authors:
-- Kazuki
+- Kazuki Sakurai
 Description: 'A search for the electroweak production of charginos and neutralinos in final states with at least two hadronically decaying tau leptons is presented.
     The analysis uses a dataset of proton$-$proton collisions corresponding to an integrated luminosity of 14.8 fb$^{-1}$, recorded with the ATLAS detector at the
     Large Hadron Collider at a centre-of-mass energy of $\sqrt{s} =$ 13 TeV. No significant deviation from the Standard Model expectation is observed. Limits are
