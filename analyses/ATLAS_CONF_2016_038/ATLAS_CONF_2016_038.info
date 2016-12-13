@@ -1,0 +1,42 @@
+Name: ATLAS_CONF_2016_038
+Year: 2016
+Summary: Search for direct top squark pair production in events with a $Z$ boson, $b$-jets and missing transverse momentum in $\sqrt{s}$=13 TeV $pp$ collisions with
+    the ATLAS detector
+Experiment: ATLAS
+Collider: LHC
+Beams: [p+, p+]
+Energies: [13000.0]
+Luminosity: [[13.3 / fb, <Insert luminosity error here>]]
+Keywords: [<Add list of keywords here separated by a comma>]
+Status: UNVALIDATED
+InspireID: 1479669
+Authors:
+- Seng Pei Liew
+Description: 'A search for direct top squark pair production resulting in events with at least three leptons, including a same-flavour opposite-sign pair with invariant
+    mass compatible with that of $Z$ boson, $b$-quark jets and missing transverse momentum is presented. The analysis is performed using proton-proton collision data
+    at $\sqrt{s}=13$ TeV collected with the ATLAS detector at the LHC in 2015-2016 corresponding to an integrated luminosity of 13.3 fb$^{-1}$. The results are interpreted
+    in models featuring direct pair production of the heavier top squark $\tilde{t}_{2}$ decaying to the lighter top squark $\tilde{t}_{1}$ via $\tilde{t}_{2} \rightarrow
+    Z \tilde{t}_{1}$.'
+References:
+- ATLAS-CONF-2016-038
+BibKey: ATLAS:2016tpc
+BibTeX: |-
+    @article{ATLAS:2016tpc,
+          author         = "The ATLAS collaboration",
+          title          = "{Search for direct top squark pair production in events
+                            with a $Z$ boson, $b$-jets and missing transverse momentum
+                            in $\sqrt{s}$=13 TeV $pp$ collisions with the ATLAS
+                            detector}",
+          collaboration  = "ATLAS",
+          year           = "2016",
+          reportNumber   = "ATLAS-CONF-2016-038",
+          SLACcitation   = "%%CITATION = ATLAS-CONF-2016-038;%%"
+    }
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibKey: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+- Fill Keywords (a non-exaustive list can be found in share/Atom/keyword_list.txt)
+- Implement analysis
+- Validate analysis
+- Fill the remaining information in the .info file
+- Add the reference for the implementation of this analysis once done

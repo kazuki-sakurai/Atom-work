@@ -1,0 +1,40 @@
+Name: ATLAS_CONF_2016_084
+Year: 2016
+Summary: A search for pair produced resonances in four jets final states in proton-proton collisions at $\sqrt{s}$=13 TeV with the ATLAS experiment
+Experiment: ATLAS
+Collider: LHC
+Beams: [p+, p+]
+Energies: [13000.0]
+Luminosity: [[15.4 / fb, <Insert luminosity error here>]]
+Keywords: [<Add list of keywords here separated by a comma>]
+Status: UNVALIDATED
+InspireID: 1480064
+Authors:
+- Seng Pei Liew
+Description: 'We present a search for the pair production of resonances, each decaying into two jets. The analysis uses 15.4 fb$^{-1}$ of proton-proton collision
+    data recorded at $\sqrt{s}$=13 TeV by the ATLAS experiment at the LHC in 2015 and 2016. No significant excess is observed above the background prediction. The
+    results are interpreted in a model with top squark pair production with R-parity violating decays into two quarks. Top squark masses between 250 and 405 GeV and
+    between 445 and 510 GeV are excluded at 95% confidence level. For the pair production of color octets with decays into two jets, masses from 250 to 1500 GeV are
+    excluded at 95% confidence level.'
+References:
+- ATLAS-CONF-2016-084
+BibKey: ATLAS:2016sfd
+BibTeX: |-
+    @article{ATLAS:2016sfd,
+          author         = "The ATLAS collaboration",
+          title          = "{A search for pair produced resonances in four jets final
+                            states in proton-proton collisions at $\sqrt{s}$=13 TeV
+                            with the ATLAS experiment}",
+          collaboration  = "ATLAS",
+          year           = "2016",
+          reportNumber   = "ATLAS-CONF-2016-084",
+          SLACcitation   = "%%CITATION = ATLAS-CONF-2016-084;%%"
+    }
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibKey: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+- Fill Keywords (a non-exaustive list can be found in share/Atom/keyword_list.txt)
+- Implement analysis
+- Validate analysis
+- Fill the remaining information in the .info file
+- Add the reference for the implementation of this analysis once done

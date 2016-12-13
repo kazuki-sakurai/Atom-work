@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/spliew/Desktop/tools/Atom_src/Atom-work/analyses/ATLAS_CONF_2016_076/ATLAS_CONF_2016_076.cc
+Atom/Analysis.hh
+/Users/spliew/Desktop/tools/Atom_src/Atom-work/analyses/ATLAS_CONF_2016_076/Atom/Analysis.hh
+Atom/Tools/CommonProjections.hh
+/Users/spliew/Desktop/tools/Atom_src/Atom-work/analyses/ATLAS_CONF_2016_076/Atom/Tools/CommonProjections.hh
+
