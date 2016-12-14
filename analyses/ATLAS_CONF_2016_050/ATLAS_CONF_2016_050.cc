@@ -1,6 +1,6 @@
 ///
-/// @file  <ANANAME>.cc
-/// @brief Implementation of <ANANAME> analysis
+/// @file  ATLAS_CONF_2016_050.cc
+/// @brief Implementation of ATLAS_CONF_2016_050 analysis
 /// @author Kazuki
 /// @date created 11/19/2016
 /// @date last revision 11/19/2016
@@ -15,12 +15,12 @@ using namespace std;
 
 namespace Atom {
 
-    class <ANANAME> : public Analysis {
+    class ATLAS_CONF_2016_050 : public Analysis {
     public:
 
-        <ANANAME>()
-            : Analysis("<ANANAME>") {
-            setNeedsCrossSection(true);
+        ATLAS_CONF_2016_050()
+            : Analysis("ATLAS_CONF_2016_050") {
+          //  setNeedsCrossSection(true);
         }
 
         /// @name Analysis methods
@@ -103,5 +103,5 @@ namespace Atom {
     };
 
     // This global object acts as a hook for the plugin system
-    AtomPlugin(<ANANAME>)
+    AtomPlugin(ATLAS_CONF_2016_050)
 }

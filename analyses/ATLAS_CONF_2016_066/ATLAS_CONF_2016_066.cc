@@ -96,6 +96,25 @@ namespace Atom {
             bookEfficiency("SRL");
             bookEfficiency("SRH");
 
+            bookCut("Nphoton > 0: base");
+
+            bookCut("photon[0].pt() > 145: SRL");
+            bookCut("Nleps = 0: SRL");
+            bookCut("Njet > 4: SRL");
+            bookCut("delta(j,met) > 0.4: SRL");
+            bookCut("delta(photon,met) > 0.4: SRL");
+            bookCut("MET > 200: SRL");
+            bookCut("meff > 2000: SRL");
+            bookCut("RT4 < 0.9 : SRL");
+
+
+            bookCut("photon[0].pt() > 400: SRH");
+            bookCut("Nleps = 0: SRH");
+            bookCut("Njet > 2: SRH");
+            bookCut("delta(j,met) > 0.4: SRH");
+            bookCut("delta(photon,met) > 0.4: SRH");
+            bookCut("MET > 400: SRH");
+            bookCut("meff > 2000: SRH");
             // Cuts booking section -- do not edit/remove this comment
             /// @todo book the cuts
             // bookCut("CutNJets");
@@ -124,11 +143,13 @@ namespace Atom {
             double MET = met.pT();
 
             // Analysis body section -- do not edit/remove this comment
-            if (photon.size()==0) vetoEvent;
-            if (photon[0].pT() <= 145) vetoEvent;
-            if (leps.size() > 0 ) vetoEvent;
-            if (jets.size() < 3) vetoEvent;
-            if (MET <= 200) vetoEvent;
+            if (!cut(photon.size(),CUT_GT, 0,"Nphoton > 0: base")) vetoEvent;
+
+         //   if (photon.size()==0) vetoEvent;
+         //   if (photon[0].pT() <= 145) vetoEvent;
+         //   if (leps.size() > 0 ) vetoEvent;
+         //   if (jets.size() < 3) vetoEvent;
+         //   if (MET <= 200) vetoEvent;
 
 
             double dPhimin= 1000;
@@ -139,7 +160,7 @@ namespace Atom {
                 if (dPhip < dPhimin) dPhimin = dPhip;
             }
 
-            if (dPhimin <= 0.4) vetoEvent;
+         //   if (dPhimin <= 0.4) vetoEvent;
 
             double HT= photon[0].pT();
             for(int i=0; i < jets.size(); i++){
@@ -148,30 +169,77 @@ namespace Atom {
 
             double meff= HT+MET;
 
-            if (meff <= 2000) vetoEvent;
+        //    if (meff <= 2000) vetoEvent;
 
 
             /// @todo fill efficiencies
 
             // SRL 
-
-            if (jets.size()> 4){
-                double RT4 = 0;
-                double ptj4 = 0;
-                double ptjall = 0;
-                for(int i=0; i < 4; i++){
-                ptj4 += jets[i].pT();
+            if (cut(photon[0].pT(),CUT_GT,145,"photon[0].pt() > 145: SRL")){
+                if (cut(leps.size(),CUT_EQ,0,"Nleps = 0: SRL")){
+                    if (cut(jets.size(),CUT_GT,4,"Njet > 4: SRL")){
+                            double dPhiminj= 1000;
+                                for(int i=0; i < 2; i++){
+                                    double dPhi= deltaPhi(jets[i].momentum(), met);
+                                    if (dPhi < dPhiminj) dPhiminj = dPhi;
+                            }
+                            double dPhiminp= 1000;
+                            double dPhip= deltaPhi(photon[0].momentum(), met);
+                                if (dPhip < dPhiminp) dPhiminp = dPhip;                        
+                        if (cut(dPhiminj,CUT_GT,0.4,"delta(j,met) > 0.4: SRL")){
+                            if (cut(dPhiminp,CUT_GT,0.4,"delta(photon,met) > 0.4: SRL")){
+                                if (cut(MET,CUT_GT,200,"MET > 200: SRL")){
+                                    if (cut(meff,CUT_GT,2000,"meff > 2000: SRL")){
+                                        double RT4 = 0;
+                                           double ptj4 = 0;
+                                           double ptjall = 0;
+                                           for(int i=0; i < 4; i++){
+                                           ptj4 += jets[i].pT();
+                                       }
+                                           for(int i=0; i < jets.size(); i++){
+                                           ptjall += jets[i].pT();
+                                       }
+                                           RT4 = ptj4/ptjall;
+                                        if (cut(RT4,CUT_LT,0.9,"RT4 < 0.9 : SRL")){
+                                            pass ("SRL");
+                                        }
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                }
             }
-                for(int i=0; i < jets.size(); i++){
-                ptjall += jets[i].pT();
-            }
-                RT4 = ptj4/ptjall;
-                if (RT4 < 0.90) pass("SRL");
+            
+
+
+          if (cut(photon[0].pT(),CUT_GT,400,"photon[0].pt() > 400: SRH")){
+                if (cut(leps.size(),CUT_EQ,0,"Nleps = 0: SRH")){
+                    if (cut(jets.size(),CUT_GT,4,"Njet > 4: SRH")){
+                            double dPhiminj= 1000;
+                                for(int i=0; i < 2; i++){
+                                    double dPhi= deltaPhi(jets[i].momentum(), met);
+                                    if (dPhi < dPhiminj) dPhiminj = dPhi;
+                            }
+                            double dPhiminp= 1000;
+                            double dPhip= deltaPhi(photon[0].momentum(), met);
+                                if (dPhip < dPhiminp) dPhiminp = dPhip;                        
+                        if (cut(dPhiminj,CUT_GT,0.4,"delta(j,met) > 0.4: SRH")){
+                            if (cut(dPhiminp,CUT_GT,0.4,"delta(photon,met) > 0.4: SRH")){
+                                if (cut(MET,CUT_GT,400,"MET > 400: SRH")){
+                                    if (cut(meff,CUT_GT,2000,"meff > 2000: SRH")){
+                                        
+                                            pass("SRH");
+                                        
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                }
             }
 
-            // SRH
 
-            if (photon[0].pT() > 400 and MET >400) pass("SRH");
 
             /// @todo fill histograms 
             // fillPlot("Meff", meff);

@@ -98,6 +98,25 @@ namespace Atom {
             // bookCut("CutNJets");
             // bookCut("CutPTJ1","description goes here");
             // bookCut("CutEtaJet","this is a control region cut", true);
+            bookCut("mll: base");
+            bookCut("leps[0].pt() > 40: base");
+
+            bookCut("jets[0].pt() > 60: SRL");
+            bookCut("Nbjet >= 1: SRL");
+            bookCut("Njet >= 6: SRL");
+            bookCut("MET > 100: SRL");
+
+            bookCut("jets[0].pt() > 100: SRH");
+            bookCut("Nbjet >= 1: SRH");
+            bookCut("Njet >= 5: SRH");
+            bookCut("MET > 100: SRH");
+            bookCut("ptll > 200: SRH");
+
+            bookCut("jets[0].pt() > 80: SRE");
+            bookCut("Nbjet >= 1: SRE");
+            bookCut("Njet >= 5: SRE");
+            bookCut("MET > 100: SRE");
+            bookCut("ptll > 100: SRE");
 
             // End init section -- do not edit/remove this comment
         }
@@ -123,10 +142,14 @@ namespace Atom {
             int Nlep = leps.size();
             int Ne = eles.size();
             int Nm = mus.size();
-            if (Nlep < 2) vetoEvent;
-            if (leps[0].pT() <= 40) vetoEvent;
-            if (bjets.size() == 0) vetoEvent;
-            if (MET <= 100) vetoEvent;
+            int Njet = jets.size();
+
+            if (Njet < 1) vetoEvent;
+        //    if (Nlep < 2) vetoEvent;
+
+        //    if (leps[0].pT() <= 40) vetoEvent;
+        //    if (bjets.size() == 0) vetoEvent;
+        //    if (MET <= 100) vetoEvent;
 
             bool SFOS = false;
             double minve = -1;
@@ -144,17 +167,50 @@ namespace Atom {
             if (minve < 106.2 and minve > 76.2) SFOS = true;
             if (minvm < 106.2 and minvm > 76.2) SFOS = true;
 
-            if (!SFOS) vetoEvent;
+            bool ptll = false;
+            if (ptee > 100 or ptmm > 100) ptll = true;
+            //if (!SFOS) vetoEvent;
+
+            if (!cut(SFOS,"mll: base")) vetoEvent;
+            if (!cut(leps[0].pT(),CUT_GT, 40,"leps[0].pt() > 40: base")) vetoEvent;
 
             //SR
 
-            if (jets.size() > 5 and jets[0].pT() > 60 and MET > 100) pass("SRL");
-            if (jets.size() > 4 and jets[0].pT() > 100 and MET > 100) {
-                if (ptee > 200 or ptmm > 200) pass("SRH");
+            if (cut(jets[0].pT(),CUT_GT,60,"jets[0].pt() > 60: SRL")){
+                if (cut(bjets.size(),CUT_GE,1,"Nbjet >= 1: SRL")){
+                    if (cut(Njet,CUT_GE,6,"Njet >= 6: SRL")){
+                        if (cut(MET,CUT_GT,100,"MET > 100: SRL")) pass ("SRL");
+                    }
+                }
             }
-            if (jets.size() > 4 and jets[0].pT() > 80 and MET > 100) {
-                if (ptee > 100 or ptmm > 100) pass("SRE");
+
+            if (cut(jets[0].pT(),CUT_GT,100,"jets[0].pt() > 100: SRH")){
+                if (cut(bjets.size(),CUT_GE,1,"Nbjet >= 1: SRH")){
+                    if (cut(Njet,CUT_GE,5,"Njet >= 5: SRH")){
+                        if (cut(MET,CUT_GT,200,"MET > 200: SRH")){
+                            if (cut(ptll,"MEptll > 100: SRH")) pass ("SRH");
+                        } 
+                    }
+                }
             }
+
+            if (cut(jets[0].pT(),CUT_GT,80,"jets[0].pt() > 80: SRE")){
+                if (cut(bjets.size(),CUT_GE,1,"Nbjet >= 1: SRE")){
+                    if (cut(Njet,CUT_GE,5,"Njet >= 5: SRE")){
+                        if (cut(MET,CUT_GT,100,"MET > 100: SRE")){
+                            if (cut(ptll,"ptll > 100: SRE")) pass ("SRE");
+                        } 
+                    }
+                }
+            }
+
+   //         if (jets.size() > 5 and jets[0].pT() > 60 and MET > 100) pass("SRL");
+   //         if (jets.size() > 4 and jets[0].pT() > 100 and MET > 100) {
+   //             if (ptee > 200 or ptmm > 200) pass("SRH");
+    //        }
+    //        if (jets.size() > 4 and jets[0].pT() > 80 and MET > 100) {
+     //           if (ptee > 100 or ptmm > 100) pass("SRE");
+      //      }
 
 
             // if(!cut(jets[0].pT(), CUT_GT, 50., "CutPTJ1")) {

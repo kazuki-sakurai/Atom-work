@@ -132,13 +132,104 @@ namespace Atom {
 			bookEfficiency("GG6J-bulk");
 			bookEfficiency("GG6J-high-mass");
 			bookEfficiency("GG4J-high-x");
+      bookEfficiency("GG4J-low-x-b-veto");
 			bookEfficiency("GG4J-low-x");
-			bookEfficiency("GG4J-low-x-b-veto");
 			bookEfficiency("SS4J-x=1/2");
 			bookEfficiency("SS5J-x=1/2");
 			bookEfficiency("SS4J-low-x");
 			bookEfficiency("SS5J-high-x");
      	//================================// 
+
+      bookCut("Nlep = 1 : base");
+      bookCut("lepton pt cut: SS base");
+
+      bookCut("lepton pt cut : GG2J");
+      bookCut("Njet >= 2 : GG2J");
+      bookCut("jets[0].pt() > 200 : GG2J");
+      bookCut("jets[1].pt() > 30 : GG2J");
+      bookCut("mT > 100 : GG2J");
+      bookCut("MET > 460 : GG2J");
+      bookCut("MET/minc_eff > 0.35: GG2J");
+
+      bookCut("lepton pt cut : GG6J-bulk");
+      bookCut("Njet >= 6 : GG6J-bulk");
+      bookCut("jets[0].pt() > 125 : GG6J-bulk");
+      bookCut("jet2/3 pt > 30 : GG6J-bulk");
+      bookCut("jets[3].pt() > 30 : GG6J-bulk");
+      bookCut("jet5/6 pt > 30 : GG6J-bulk");
+      bookCut("mT > 225 : GG6J-bulk");
+      bookCut("MET > 250 : GG6J-bulk");
+      bookCut("meff_inc > 1000: GG6J-bulk");
+      bookCut("MET/meff_inc > 0.2: GG6J-bulk");
+      bookCut("jet aplanarity > 0.04: GG6J-bulk");
+
+      bookCut("lepton pt cut : GG6J-high-mass");
+      bookCut("Njet >= 6 : GG6J-high-mass");
+      bookCut("jets[0].pt() > 125 : GG6J-high-mass");
+      bookCut("jet2/3 pt > 30 : GG6J-high-mass");
+      bookCut("jets[3].pt() > 30 : GG6J-high-mass");
+      bookCut("jet5/6 pt > 30 : GG6J-high-mass");
+      bookCut("mT > 225 : GG6J-high-mass");
+      bookCut("MET > 250 : GG6J-high-mass");
+      bookCut("meff_inc > 1000: GG6J-high-mass");
+      bookCut("MET/meff_inc > 0.1: GG6J-high-mass");
+      bookCut("jet aplanarity > 0.04: GG6J-high-mass");
+      bookCut("GG6J-high-mass");
+
+      bookCut("lepton pt cut : GG4j-low-x");
+      bookCut("Njet >= 4 : GG4j-low-x");
+      bookCut("jets[0].pt() > 100 : GG4j-low-x");
+      bookCut("jet2/3 pt > 100 : GG4j-low-x");
+      bookCut("jets[3].pt() > 100 : GG4j-low-x");
+      bookCut("mT > 125 : GG4j-low-x");
+      bookCut("MET > 250 : GG4j-low-x");
+      bookCut("meff_inc > 2000: GG4j-low-x");
+      bookCut("jet aplanarity > 0.06: GG4j-low-x");
+
+      bookCut("lepton pt cut : GG4j-high-x");
+      bookCut("Njet >= 4 : GG4j-high-x");
+      bookCut("jets[0].pt() > 400 : GG4j-high-x");
+      bookCut("jet2/3 pt > 100 : GG4j-high-x");
+      bookCut("jets[3].pt() [30,100] : GG4j-high-x");
+      bookCut("mT > 475 : GG4j-high-x");
+      bookCut("MET > 250 : GG4j-high-x");
+      bookCut("meff_inc > 1600: GG4j-high-x");
+      bookCut("MET/meff_inc > 0.1: GG4j-high-x");
+
+      bookCut("Njet >= 4 : SS4J-x=1/2");
+      bookCut("jet1/2 pt > 50 : SS4J-x=1/2");
+      bookCut("jet3/4 pt > 50 : SS4J-x=1/2");
+      bookCut("bjet veto: SS4J-x=1/2");
+      bookCut("mT > 175 : SS4J-x=1/2");
+      bookCut("MET > 300 : SS4J-x=1/2");
+      bookCut("meff_inc > 1200: SS4J-x=1/2");
+      bookCut("lepton aplanarity > 0.08: SS4J-x=1/2");
+
+      bookCut("Njet >= 4 : SS4J-low-x");
+      bookCut("jet1/2 pt > 250 : SS4J-low-x");
+      bookCut("jet3/4 pt > 30 : SS4J-low-x");
+      bookCut("bjet veto: SS4J-low-x");
+      bookCut("mT [150,400] : SS4J-low-x");
+      bookCut("MET > 250 : SS4J-low-x");
+      bookCut("lepton aplanarity > 0.03: SS4J-low-x");
+
+      bookCut("Njet >= 5 : SS5J-x=1/2");
+      bookCut("jet1/2 pt > 50 : SS5J-x=1/2");
+      bookCut("jet3/4 pt > 50 : SS5J-x=1/2");
+      bookCut("jets[4].pT() > 50 : SS5J-x=1/2");
+      bookCut("bjet veto: SS5J-x=1/2");
+      bookCut("mT > 175 : SS5J-x=1/2");
+      bookCut("MET > 300 : SS5J-x=1/2");
+      bookCut("MET/meff_inc > 0.1: SS5J-x=1/2");
+
+      bookCut("Njet >= 5 : SS5J-high-x");
+      bookCut("jet1/2 pt > 30 : SS5J-high-x");
+      bookCut("jet3/4 pt > 30 : SS5J-high-x");
+      bookCut("jets[4].pT() > 30 : SS5J-high-x");
+      bookCut("bjet veto: SS5J-high-x");
+      bookCut("mT > 400 : SS5J-high-x");
+      bookCut("MET > 300 : SS5J-high-x");
+      bookCut("lepton aplanarity > 0.03: SS5J-high-x");
 			// End init section -- do not edit/remove this comment
       bookHisto1D("GG2JMET", 6, 250, 670, "GG2JMET", "MET", "Arbitrary");
       bookHisto1D("GG6J-bulkMT", 6, 65, 545, "GG6J-bulkMT", "MT", "Arbitrary");
@@ -178,7 +269,7 @@ namespace Atom {
       // int N_J = large_jets.size();
       // temporary
 
-      if (Nlep != 1) vetoEvent; 
+      if (!cut(Nlep,CUT_EQ,1,"Nlep = 1 : base")) vetoEvent; 
       		
       double mT = -100;
      	mT = get_mT(leps[0].momentum(), met);
@@ -192,57 +283,252 @@ namespace Atom {
 			double aplan_lep = 1;
 
 		  //GG2J
-      if(Njet >1 and leps[0].pT() <= 35.){
-      	if(jets[0].pT()>200 and jets[1].pT()>30 and mT >100 and MET >460 and MET/meff_inc > 0.35) pass("GG2J");
+      if(cut(leps[0].pT(),CUT_LE,35,"lepton pt cut : GG2J")){
+        if(cut(Njet,CUT_GT,1,"Njet >= 2 : GG2J")){
+          if(cut(jets[0].pT(),CUT_GT,200,"jets[0].pt() > 200 : GG2J")){
+            if(cut(jets[1].pT(),CUT_GT,30,"jets[1].pt() > 30 : GG2J")){
+              if(cut(mT,CUT_GT,100,"mT > 100 : GG2J")){
+                if(cut(MET,CUT_GT,460,"MET > 460 : GG2J")){
+                  if(cut(MET/meff_inc,CUT_GT,0.35,"MET/meff_inc > 0.35: GG2J")){
+                    pass("GG2J");
+                  }
+                }
+              }
+            }
+          }
+        }
       }
+     
 
       //GG6J
-    	if(Njet >5 and leps[0].pT() > 35. and jets[0].pT()>125 and jets[1].pT()>30 and jets[2].pT()>30 and jets[3].pT()>30 and jets[4].pT()>30 and jets[5].pT()>30 and mT>225 and MET > 250 and aplan_jet > 0.04){
-      	
-        if(meff_inc > 1000 and MET/meff_inc > 0.2){ 
-          pass("GG6J-bulk");
-        }
-        if(meff_inc > 2000 and MET/meff_inc > 0.1){
-          pass("GG6J-high-mass");
-        }
-
-      }
-      	
-      //GG4j
-      if(Njet > 3 and jets[0].pT()> 100){
-        if(  jets[1].pT()> 100 and jets[2].pT()>100 and jets[3].pT()>100 and mT > 125 and MET > 250 and meff_inc > 2000){
-          //aplanarity
-          if(Nb==0 and aplan_jet > 0.03){
-            pass("GG4J-low-x-b-veto");
+      if(cut(leps[0].pT(),CUT_GT,35,"lepton pt cut : GG6J-bulk")){
+        if(cut(Njet,CUT_GT,5,"Njet >= 6 : GG6J-bulk")){
+          if(cut(jets[0].pT(),CUT_GT,125,"jets[0].pt() > 125 : GG6J-bulk")){
+            bool jet23pt = false;
+            if(jets[1].pT()>30 and jets[2].pT()>30) jet23pt = true;
+            if(cut(jet23pt,"jet2/3 pt > 30 : GG6J-bulk")){
+              if(cut(jets[3].pT(),CUT_GT,30,"jets[3].pt() > 30 : GG6J-bulk")){
+                bool jet56pt = false;
+                if(jets[4].pT()>30 and jets[5].pT()>30) jet56pt = true;
+                if(cut(jet56pt,"jet5/6 pt > 30 : GG6J-bulk")){
+                  if(cut(mT,CUT_GT,225,"mT > 225 : GG6J-bulk")){
+                    if(cut(MET,CUT_GT,250,"MET > 250 : GG6J-bulk")){
+                      if(cut(meff_inc,CUT_GT,1000,"meff_inc > 1000: GG6J-bulk")){
+                      if(cut(MET/meff_inc,CUT_GT,0.2,"MET/meff_inc > 0.2: GG6J-bulk")){
+                        if(cut(aplan_jet,CUT_GT,0.04,"jet aplanarity > 0.04: GG6J-bulk")){
+                        pass("GG6J-bulk");
+                      }
+                    }  
+                  }
+                }
+              }
+            }
           }
-          if( aplan_jet > 0.06){
-            pass("GG4J-low-x");
-          }
-        }
-        if (leps[0].pT() > 35 and jets[0].pT()> 400 and jets[1].pT() > 30 and jets[2].pT() > 30 and jets[2].pT() < 100 and mT > 475 and MET > 250 and meff_inc > 1600 and MET/meff_inc > 0.3){
-          pass("GG4J-high-x");
         }
       }
-      				
-    	//SS4j
-    	if(Nb==0 and Njet > 3 and jets[0].pT()> 50 and leps[0].pT() > 35){
-    		if(  jets[1].pT()> 50 and jets[2].pT()>50 and jets[3].pT()>50 and mT > 175 and MET > 300 and meff_inc > 1200 and aplan_lep > 0.08){
-    			pass("SS4J-x=1/2");
-    		}
-    		if( jets[0].pT()> 250 and jets[1].pT()> 250 and jets[2].pT()> 30 and jets[3].pT()>30 and mT > 150 and mT < 400 and MET > 250  and aplan_lep > 0.03){
-    			pass("SS4J-low-x");
-    		}
-    	}
+    }
+  }
 
-    	//SS5j
-    	if(Nb==0 and Njet > 4 and jets[0].pT()> 30 and jets[1].pT()> 30 and jets[2].pT()> 30 and jets[3].pT()> 30 and jets[4].pT()> 30 and leps[0].pT() > 35){
-    		if(jets[0].pT()> 50 and jets[1].pT()> 50 and jets[2].pT()>50 and jets[3].pT()>50 and jets[4].pT()>50 and mT > 175 and MET > 300 and MET/meff_inc > 0.2 ){
-          pass("SS5J-x=1/2");
-    		}
-    		if( mT > 400 and MET > 400  and aplan_lep > 0.03){
-          pass("SS5J-high-x");
-    		}
-    	}
+  if(cut(leps[0].pT(),CUT_GT,35,"lepton pt cut : GG6J-high-mass")){
+        if(cut(Njet,CUT_GT,5,"Njet >= 6 : GG6J-high-mass")){
+          if(cut(jets[0].pT(),CUT_GT,125,"jets[0].pt() > 125 : GG6J-high-mass")){
+            bool jet23pt = false;
+            if(jets[1].pT()>30 and jets[2].pT()>30) jet23pt = true;
+            if(cut(jet23pt,"jet2/3 pt > 30 : GG6J-high-mass")){
+              if(cut(jets[3].pT(),CUT_GT,30,"jets[3].pt() > 30 : GG6J-high-mass")){
+                bool jet56pt = false;
+                if(jets[4].pT()>30 and jets[5].pT()>30) jet56pt = true;
+                if(cut(jet56pt,"jet5/6 pt > 30 : GG6J-high-mass")){
+                  if(cut(mT,CUT_GT,225,"mT > 225 : GG6J-high-mass")){
+                    if(cut(MET,CUT_GT,250,"MET > 250 : GG6J-high-mass")){
+                      if(cut(meff_inc,CUT_GT,1000,"meff_inc > 1000: GG6J-high-mass")){
+                      if(cut(MET/meff_inc,CUT_GT,0.1,"MET/meff_inc > 0.1: GG6J-high-mass")){
+                        if(cut(aplan_jet,CUT_GT,0.04,"jet aplanarity > 0.04: GG6J-high-mass")){
+                        pass("GG6J-high-mass");
+                      }
+                    }  
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+    	      //GG4j
+
+  if(cut(leps[0].pT(),CUT_GT,6,"lepton pt cut : GG4j-low-x")){
+        if(cut(Njet,CUT_GT,3,"Njet >= 4 : GG4j-low-x")){
+          if(cut(jets[0].pT(),CUT_GT,100,"jets[0].pt() > 100 : GG4j-low-x")){
+            bool jet23pt = false;
+            if(jets[1].pT()>100 and jets[2].pT()>100) jet23pt = true;
+            if(cut(jet23pt,"jet2/3 pt > 100 : GG4j-low-x")){
+              if(cut(jets[3].pT(),CUT_GT,100,"jets[3].pt() > 100 : GG4j-low-x")){           
+                  if(cut(mT,CUT_GT,125,"mT > 125 : GG4j-low-x")){
+                    if(cut(MET,CUT_GT,250,"MET > 250 : GG4j-low-x")){
+                      if(cut(meff_inc,CUT_GT,2000,"meff_inc > 2000: GG4j-low-x")){
+                        if(cut(aplan_jet,CUT_GT,0.06,"jet aplanarity > 0.06: GG4j-low-x")){
+                        pass("GG4j-low-x");                   
+                   
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+    if(cut(leps[0].pT(),CUT_GT,6,"lepton pt cut : GG4j-low-x-b-veto")){
+        if(cut(Njet,CUT_GT,3,"Njet >= 4 : GG4j-low-x-b-veto")){
+          if(cut(jets[0].pT(),CUT_GT,100,"jets[0].pt() > 100 : GG4j-low-x-b-veto")){
+            bool jet23pt = false;
+            if(jets[1].pT()>100 and jets[2].pT()>100) jet23pt = true;
+            if(cut(jet23pt,"jet2/3 pt > 100 : GG4j-low-x-b-veto")){
+              if(cut(jets[3].pT(),CUT_GT,100,"jets[3].pt() > 100 : GG4j-low-x-b-veto")){   
+                if(cut(Nb,CUT_EQ,0,"bjet veto: GG4J-low-x-b-veto")){        
+                  if(cut(mT,CUT_GT,125,"mT > 125 : GG4j-low-x-b-veto")){
+                    if(cut(MET,CUT_GT,250,"MET > 250 : GG4j-low-x-b-veto")){
+                      if(cut(meff_inc,CUT_GT,2000,"meff_inc > 2000: GG4j-low-x-b-veto")){
+                        if(cut(aplan_jet,CUT_GT,0.06,"jet aplanarity > 0.06: GG4j-low-x-b-veto")){
+                        pass("GG4j-low-x-b-veto");                   
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  if(cut(leps[0].pT(),CUT_GT,35,"lepton pt cut : GG4j-high-x")){
+        if(cut(Njet,CUT_GT,3,"Njet >= 4 : GG4j-high-x")){
+          if(cut(jets[0].pT(),CUT_GT,400,"jets[0].pt() > 400 : GG4j-high-x")){
+            bool jet23pt = false;
+            if(jets[1].pT()>30 and jets[2].pT()>30) jet23pt = true;
+            if(cut(jet23pt,"jet2/3 pt > 100 : GG4j-high-x")){
+              if(cut(jets[3].pT(),CUT_IN,make_pair(30.,100.),"jets[3].pt() [30,100] : GG4j-high-x")){           
+                  if(cut(mT,CUT_GT,475,"mT > 475 : GG4j-high-x")){
+                    if(cut(MET,CUT_GT,250,"MET > 250 : GG4j-high-x")){
+                      if(cut(meff_inc,CUT_GT,1600,"meff_inc > 1600: GG4j-high-x")){
+                        if(cut(MET/meff_inc,CUT_GT,0.3,"MET/meff_inc > 0.1: GG4j-high-x")){
+                        pass("GG4j-high-x");                   
+                   
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+      
+
+if (cut(leps[0].pT(),CUT_GT,35,"lepton pt cut : SS base")){
+
+      //SS4j
+
+  if(cut(Njet,CUT_GT,3,"Njet >= 4 : SS4J-x=1/2")){
+          
+            bool jet12pt = false;
+            if(jets[0].pT()>50 and jets[1].pT()>50) jet12pt = true;
+            if(cut(jet12pt,"jet1/2 pt > 50 : SS4J-x=1/2")){
+              bool jet34pt = false;
+            if(jets[2].pT()>50 and jets[3].pT()>50) jet34pt = true;
+              if(cut(jet34pt,"jet3/4 pt > 50 : SS4J-x=1/2")){
+                if (cut(Nb,CUT_EQ,0,"bjet veto: SS4J-x=1/2")){
+                  if(cut(mT,CUT_GT,175,"mT > 175 : SS4J-x=1/2")){
+                    if(cut(MET,CUT_GT,300,"MET > 300 : SS4J-x=1/2")){
+                      if(cut(meff_inc,CUT_GT,1200,"meff_inc > 1200: SS4J-x=1/2")){
+                        if(cut(aplan_lep,CUT_GT,0.08,"lepton aplanarity > 0.08: SS4J-x=1/2")){
+                        pass("SS4J-x=1/2");                   
+                   
+                  
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+  if(cut(Njet,CUT_GT,3,"Njet >= 4 : SS4J-low-x")){
+          
+            bool jet12pt = false;
+            if(jets[0].pT()>250 and jets[1].pT()>250) jet12pt = true;
+            if(cut(jet12pt,"jet1/2 pt > 250 : SS4J-low-x")){
+              bool jet34pt = false;
+            if(jets[2].pT()>30 and jets[3].pT()>30) jet34pt = true;
+              if(cut(jet34pt,"jet3/4 pt > 30 : SS4J-low-x")){
+                if (cut(Nb,CUT_EQ,0,"bjet veto: SS4J-low-x")){
+                  if(cut(mT,CUT_IN,make_pair(150,400),"mT [150,400] : SS4J-low-x")){
+                    if(cut(MET,CUT_GT,250,"MET > 250 : SS4J-low-x")){
+                        if(cut(aplan_lep,CUT_GT,0.03,"lepton aplanarity > 0.03: SS4J-low-x")){
+                        pass("SS4J-low-x");                   
+                   
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+  
+      //SS5j
+  if(cut(Njet,CUT_GT,4,"Njet >= 5 : SS5J-x=1/2")){
+          
+            bool jet12pt = false;
+            if(jets[0].pT()>50 and jets[1].pT()>50) jet12pt = true;
+            if(cut(jet12pt,"jet1/2 pt > 50 : SS5J-x=1/2")){
+              bool jet34pt = false;
+            if(jets[2].pT()>50 and jets[3].pT()>50) jet34pt = true;
+              if(cut(jet34pt,"jet3/4 pt > 50 : SS5J-x=1/2")){
+                if(cut(jets[4].pT(),CUT_GT,50,"jets[4].pT() > 50 : SS5J-x=1/2")){
+                if (cut(Nb,CUT_EQ,0,"bjet veto: SS5J-x=1/2")){
+                  if(cut(mT,CUT_GT,175,"mT > 175 : SS5J-x=1/2")){
+                    if(cut(MET,CUT_GT,300,"MET > 300 : SS5J-x=1/2")){
+                        if(cut(MET/meff_inc,CUT_GT,0.2,"MET/meff_inc > 0.1: SS5J-x=1/2")){
+                        pass("SS5J-x=1/2");                   
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+    if(cut(Njet,CUT_GT,4,"Njet >= 5 : SS5J-high-x")){
+          
+            bool jet12pt = false;
+            if(jets[0].pT()>30 and jets[1].pT()>30) jet12pt = true;
+            if(cut(jet12pt,"jet1/2 pt > 30 : SS5J-high-x")){
+              bool jet34pt = false;
+            if(jets[2].pT()>30 and jets[3].pT()>30) jet34pt = true;
+              if(cut(jet34pt,"jet3/4 pt > 30 : SS5J-high-x")){
+                if(cut(jets[4].pT(),CUT_GT,30,"jets[4].pT() > 30 : SS5J-high-x")){
+                if (cut(Nb,CUT_EQ,0,"bjet veto: SS5J-high-x")){
+                  if(cut(mT,CUT_GT,400,"mT > 400 : SS5J-high-x")){
+                    if(cut(MET,CUT_GT,300,"MET > 300 : SS5J-high-x")){
+                        if(cut(aplan_lep,CUT_GT,0.03,"lepton aplanarity > 0.03: SS5J-high-x")){
+                        pass("SS5J-high-x");                   
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+}     				
+    	
 			// Projection application section -- do not edit/remove this comment
       /// @todo apply projections
 			// const Particles& jets = applyProjection< FastJets >(event, "Jets").particlesByPt(&event);
