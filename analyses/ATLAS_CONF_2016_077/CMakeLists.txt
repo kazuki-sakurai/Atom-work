@@ -95,7 +95,7 @@ ENDIF(APPLE)
 
 # set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${ROOT_CPPFLAGS}")
 
-set (Atom_Libraries AtomBase AtomCore AtomProjections AtomSimulation DetectorYaml AtomTools RivetTools /usr/local/lib/libHepMC.dylib -Wl,-rpath,/usr/local/Cellar/fastjet/3.2.0/lib -lm -L/usr/local/Cellar/fastjet/3.2.0/lib -lfastjettools -lfastjet -lfastjetplugins -lsiscone_spherical -lsiscone /usr/local/Cellar/yoda/1.6.1/lib/libYODA.dylib)
+set (Atom_Libraries AtomBase AtomCore AtomProjections AtomSimulation DetectorYaml AtomTools RivetTools /usr/local/lib/libHepMC.dylib -Wl,-rpath,/usr/local/Cellar/fastjet/3.1.0/lib -lm -L/usr/local/Cellar/fastjet/3.1.0/lib -lfastjettools -lfastjet -lfastjetplugins -lsiscone_spherical -lsiscone /usr/local/Cellar/yoda/1.5.9/lib/libYODA.dylib)
 function (new_ana name)
   add_library(Atom_${name} SHARED ${name}.cc)
   file(READ ${name}.cc Atom_${name}_source)
