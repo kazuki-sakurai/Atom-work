@@ -1,0 +1,804 @@
+# Atom ver. 0.9 yaml output
+# Contains Cuts and Efficiencies
+Atom Run Info:
+  Processed Files:
+    - /var/folders/s4/vvrdc1n15q5cg0z52v_7qz200000gp/T/tmp1VTwLR/myfifo
+  Processed Events: 619
+  Used Settings:
+    - Setting Name: ATLAS_1605_03814:CalcCR
+      Description: Compute quantities for Control Regions
+      Value: On
+    - Setting Name: ATLAS_1605_03814:DoEfficiencies
+      Description: Apply parameterized efficiencies for the objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1605_03814:DoSmearing
+      Description: Apply parameterized momentum resolution for the objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1605_03814:DoTagging
+      Description: Use parameterized efficiencies for tagging objects of this analysis
+      Value: On
+    - Setting Name: ATLAS_1605_03814:SaveEvents
+      Description: Save event-related information for this analysis
+      Value: On
+    - Setting Name: ATLAS_1605_03814:SaveHistograms
+      Description: Save histograms for this analysis
+      Value: On
+    - Setting Name: ATLAS_1605_03814:SavePassFail
+      Description: Save pass-fail informatio for this analysisn
+      Value: On
+    - Setting Name: ATLAS_1605_03814:SaveProjections
+      Description: Save projection information for this analysis
+      Value: On
+    - Setting Name: AnalysisHandler:IgnoreBeams
+      Description: Ignore beam information in selecting valid analyses for an Atom run
+      Value: Off
+    - Setting Name: DressedLeptons:EoverPRatio
+      Description: Energy over Track momentum ratio cut to define leptonic clusters
+      Value: 1.3
+    - Setting Name: FastJets:DoJES
+      Description: "Compute the Jet Energy scale contribution to the smearing "
+      Value: On
+    - Setting Name: FlagCutSensitivity:Tolerance
+      Description: Threshold for flagging high sensitivity (dlog cut_eff/dlog cut_value) in cut efficiencies
+      Value: 5
+    - Setting Name: FlagLowStatistics:Sigmas
+      Description: Significance threshold for flagging low statistics in numerical quantities
+      Value: 2
+    - Setting Name: FlaggingHandler:DoFlagging
+      Description: Perform the condition-flagging step
+      Value: On
+    - Setting Name: ProjectionHandler:CacheRanges
+      Description: Uses kinematic information to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CacheSaved
+      Description: Uses saved projections from a binary file to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CacheSimulation
+      Description: Uses smearing and efficiency information to perform projection caching
+      Value: On
+    - Setting Name: ProjectionHandler:CalcCR
+      Description: Compute quantities (efficiencies, cutflows, histograms) for Control Regions
+      Value: On
+    - Setting Name: ProjectionHandler:DoEfficiencies
+      Description: Enable the use of parameterized efficiencies
+      Value: On
+    - Setting Name: ProjectionHandler:DoSmearing
+      Description: Enable the use of parameterized momentum resolution (smearing)
+      Value: On
+    - Setting Name: ProjectionHandler:DoTagging
+      Description: Enable the use of parameterized efficiencies for tagging
+      Value: On
+    - Setting Name: Run:ListUsedAnalyses
+      Description: Displays the list of valid analyses used in the current run
+      Value: On
+    - Setting Name: Run:NumberOfThreads
+      Description: Maximum number of threads usable in current run
+      Value: 4
+    - Setting Name: Run:ParallelRun
+      Description: Enable multi-threading in calculation. EXPERIMENTAL
+      Value: Off
+    - Setting Name: Run:RefsOutputFile
+      Description: Output file containing citation references for the current Atom run
+      Value: Run01.bib
+    - Setting Name: Run:RunName
+      Description: Name of the current Atom run
+      Value: Run01
+    - Setting Name: Run:SaveReferences
+      Description: Save a file containing the citation references for the current Atom run
+      Value: On
+    - Setting Name: Run:Seed
+      Description: Random seed (default = 0 to be randomly determined.)
+      Value: 0
+    - Setting Name: WriterHandler:SaveAllProcIds
+      Description: Save the information relative to specific process IDs
+      Value: Off
+    - Setting Name: WriterHandler:SaveEvents
+      Description: Save event-by-event particles and vertices information
+      Value: Off
+    - Setting Name: WriterHandler:SaveHistograms
+      Description: Save analyses histograms
+      Value: On
+    - Setting Name: WriterHandler:SaveKinematics
+      Description: Save event-by-event hard process kinematical information
+      Value: Off
+    - Setting Name: WriterHandler:SaveOptions
+      Description: Save run options
+      Value: On
+    - Setting Name: WriterHandler:SavePassFail
+      Description: Save per-analysis event-by-event pass/fail information
+      Value: Off
+    - Setting Name: WriterHandler:SaveProjections
+      Description: Save analysis-by-analysis projections information
+      Value: Off
+Sub Processes Information:
+  []
+Cross Sections:
+  - Process ID: -16
+    Cross Section: 0.002
+    Cross Section Error: [1, 1]
+  - Process ID: -15
+    Cross Section: 0.003
+    Cross Section Error: [1.4, 1.4]
+  - Process ID: -14
+    Cross Section: 0.002
+    Cross Section Error: [1, 1]
+  - Process ID: -13
+    Cross Section: 0.002
+    Cross Section Error: [1, 1]
+  - Process ID: -12
+    Cross Section: 0.002
+    Cross Section Error: [1, 1]
+  - Process ID: -11
+    Cross Section: 0.003
+    Cross Section Error: [1.4, 1.4]
+  - Process ID: -10
+    Cross Section: 0.008
+    Cross Section Error: [2.2, 2.2]
+  - Process ID: -9
+    Cross Section: 0.002
+    Cross Section Error: [1, 1]
+  - Process ID: -8
+    Cross Section: 0.02
+    Cross Section Error: [3.1, 3.1]
+  - Process ID: -7
+    Cross Section: 0.03
+    Cross Section Error: [4.2, 4.2]
+  - Process ID: -6
+    Cross Section: 0.06
+    Cross Section Error: [6, 6]
+  - Process ID: -5
+    Cross Section: 0.02
+    Cross Section Error: [3.8, 3.8]
+  - Process ID: -4
+    Cross Section: 0.2
+    Cross Section Error: [11, 11]
+  - Process ID: -3
+    Cross Section: 0.01
+    Cross Section Error: [3, 3]
+  - Process ID: -2
+    Cross Section: 0.6
+    Cross Section Error: [12, 12]
+  - Process ID: -1
+    Cross Section: 0.002
+    Cross Section Error: [1, 1]
+  - Process ID: 0
+    Cross Section: 1
+    Cross Section Error: [0, 0]
+Analyses:
+  ATLAS_1605_03814:
+    Summary: Search for squarks and gluinos in final states with jets and missing  transverse momentum at $\sqrt{s}=$ 13 TeV with the ATLAS detector
+    Experiment: ATLAS
+    Collider: LHC13
+    Year: 2016
+    Description: A search for squarks and gluinos in final states containing hadronic jets, missing transverse momentum but no electrons or muons is presented.  The data were recorded in 2015 by the ATLAS experiment in $\sqrt{s}=$ 13 TeV proton--proton collisions at the Large Hadron Collider. No excess above the Standard Model background expectation was observed in 3.2 fb$^{-1}$ of analyzed data.  Results are interpreted within simplified models that assume R-parity is conserved and the neutralino is the lightest supersymmetric particle.  An exclusion limit at the 95% confidence level on the mass of the gluino is set at 1.51 TeV for a simplified model incorporating only a gluino octet and the lightest neutralino, assuming the lightest neutralino  is massless. For a simplified model involving the strong production of mass-degenerate first- and second-generation squarks, squark masses below  1.03 TeV are excluded for a massless lightest neutralino. These limits substantially extend the region of supersymmetric parameter space excluded by previous measurements with the ATLAS detector.
+    RunInfo: ""
+    Status: UNVALIDATED
+    Authors:
+      - Kazuki
+    References:
+      - arXiv:1605.03814
+      - arXiv:1605.03814
+    InspireID: 1458270
+    BibKey: Aaboud:2016zdn
+    Luminosity:
+      Value: 3.2e+03
+      Error: 1.6e+02
+    Efficiencies:
+      - Efficiency Name: 2jl
+        Description: ""
+        IsControlRegion: false
+        Data:
+          - Sub-process ID: 0
+            Efficiency Value: 0.456
+            Efficiency Stat Error: [-0.02, 0.02]
+            Flags: [None]
+      - Efficiency Name: 2jm
+        Description: ""
+        IsControlRegion: false
+        Data:
+          - Sub-process ID: 0
+            Efficiency Value: 0.582
+            Efficiency Stat Error: [-0.019, 0.02]
+            Flags: [None]
+      - Efficiency Name: 2jt
+        Description: ""
+        IsControlRegion: false
+        Data:
+          - Sub-process ID: 0
+            Efficiency Value: 0.147
+            Efficiency Stat Error: [-0.014, 0.015]
+            Flags: [None]
+      - Efficiency Name: 4jt
+        Description: ""
+        IsControlRegion: false
+        Data:
+          - Sub-process ID: 0
+            Efficiency Value: 0.302
+            Efficiency Stat Error: [-0.018, 0.019]
+            Flags: [None]
+      - Efficiency Name: 5j
+        Description: ""
+        IsControlRegion: false
+        Data:
+          - Sub-process ID: 0
+            Efficiency Value: 0.232
+            Efficiency Stat Error: [-0.016, 0.018]
+            Flags: [None]
+      - Efficiency Name: 6jm
+        Description: ""
+        IsControlRegion: false
+        Data:
+          - Sub-process ID: 0
+            Efficiency Value: 0.127
+            Efficiency Stat Error: [-0.013, 0.014]
+            Flags: [None]
+      - Efficiency Name: 6jt
+        Description: ""
+        IsControlRegion: false
+        Data:
+          - Sub-process ID: 0
+            Efficiency Value: 0.19
+            Efficiency Stat Error: [-0.015, 0.016]
+            Flags: [None]
+    Cuts:
+      - Cut Name: "Aplanarity > 0.04: 4jt"
+        Description: ""
+        Parent Cut: ["pTj4 > 100: 4jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.544
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "Aplanarity > 0.04: 5j"
+        Description: ""
+        Parent Cut: ["pTj5 > 50: 5j", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.498
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "Aplanarity > 0.04: 6jm"
+        Description: ""
+        Parent Cut: ["pTj6 > 50: 6jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.353
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "Aplanarity > 0.04: 6jt"
+        Description: ""
+        Parent Cut: ["pTj6 > 50: 6jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.353
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: MET > 200
+        Description: ""
+        Parent Cut: [lepton veto, Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.919
+            Cut Stat Error: [-0.011, 0.011]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.19
+            Cut Log. Der. Stat Error: [-0.29, 0.3]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "MET/meff_Nj > 0.25: 5j"
+        Description: ""
+        Parent Cut: ["Aplanarity > 0.04: 5j", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.235
+            Cut Stat Error: [-0.016, 0.018]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 2
+            Cut Log. Der. Stat Error: [-0.6, 0.61]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "MET/meff_Nj > 0.25: 6jm"
+        Description: ""
+        Parent Cut: ["Aplanarity > 0.04: 6jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.127
+            Cut Stat Error: [-0.013, 0.014]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 2.8
+            Cut Log. Der. Stat Error: [-0.83, 0.85]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "MET/meff_Nj > 0.2: 4jt"
+        Description: ""
+        Parent Cut: ["Aplanarity > 0.04: 4jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.358
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.86
+            Cut Log. Der. Stat Error: [-0.48, 0.48]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "MET/meff_Nj > 0.2: 6jt"
+        Description: ""
+        Parent Cut: ["Aplanarity > 0.04: 6jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.203
+            Cut Stat Error: [-0.016, 0.017]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 1.3
+            Cut Log. Der. Stat Error: [-0.63, 0.64]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "MET/sqrt(HT) > 15: 2jl"
+        Description: ""
+        Parent Cut: ["pTj2 > 200: 2jl", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.456
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.42
+            Cut Log. Der. Stat Error: [-0.42, 0.42]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "MET/sqrt(HT) > 15: 2jm"
+        Description: ""
+        Parent Cut: ["pTj2 > 50: 2jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.595
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.47
+            Cut Log. Der. Stat Error: [-0.37, 0.37]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "MET/sqrt(HT) > 20: 2jt"
+        Description: ""
+        Parent Cut: ["pTj2 > 200: 2jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.155
+            Cut Stat Error: [-0.014, 0.015]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 2.4
+            Cut Log. Der. Stat Error: [-0.77, 0.79]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "Nj >= 2: 2jl"
+        Description: ""
+        Parent Cut: [pTj1 > 200, Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.919
+            Cut Stat Error: [-0.011, 0.011]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "Nj >= 2: 2jm"
+        Description: ""
+        Parent Cut: ["pTj1 > 300: 2jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.915
+            Cut Stat Error: [-0.011, 0.011]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "Nj >= 2: 2jt"
+        Description: ""
+        Parent Cut: ["MET/sqrt(HT) > 15: 2jm", Failed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.919
+            Cut Stat Error: [-0.011, 0.011]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "Nj >= 4: 4jt"
+        Description: ""
+        Parent Cut: ["MET/sqrt(HT) > 20: 2jt", Failed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.9
+            Cut Stat Error: [-0.012, 0.012]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "Nj >= 5: 5j"
+        Description: ""
+        Parent Cut: ["MET/meff_Nj > 0.2: 4jt", Failed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.773
+            Cut Stat Error: [-0.017, 0.017]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "Nj >= 6: 6jm"
+        Description: ""
+        Parent Cut: ["Nj >= 5: 5j", Failed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.555
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "Nj >= 6: 6jt"
+        Description: ""
+        Parent Cut: ["Nj >= 6: 6jm", Failed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.555
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_123 > 0.4: 2jm"
+        Description: ""
+        Parent Cut: ["Nj >= 2: 2jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.732
+            Cut Stat Error: [-0.018, 0.018]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.25
+            Cut Log. Der. Stat Error: [-0.33, 0.33]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_123 > 0.4: 4jt"
+        Description: ""
+        Parent Cut: ["Nj >= 4: 4jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.723
+            Cut Stat Error: [-0.018, 0.018]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.26
+            Cut Log. Der. Stat Error: [-0.33, 0.34]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_123 > 0.4: 5j"
+        Description: ""
+        Parent Cut: ["Nj >= 5: 5j", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.615
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.29
+            Cut Log. Der. Stat Error: [-0.36, 0.36]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_123 > 0.4: 6jm"
+        Description: ""
+        Parent Cut: ["Nj >= 6: 6jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.44
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.29
+            Cut Log. Der. Stat Error: [-0.43, 0.43]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_123 > 0.4: 6jt"
+        Description: ""
+        Parent Cut: ["Nj >= 6: 6jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.44
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.29
+            Cut Log. Der. Stat Error: [-0.43, 0.43]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_123 > 0.8: 2jl"
+        Description: ""
+        Parent Cut: ["Nj >= 2: 2jl", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.561
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.52
+            Cut Log. Der. Stat Error: [-0.38, 0.38]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_123 > 0.8: 2jt"
+        Description: ""
+        Parent Cut: ["Nj >= 2: 2jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.561
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.52
+            Cut Log. Der. Stat Error: [-0.38, 0.38]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_all > 0.2: 4jt"
+        Description: ""
+        Parent Cut: ["dPhiMin_123 > 0.4: 4jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.602
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.2
+            Cut Log. Der. Stat Error: [-0.36, 0.37]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_all > 0.2: 5j"
+        Description: ""
+        Parent Cut: ["dPhiMin_123 > 0.4: 5j", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.498
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.23
+            Cut Log. Der. Stat Error: [-0.4, 0.4]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_all > 0.2: 6jm"
+        Description: ""
+        Parent Cut: ["dPhiMin_123 > 0.4: 6jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.353
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.32
+            Cut Log. Der. Stat Error: [-0.47, 0.48]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "dPhiMin_all > 0.2: 6jt"
+        Description: ""
+        Parent Cut: ["dPhiMin_123 > 0.4: 6jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.353
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.32
+            Cut Log. Der. Stat Error: [-0.47, 0.48]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: lepton veto
+        Description: ""
+        Parent Cut: ["", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.9919
+            Cut Stat Error: [-0.0036, 0.0036]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "meff_inc > 1200: 2jl"
+        Description: ""
+        Parent Cut: ["MET/sqrt(HT) > 15: 2jl", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.456
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.02
+            Cut Log. Der. Stat Error: [-0.42, 0.42]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "meff_inc > 1600: 2jm"
+        Description: ""
+        Parent Cut: ["MET/sqrt(HT) > 15: 2jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.582
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.097
+            Cut Log. Der. Stat Error: [-0.37, 0.37]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "meff_inc > 1600: 5j"
+        Description: ""
+        Parent Cut: ["MET/meff_Nj > 0.25: 5j", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.232
+            Cut Stat Error: [-0.016, 0.018]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.069
+            Cut Log. Der. Stat Error: [-0.59, 0.59]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "meff_inc > 1600: 6jm"
+        Description: ""
+        Parent Cut: ["MET/meff_Nj > 0.25: 6jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.127
+            Cut Stat Error: [-0.013, 0.014]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.06
+            Cut Log. Der. Stat Error: [-0.79, 0.8]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "meff_inc > 2000: 2jt"
+        Description: ""
+        Parent Cut: ["MET/sqrt(HT) > 20: 2jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.147
+            Cut Stat Error: [-0.014, 0.015]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.27
+            Cut Log. Der. Stat Error: [-0.73, 0.74]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "meff_inc > 2000: 6jt"
+        Description: ""
+        Parent Cut: ["MET/meff_Nj > 0.2: 6jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.19
+            Cut Stat Error: [-0.015, 0.016]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.64
+            Cut Log. Der. Stat Error: [-0.64, 0.65]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "meff_inc > 2200: 4jt"
+        Description: ""
+        Parent Cut: ["MET/meff_Nj > 0.2: 4jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.302
+            Cut Stat Error: [-0.018, 0.019]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.99
+            Cut Log. Der. Stat Error: [-0.51, 0.52]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: pTj1 > 200
+        Description: ""
+        Parent Cut: [MET > 200, Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.919
+            Cut Stat Error: [-0.011, 0.011]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj1 > 300: 2jm"
+        Description: ""
+        Parent Cut: ["MET/sqrt(HT) > 15: 2jl", Failed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.915
+            Cut Stat Error: [-0.011, 0.011]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.02
+            Cut Log. Der. Stat Error: [-0.3, 0.3]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj2 > 100: 4jt"
+        Description: ""
+        Parent Cut: ["dPhiMin_all > 0.2: 4jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.6
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.01
+            Cut Log. Der. Stat Error: [-0.37, 0.37]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj2 > 100: 5j"
+        Description: ""
+        Parent Cut: ["dPhiMin_all > 0.2: 5j", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.498
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj2 > 100: 6jm"
+        Description: ""
+        Parent Cut: ["dPhiMin_all > 0.2: 6jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.353
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj2 > 100: 6jt"
+        Description: ""
+        Parent Cut: ["dPhiMin_all > 0.2: 6jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.353
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj2 > 200: 2jl"
+        Description: ""
+        Parent Cut: ["dPhiMin_123 > 0.8: 2jl", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.556
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.043
+            Cut Log. Der. Stat Error: [-0.38, 0.38]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj2 > 200: 2jt"
+        Description: ""
+        Parent Cut: ["dPhiMin_123 > 0.8: 2jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.556
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.043
+            Cut Log. Der. Stat Error: [-0.38, 0.38]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj2 > 50: 2jm"
+        Description: ""
+        Parent Cut: ["dPhiMin_123 > 0.4: 2jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.732
+            Cut Stat Error: [-0.018, 0.018]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0
+            Cut Log. Der. Stat Error: [-0, 0]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj4 > 100: 4jt"
+        Description: ""
+        Parent Cut: ["pTj2 > 100: 4jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.544
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.24
+            Cut Log. Der. Stat Error: [-0.38, 0.39]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj5 > 50: 5j"
+        Description: ""
+        Parent Cut: ["pTj2 > 100: 5j", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.498
+            Cut Stat Error: [-0.02, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.19
+            Cut Log. Der. Stat Error: [-0.4, 0.4]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj6 > 50: 6jm"
+        Description: ""
+        Parent Cut: ["pTj2 > 100: 6jm", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.353
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.48
+            Cut Log. Der. Stat Error: [-0.47, 0.47]
+            Cut Log. Der. Flags: [None]
+      - Cut Name: "pTj6 > 50: 6jt"
+        Description: ""
+        Parent Cut: ["pTj2 > 100: 6jt", Passed]
+        Data:
+          - Sub-process ID: 0
+            Cut Value: 0.353
+            Cut Stat Error: [-0.019, 0.02]
+            Cut Value Flags: [None]
+            Cut Log. Derivative: 0.48
+            Cut Log. Der. Stat Error: [-0.47, 0.47]
+            Cut Log. Der. Flags: [None]

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kazuki/Projects/Atom-work/analyses/ATLAS_1605_03814/ATLAS_1605_03814.cc
+Atom/Analysis.hh
+/Users/kazuki/Projects/Atom-work/analyses/ATLAS_1605_03814/Atom/Analysis.hh
+Atom/Tools/CommonProjections.hh
+/Users/kazuki/Projects/Atom-work/analyses/ATLAS_1605_03814/Atom/Tools/CommonProjections.hh
+

@@ -1,0 +1,39 @@
+Name: ATLAS_1605_03814
+Year: 2016
+Summary: 'Search for squarks and gluinos in final states with jets and missing  transverse momentum at $\sqrt{s}=$ 13 TeV with the ATLAS detector'
+Experiment: ATLAS
+Collider: LHC13
+InspireID: 1458270
+References:
+ - arXiv:1605.03814
+ - arXiv:1605.03814
+Status: UNVALIDATED
+Authors:
+ - Kazuki
+Beams: [ p+, p+ ]
+Energies: [ 13000 ]
+Keywords: [ JETS, MET ]
+Luminosity: [ 3.2 / fb, 5.0 percent ]
+Description: 'A search for squarks and gluinos in final states containing hadronic jets, missing transverse momentum but no electrons or muons is presented.  The data were recorded in 2015 by the ATLAS experiment in $\sqrt{s}=$ 13 TeV proton--proton collisions at the Large Hadron Collider. No excess above the Standard Model background expectation was observed in 3.2 fb$^{-1}$ of analyzed data.  Results are interpreted within simplified models that assume R-parity is conserved and the neutralino is the lightest supersymmetric particle.  An exclusion limit at the 95% confidence level on the mass of the gluino is set at 1.51 TeV for a simplified model incorporating only a gluino octet and the lightest neutralino, assuming the lightest neutralino  is massless. For a simplified model involving the strong production of mass-degenerate first- and second-generation squarks, squark masses below  1.03 TeV are excluded for a massless lightest neutralino. These limits substantially extend the region of supersymmetric parameter space excluded by previous measurements with the ATLAS detector.'
+BibKey: 'Aaboud:2016zdn'
+BibTeX: '@article{Aaboud:2016zdn,
+      author         = "Aaboud, Morad and others",
+      title          = "{Search for squarks and gluinos in final states with jets
+                        and missing transverse momentum at $\sqrt{s}=$ 13 TeV with
+                        the ATLAS detector}",
+      collaboration  = "ATLAS",
+      year           = "2016",
+      eprint         = "1605.03814",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-EP-2016-080",
+      SLACcitation   = "%%CITATION = ARXIV:1605.03814;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error

@@ -1,0 +1,130 @@
+###################################
+##  Atom cutflow validation card ##
+###################################
+Analysis: ATLAS_1605_03814
+Run name: QQdirect
+Generator: MadGraph5 + Pythia6
+Process: $pp \to \tilde q \tilde q, \tilde q \to q \tilde \chi_1^0$
+Parameters: $(m_{\tilde q}, m_{\tilde \chi_1^0}) = (1000, 400) \,{\rm GeV}$
+Eventfile: /Users/kazuki/Projects/Atom-work/updates/ATLAS_1605_03814/evgen/QQ_direct_1000_400_1E4.hep.gz
+Num. Events Exp: 20000            # erase or set to 1 if efficiencies and errors are entered in the cutflow tables below
+Num. NoCut Events Exp: 20000 
+
+Caption: this is caption
+Comment: this is a comment
+
+#-- Options start --#
+set DoSmearing On
+set DoEfficiencies On
+set MaxEventNumber -1
+set SaveAllProcIds Off
+#-- Options end --#
+
+#-- start of cutflow table --#
+# cut-name   atom-cut   eff (or Nev)   [eff_individual, (err) or (err+, err-)] optional
+'Preselection, ${\rm MET > 200}$, $p_T^{j_1} > 200$'    'pTj1 > 200'                16956
+'$N_j \ge 2$: 2jl'                                      'Nj >= 2: 2jl'              16704
+'$\Delta \phi_{min} > 0.8$: 2jl'                        'dPhiMin_123 > 0.8: 2jl'    13211
+'$p_T^{j_2} > 200$: 2jl'                                'pTj2 > 200: 2jl'            9851
+'${\rm MET}/\sqrt{H_T} > 15$: 2jl'                      'MET/sqrt(HT) > 15: 2jl'     6361
+# '$m_{\rm eff}^{\rm inc} > 1200$: 2jl'                   'meff_inc > 1200: 2jl'       5761
+# '$p_T^{j_1} > 300$: 2jm'                                'pTj1 > 300: 2jm'           15400  'pTj1 > 200' 
+# '$N_j \ge 2$: 2jm'                                      'Nj >= 2: 2jm'              15185
+# '$\Delta \phi_{min} > 0.4$: 2jm'                        'dPhiMin_123 > 0.4: 2jm'    13554
+# '$p_T^{j_2} > 50$: 2jm'                                 'pTj2 > 50: 2jm'            13554
+# '${\rm MET}/\sqrt{H_T} > 15$: 2jm'                      'MET/sqrt(HT) > 15: 2jm'     8901
+# '$m_{\rm eff}^{\rm inc} > 1600: 2jm'                    'meff_inc > 1600: 2jm'       4157
+# '$Nj \ge 2$: 2jt'                                       'Nj >= 2: 2jt'              16704  'pTj1 > 200'
+# '$\Delta \phi_{min} > 0.8$: 2jt'                        'dPhiMin_123 > 0.8: 2jt'    13211
+# '$p_T^{j_2} > 200$: 2jt'                                'pTj2 > 200: 2jt'            9851 
+# '${\rm MET}/\sqrt{H_T} > 20$: 2jl'                      'MET/sqrt(HT) > 20: 2jt'     3928
+# '$m_{\rm eff}_{\rm inc} > 2000: 2jt'                    'meff_inc > 2000: 2jt'        751
+# '$N_j \ge 4$: 4jt'                                      'Nj >= 4: 4jt'               5950  'pTj1 > 200'
+# '$\Delta \phi_{min}$ cut: 4jt'                          'dPhiMin_all > 0.2: 4jt'     4825
+# '$p_T^{j_2} > 100$: 4jt'                                'pTj2 > 100: 4jt'            4769
+# '$p_T^{j_4} > 100$: 4jt'                                'pTj4 > 100: 4jt'            1720
+# '${\rm Aplanarity} > 0.04$: 4jt'                        'Aplanarity > 0.04: 4jt'      981
+# '${\rm MET}/\sqrt{H_T} > 0.2$" 4jt'                     'MET/meff_Nj > 0.2: 4jt'      872
+# '$m_{\rm eff}^{\rm inc} > 2200: 4jt'                    'meff_inc > 2200: 4jt'        198
+# '$N_j \ge 5$: 5j'                                       'Nj >= 5: 5j'                2259  'pTj1 > 200'
+# '$\Delta \phi_{min}$ cut: 5j'                           'dPhiMin_all > 0.2: 5j'      1758
+# '$p_T^{j_2} > 100$: 5j'                                 'pTj2 > 100: 5j'             1742
+# '$p_T^{j_5} > 50$: 5j'                                  'pTj5 > 50: 5j'               955
+# '${\rm Aplanarity} > 0.04$: 5j'                         'Aplanarity > 0.04: 5j'       597
+# '${\rm MET}/m_{\rm efff}(N_j) > 0.25$" 5j'              'MET/meff_Nj > 0.25: 5j'      434
+# '$m_{\rm eff}^{\rm inc} > 1600$: 5j'                    'meff_inc > 1600: 5j'         330
+# '$N_j \ge 6$: 6jm'                                      'Nj >= 6: 6jm'                725  'pTj1 > 200'
+# '$\Delta \phi_{min}$ cut: 6jm'                          'dPhiMin_all > 0.2: 6jm'      543
+# '$p_T^{j_2} > 100$: 6jm'                                'pTj2 > 100: 6jm'             542
+# '$p_T^{j_6} > 50$: 6jm'                                 'pTj6 > 50: 6jm'              383
+# '${\rm Aplanarity} > 0.04$: 6jm'                        'Aplanarity > 0.04: 6jm'      265
+# '${\rm MET}/m_{\rm efff}(N_j) > 0.25$" 6jm'             'MET/meff_Nj > 0.25: 6jm'     181
+# '$m_{\rm eff}^{\rm inc} > 1600$: 6jm'                   'meff_inc > 1600: 6jm'        148
+# '$N_j \ge 6$: 6jt'                                      'Nj >= 6: 6jt'                725  'pTj1 > 200'
+# '$\Delta \phi_{min}$ cut: 6jt'                          'dPhiMin_all > 0.2: 6jt'      543
+# '$p_T^{j_2} > 100$: 6jt'                                'pTj2 > 100: 6jt'             542
+# '$p_T^{j_2} > 100$: 6jt'                                'pTj6 > 50: 6jt'              383
+# '${\rm Aplanarity} > 0.04$: 6jt'                        'Aplanarity > 0.04: 6jt'      265
+# '${\rm MET}/m_{\rm efff}(N_j) > 0.25$: 6jt'             'MET/meff_Nj > 0.2: 6jt'      212
+# '$m_{\rm eff}^{\rm inc} > 1600$: 6jt'                   'meff_inc > 2000: 6jt'         97
+
+
+###################
+#   Backup Lists  #
+###################
+#
+#'cut0'    'lepton veto'               1
+#'cut1'    'MET > 200'                 1
+#'cut2'    'pTj1 > 200'                1
+#'cut3'    'Nj >= 2: 2jl'              1
+#'cut4'    'dPhiMin_123 > 0.8: 2jl'    1
+#'cut5'    'pTj2 > 200: 2jl'           1
+#'cut6'    'MET/sqrt(HT) > 15: 2jl'    1
+#'cut7'    'meff_inc > 1200: 2jl'      1
+#'cut8'    'pTj1 > 300: 2jm'           1
+#'cut9'    'Nj >= 2: 2jm'              1
+#'cut10'  'dPhiMin_123 > 0.4: 2jm'    1
+#'cut11'  'pTj2 > 50: 2jm'            1
+#'cut12'  'MET/sqrt(HT) > 15: 2jm'    1
+#'cut13'  'meff_inc > 1600: 2jm'      1
+#'cut14'  'Nj >= 2: 2jt'              1
+#'cut15'  'dPhiMin_123 > 0.8: 2jt'    1
+#'cut16'  'pTj2 > 200: 2jt'           1
+#'cut17'  'MET/sqrt(HT) > 20: 2jt'    1
+#'cut18'  'meff_inc > 2000: 2jt'      1
+#'cut19'  'Nj >= 4: 4jt'              1
+#'cut20'  'dPhiMin_123 > 0.4: 4jt'    1
+#'cut21'  'pTj2 > 100: 4jt'           1
+#'cut22'  'pTj4 > 100: 4jt'           1
+#'cut23'  'dPhiMin_all > 0.2: 4jt'    1
+#'cut24'  'Aplanarity > 0.04: 4jt'    1
+#'cut25'  'MET/meff_Nj > 0.2: 4jt'    1
+#'cut26'  'meff_inc > 2200: 4jt'      1
+#'cut27'  'Nj >= 5: 5j'               1
+#'cut28'  'dPhiMin_123 > 0.4: 5j'     1
+#'cut29'  'dPhiMin_all > 0.2: 5j'     1
+#'cut30'  'pTj2 > 100: 5j'            1
+#'cut31'  'pTj5 > 50: 5j'             1
+#'cut32'  'Aplanarity > 0.04: 5j'     1
+#'cut33'  'MET/meff_Nj > 0.25: 5j'    1
+#'cut34'  'meff_inc > 1600: 5j'       1
+#'cut35'  'Nj >= 6: 6jm'              1
+#'cut36'  'dPhiMin_123 > 0.4: 6jm'    1
+#'cut37'  'dPhiMin_all > 0.2: 6jm'    1
+#'cut38'  'pTj2 > 100: 6jm'           1
+#'cut39'  'pTj6 > 50: 6jm'            1
+#'cut40'  'Aplanarity > 0.04: 6jm'    1
+#'cut41'  'MET/meff_Nj > 0.25: 6jm'   1
+#'cut42'  'meff_inc > 1600: 6jm'      1
+#'cut43'  'Nj >= 6: 6jt'              1
+#'cut44'  'dPhiMin_123 > 0.4: 6jt'    1
+#'cut45'  'dPhiMin_all > 0.2: 6jt'    1
+#'cut46'  'pTj2 > 100: 6jt'           1
+#'cut47'  'pTj6 > 50: 6jt'            1
+#'cut48'  'Aplanarity > 0.04: 6jt'    1
+#'cut49'  'MET/meff_Nj > 0.2: 6jt'    1
+#'cut50'  'meff_inc > 2000: 6jt'      1
+#'cut51'  'CutNJets'                  1
+#'cut52'  'CutPTJ1'                   1
+#'cut53'  'CutEtaJet'                 1
+
