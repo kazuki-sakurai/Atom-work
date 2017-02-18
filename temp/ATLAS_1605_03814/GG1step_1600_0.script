@@ -1,8 +1,0 @@
-add Analysis ATLAS_1605_03814
-add InputFile /Users/kazuki/Projects/Atom-work/updates/ATLAS_1605_03814/evgen/GG_1step_1600_0_1E3.hep.gz
-add OutputFile GG1step_1600_0.yaml
-set DoSmearing On
-set DoEfficiencies On
-set MaxEventNumber -1
-set SaveAllProcIds Off
-launch
