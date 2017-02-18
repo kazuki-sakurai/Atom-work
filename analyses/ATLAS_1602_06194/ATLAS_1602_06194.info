@@ -1,0 +1,55 @@
+Name: ATLAS_1602_06194
+Year: 2016
+Summary: 'Search for new phenomena in final states with large jet multiplicities  and missing transverse momentum with ATLAS using $\sqrt{s} =13$ TeV  proton--proton collisions'
+Experiment: ATLAS
+Collider: LHC13
+InspireID: 1422615
+References:
+ - arXiv:1602.06194
+ - CERN-EP-2016-026
+ - doi:10.1016/j.physletb.2016.04.005
+Status: UNVALIDATED
+Authors:
+ - Kazuki
+Beams: [ p+, p+ ]
+Energies: [ 13000 ]
+Keywords: [ JETS, MET ]
+Luminosity: [ 3.2 / fb, 0.2 / fb ]
+Description: 'Results are reported of a search for new phenomena, such as supersymmetric
+particle production, that could be observed in high-energy proton--proton
+collisions. Events with large numbers of jets, together with missing transverse
+momentum from unobserved particles, are selected. The data analysed were
+recorded by the ATLAS experiment during 2015 using the 13 TeV centre-of-mass
+proton--proton collisions at the Large Hadron Collider, and correspond to an
+integrated luminosity of 3.2 fb$^{-1}$. The search selected events with various
+jet multiplicities from $\ge 7$ to $\ge 10$ jets, and with various $b$-jet
+multiplicity requirements to enhance sensitivity. No excess above Standard
+Model expectations is observed. The results are interpreted within two
+supersymmetry models, where gluino masses up to 1400 GeV are excluded at 95%
+confidence level, significantly extending previous limits.'
+BibKey: 'Aad:2016jxj'
+BibTeX: '@article{Aad:2016jxj,
+      author         = "Aad, Georges and others",
+      title          = "{Search for new phenomena in final states with large jet
+                        multiplicities and missing transverse momentum with ATLAS
+                        using $\sqrt{s} =$ 13 TeV proton-proton collisions}",
+      collaboration  = "ATLAS",
+      journal        = "Phys. Lett.",
+      volume         = "B757",
+      year           = "2016",
+      pages          = "334-355",
+      doi            = "10.1016/j.physletb.2016.04.005",
+      eprint         = "1602.06194",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2016-026, CERN-EP-2016-026",
+      SLACcitation   = "%%CITATION = ARXIV:1602.06194;%%"
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error

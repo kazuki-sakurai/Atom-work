@@ -1,0 +1,46 @@
+Name: ATLAS_1407_0600
+Year: 2014
+Summary: Search for strong production of supersymmetric particles in final states  with missing transverse momentum and at least three b-jets at $\sqrt{s} =$ 8  TeV proton-proton collisions with the ATLAS detector
+Experiment: ATLAS
+Collider: LHC8
+InspireID: 1304457
+References:
+ - arXiv:1407.0600
+ - CERN-PH-EP-2014-110
+ - J. High Energy Phys. 10 (2014), 024
+ - doi:10.1007/jhep10(2014)024
+Status: UNVALIDATED
+Authors:
+ - Kazuki Sakurai <kazuki.sakurai@kcl.ac.uk>
+Beams: [ p+, p+ ]
+Energies: [ 8000 ]
+Keywords: [ JETS, BJETS, LEPTONS, MET ]
+Luminosity: [ 20.1 / fb, 2.8 percent ]
+Description: "This paper reports the results of a search for strong production of supersymmetric particles in 20.1 fb$^{-1}$ of proton-proton collisions~ at a centre-of-mass energy of 8 TeV using the ATLAS detector at the LHC. The search is performed separately in events with either zero or at least one high $p_\\mathrm{T}$ lepton (electron or muon), large missing transverse momentum, high jet multiplicity and at least three jets identified~ as originated from the fragmentation of a b-quark. No excess is observed~ with respect to the Standard Model predictions. The results are interpreted in the context of several supersymmetric models involving gluinos and scalar top and bottom quarks, as well as a mSUGRA/CMSSM model. Gluino masses up to 1340 GeV are excluded, depending on the model, significantly extending the previous ATLAS limits."
+BibKey: Aad:2014lra
+BibTeX: '@article{Aad:2014lra,
+      author         = "Aad, Georges and others",
+      title          = "{Search for strong production of supersymmetric particles
+                        in final states with missing transverse momentum and at
+                        least three $b$-jets at $\\sqrt{s}$= 8 TeV proton-proton
+                        collisions with the ATLAS detector}",
+      collaboration  = "ATLAS",
+      journal        = "JHEP",
+      volume         = "1410",
+      pages          = "24",
+      doi            = "10.1007/JHEP10(2014)024",
+      year           = "2014",
+      eprint         = "1407.0600",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-110",
+      SLACcitation   = "%%CITATION = ARXIV:1407.0600;%%",
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error

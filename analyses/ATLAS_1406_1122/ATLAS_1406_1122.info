@@ -1,0 +1,45 @@
+Name: ATLAS_1406_1122
+Year: 2014
+Summary: Search for direct pair production of the top squark in all-hadronic  final states in proton-proton collisions at $\sqrt{s}=8$ TeV with the ATLAS  detector
+Experiment: ATLAS
+Collider: LHC8
+InspireID: 1299143
+References:
+ - arXiv:1406.1122
+ - CERN-PH-EP-2014-112
+ - J. High Energy Phys. 09 (2014), 015
+ - doi:10.1007/jhep09(2014)015
+Status: UNVALIDATED
+Authors:
+ - Kazuki Sakurai <kazuki.sakurai@kcl.ac.uk>
+Beams: [ p+, p+ ]
+Energies: [ 8000 ]
+Keywords: [ JETS, BJETS, MET ]
+Luminosity: [ 20.1 / fb, 0.6 / fb ]
+Description: "The results of a search for direct pair production of the scalar partner to the top quark using an integrated luminosity of $20.1 \\rm{fb}^{-1}$ of proton--proton collision data at $\\sqrt{s}=8$~TeV recorded with the ATLAS detector at the LHC are reported. The top squark is assumed to decay via $\\tilde{t} \\rightarrow t \\tilde{\\chi}_{1}^{0}$ or $\\tilde{t}\\rightarrow b\\tilde{\\chi}_{1}^{\\pm} \\rightarrow b W^{\\left(\\ast\\right)} \\tilde{\\chi}_{1}^{0}$, where $\\tilde{\\chi}_{1}^{0}$ ($\\tilde{\\chi}_{1}^{\\pm}$) denotes the lightest neutralino (chargino) in supersymmetric models. The search targets a fully-hadronic final state in events with four or more jets and large missing transverse momentum. No significant excess over the Standard Model background prediction is observed, and exclusion limits are reported in terms of the top squark and neutralino masses and as a function of the branching fraction of $\\tilde{t} \\rightarrow t \\tilde{\\chi}_{1}^{0}$. For a branching fraction of $100\\%$, top squark masses in the range $270$--$645 GeV$ are excluded for $\\tilde{\\chi}_{1}^{0}$ masses below $30 GeV$. For a branching fraction of $50\\%$ to either $\\tilde{t} \\rightarrow t \\tilde{\\chi}_{1}^{0}$ or $\\tilde{t}\\rightarrow b\\tilde{\\chi}_{1}^{\\pm}$, and assuming the $\\tilde{\\chi}_{1}^{\\pm}$ mass to be twice the $\\tilde{\\chi}_{1}^{0}$ mass, top squark masses in the range $250$--$550 GeV$ are excluded for $\\tilde{\\chi}_{1}^{0}$ masses below $60 GeV$."
+BibKey: Aad:2014bva
+BibTeX: '@article{Aad:2014bva,
+      author         = "Aad, Georges and others",
+      title          = "{Search for direct pair production of the top squark in
+                        all-hadronic final states in proton-proton collisions at
+                        $\\sqrt{s}=8$ TeV with the ATLAS detector}",
+      collaboration  = "ATLAS",
+      journal        = "JHEP",
+      volume         = "1409",
+      pages          = "015",
+      doi            = "10.1007/JHEP09(2014)015",
+      year           = "2014",
+      eprint         = "1406.1122",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-112",
+      SLACcitation   = "%%CITATION = ARXIV:1406.1122;%%",
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error

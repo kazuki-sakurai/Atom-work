@@ -1,0 +1,102 @@
+###################################
+##  Atom cutflow validation card ##
+###################################
+Analysis: ATLAS_1402_7029
+Run name: slep_267_232
+Generator: Herwig++
+Process: C1N2 via slepton
+Parameters: $(m_{\tilde \chi_1^pm}, m_{\tilde \chi_1^0}) = (267.5, 232.5)$ 
+Eventfile: /Users/kazuki/Projects/Atom-work/updates/ATLAS_1402_7029/evgen/HW_slep_267_232/Events_2E4.hepmc HepMC
+
+# Num. Events Exp: 20000
+# Num. NoCut Events Exp: 20000
+# Caption: this is caption
+# Comment: this is a comment
+
+#-- Options start --#
+set DoSmearing ON
+set DoEfficiencies Off
+set MaxEventNumber -1
+#-- Options end --#
+
+#-- start of cutflow table --#
+# cut-name   atom-cut   eff (or Nev)   [eff_individual, (err) or (err+, err-)] optional
+'Lepton req.'                   '= 3 LF leptons: SR0ta'         0.225779967159    (0.00274169977853)
+'SFOS'                          '12 < mSFOS < 40: SR0ta(1-4)'   0.15873015873    (0.00241674832469)
+'b-veto'                        'b veto: SR0ta(1-4)'            0.151888341544    (0.00238109786342)
+'$50 < {\rm MET} < 90$ (0ta1)'  '50 < MET < 90: SR0ta1'         0.0396825396825    (0.00169247806151)
+'$m_T < 80$ (0ta1)'             'mT < 80: SR0ta1'               0.0369458128079    (0.00167214347973)
+'${\rm MET} > 90$ (0ta2)'       'MET > 90: SR0ta2'              0.0232621784346    (0.00156651618488)   'b veto: SR0ta(1-4)'
+'$m_T < 80$ (0ta2)'             'mT < 80: SR0ta2'               0.0177887246853    (0.00152221437838)
+'$50 < {\rm MET} < 75$ (0ta3)'  '50 < MET < 75: SR0ta3'         0.0301039956212    (0.00162019084899)   'b veto: SR0ta(1-4)'
+'$m_T > 80$: (0ta3)'            'mT > 80: SR0ta3'               0.00150519978106    (0.00138204503948)
+'${\rm MET} > 75$ (0ta4)'       'MET > 75: SR0ta4'              0.0328407224959     (0.0016411692658)   'b veto: SR0ta(1-4)'
+'$m_T > 80$ (0ta4)'             'mT > 80: SR0ta4'               0.00684181718664    (0.00142949778814)
+
+
+
+###################
+#   Backup Lists  #
+###################
+#
+#'cut0'    '= 3 leptons(e,mu,tau)'              1
+#'cut1'    'dRmin(l1,l2,l3) > 0.3'              1
+#'cut2'    'at least one e or mu'               1
+#'cut3'    'pTl1 > 25: SL trigger'              1
+#'cut4'    'DL trigger'                         1
+#'cut5'    'Trigger'                            1
+#'cut6'    '= 3 LF leptons: SR0ta'   1
+#'cut7'    'at least one SFOS pair: SR0ta'      1
+#'cut8'    '12 < mSFOS < 40: SR0ta(1-4)'        1
+#'cut9'    'b veto: SR0ta(1-4)'                 1
+#'cut10'  '50 < MET < 90: SR0ta1'              1
+#'cut11'  'mT < 80: SR0ta1'                    1
+#'cut12'  'MET > 90: SR0ta2'                   1
+#'cut13'  'mT < 80: SR0ta2'                    1
+#'cut14'  '50 < MET < 75: SR0ta3'              1
+#'cut15'  'mT > 80: SR0ta3'                    1
+#'cut16'  'MET > 75: SR0ta4'                   1
+#'cut17'  'mT > 80: SR0ta4'                    1
+#'cut18'  '40 < mSFOS < 60: SR0ta(5-8)'        1
+#'cut19'  'b veto: SR0ta(5-8)'                 1
+#'cut20'  '50 < MET < 75: SR0ta5'              1
+#'cut21'  'mT < 80: SR0ta5'                    1
+#'cut22'  'Z veto: SR0ta5'                     1
+#'cut23'  'MET > 75: SR0ta6'                   1
+#'cut24'  'mT < 80: SR0ta6'                    1
+#'cut25'  '50 < MET < 135: SR0ta7'             1
+#'cut26'  'mT > 80: SR0ta7'                    1
+#'cut27'  'MET > 135: SR0ta8'                  1
+#'cut28'  'mT > 80: SR0ta8'                    1
+#'cut29'  '60 < mSFOS < 81: SR0ta(9-12)'       1
+#'cut30'  'b veto: SR0ta(9-12)'                1
+#'cut31'  '50 < MET < 75: SR0ta9'              1
+#'cut32'  'mT < 80: SR0ta9'                    1
+#'cut33'  'Z veto: SR0ta9'                     1
+#'cut34'  '50 < MET < 75: SR0ta10'             1
+#'cut35'  'MET > 75: SR0ta11'                  1
+#'cut36'  'mT < 110: SR0ta11'                  1
+#'cut37'  'MET > 75: SR0ta12'                  1
+#'cut38'  'mT > 110: SR0ta12'                  1
+#'cut39'  '81 < mSFOS < 101: SR0ta(13-16)'     1
+#'cut40'  'b veto: SR0ta(13-16)'               1
+#'cut41'  '50 < MET < 90: SR0ta13'             1
+#'cut42'  'mT < 110: SR0ta13'                  1
+#'cut43'  'Z veto: SR0ta13'                    1
+#'cut44'  'MET > 90: SR0ta14'                  1
+#'cut45'  'mT < 110: SR0ta14'                  1
+#'cut46'  '50 < MET < 135: SR0ta15'            1
+#'cut47'  'mT > 110: SR0ta15'                  1
+#'cut48'  'MET > 135: SR0ta16'                 1
+#'cut49'  'mT > 110: SR0ta16'                  1
+#'cut50'  'mSFOS > 101: SR0ta(17-20)'          1
+#'cut51'  'b veto: SR0ta(17-20)'               1
+#'cut52'  '50 < MET < 210: SR0ta17'            1
+#'cut53'  'mT < 180: SR0ta17'                  1
+#'cut54'  '50 < MET < 210: SR0ta18'            1
+#'cut55'  'mT > 180: SR0ta18'                  1
+#'cut56'  'MET > 210: SR0ta19'                 1
+#'cut57'  'mT < 120: SR0ta19'                  1
+#'cut58'  'MET > 210: SR0ta20'                 1
+#'cut59'  'mT > 120: SR0ta20'                  1
+

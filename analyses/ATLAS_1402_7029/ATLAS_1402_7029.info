@@ -1,0 +1,46 @@
+Name: ATLAS_1402_7029
+Year: 2014
+Summary: Search for direct production of charginos and neutralinos in events with  three leptons and missing transverse momentum in sqrt(s) = 8TeV pp collisions  with the ATLAS detector
+Experiment: ATLAS
+Collider: LHC8
+InspireID: 1282905
+References:
+ - arXiv:1402.7029
+ - CERN-PH-EP-2014-019
+ - J. High Energy Phys. 04 (2014), 169
+ - doi:10.1007/jhep04(2014)169
+Status: UNVALIDATED
+Authors:
+ - Kazuki
+Beams: [ p+, p+ ]
+Energies: [ 8000 ]
+Keywords: [ LEPTONS, TAUS, MET ]
+Luminosity: [ 20.3 / fb, 2.8 percent ]
+Description: "A search for the direct production of charginos and neutralinos in final states with three leptons and missing transverse momentum is presented. The analysis is based on 20.3 fb$^{-1}$ of $\\sqrt{s}$ = 8 TeV proton-proton collision data delivered by the Large Hadron Collider and recorded with the ATLAS detector. Observations are consistent with the Standard Model expectations and limits are set in $R$-parity-conserving phenomenological Minimal Supersymmetric Standard Models and in simplified supersymmetric models, significantly extending previous results.  For simplified supersymmetric models of direct chargino ($\\tilde\\chi^\\pm_1$) and next-to-lightest neutralino ($\\tilde{\\chi}_2^0$) production with decays to lightest neutralino ($\\tilde{\\chi}_1^0$) via either all three generations of sleptons, staus only, gauge bosons, or Higgs bosons, $\\tilde\\chi^\\pm_1$ and $\\tilde{\\chi}_2^0$ masses are excluded up to 700 GeV, 380 GeV, 345 GeV, or 148 GeV respectively, for a massless $\\tilde{\\chi}_1^0$."
+BibKey: Aad:2014nua
+BibTeX: '@article{Aad:2014nua,
+      author         = "Aad, Georges and others",
+      title          = "{Search for direct production of charginos and
+                        neutralinos in events with three leptons and missing
+                        transverse momentum in $\\sqrt{s} =$ 8TeV $pp$ collisions
+                        with the ATLAS detector}",
+      collaboration  = "ATLAS",
+      journal        = "JHEP",
+      volume         = "1404",
+      pages          = "169",
+      doi            = "10.1007/JHEP04(2014)169",
+      year           = "2014",
+      eprint         = "1402.7029",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-019",
+      SLACcitation   = "%%CITATION = ARXIV:1402.7029;%%",
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error

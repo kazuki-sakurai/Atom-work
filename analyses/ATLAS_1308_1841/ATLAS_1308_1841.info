@@ -1,0 +1,55 @@
+Name: ATLAS_1308_1841
+Year: 2013
+Summary: Search for new phenomena in final states with large jet multiplicities  and missing transverse momentum at sqrt(s)=8 TeV proton-proton collisions  using the ATLAS experiment
+Experiment: ATLAS
+Collider: LHC8
+InspireID: 1247060
+References:
+ - arXiv:1308.1841
+ - CERN-PH-EP-2013-110
+ - J. High Energy Phys. 10 (2013), 130
+ - doi:10.1007/jhep01(2014)109
+ - doi:10.1007/jhep10(2013)130
+Status: UNVALIDATED
+Authors:
+ - Kazuki Sakurai <kazuki.sakurai@kcl.ac.uk>
+Beams: [ p+, p+ ]
+Energies: [ 8000 ]
+Keywords: [ JETS, MET ]
+Luminosity: [ 20.3 / fb, 0.6 / fb ]
+Description: "A search is presented for new particles decaying to large numbers (7 to
+greater or equal to 10) of jets, missing transverse momentum and no isolated
+electrons or muons. This analysis uses 20.3/fb of pp collision data at
+sqrt(s)=8 TeV collected by the ATLAS experiment at the Large Hadron Collider.
+The sensitivity of the search is enhanced by considering the number of b-tagged
+jets and the scalar sum of masses of large-radius jets in an event. No evidence
+is found for physics beyond the Standard Model. The results are interpreted in
+the context of various simplified supersymmetry-inspired models where gluinos
+are pair produced, as well as a mSUGRA/CMSSM model."
+BibKey: Aad:2013wta
+BibTeX: '@article{Aad:2013wta,
+      author         = "Aad, Georges and others",
+      title          = "{Search for new phenomena in final states with large jet
+                        multiplicities and missing transverse momentum at
+                        $\sqrt{s}$=8 TeV proton-proton collisions using the ATLAS
+                        experiment}",
+      collaboration  = "ATLAS",
+      journal        = "JHEP",
+      volume         = "1310",
+      pages          = "130",
+      doi            = "10.1007/JHEP10(2013)130, 10.1007/JHEP01(2014)109",
+      year           = "2013",
+      eprint         = "1308.1841",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2013-110",
+      SLACcitation   = "%%CITATION = ARXIV:1308.1841;%%",
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error

@@ -1,0 +1,57 @@
+Name: ATLAS_1403_4853
+Year: 2014
+Summary: Search for direct top-squark pair production in final states with two  leptons in pp collisions at sqrt(s)=8TeV with the ATLAS detector
+Experiment: ATLAS
+Collider: LHC8
+InspireID: 1286444
+References:
+ - arXiv:1403.4853
+ - CERN-PH-EP-2014-014
+ - J. High Energy Phys. 06 (2014), 124
+ - doi:10.1007/JHEP06(2014)124
+Status: UNVALIDATED
+Authors:
+ - Kazuki Sakurai <kazuki.sakurai@kcl.ac.uk>
+Beams: [ p+, p+ ]
+Energies: [ 8000 ]
+Keywords: [ LEPTONS, JETS, MET, MT2 ]
+Luminosity: [ 20.3 / fb, 2.8 percent ]
+Description: "A search is presented for direct top-squark pair production in final states
+with two leptons (electrons or muons) of opposite charge using 20.3fb-1 of pp
+collision data at sqrt(s)=8TeV, collected by the ATLAS experiment at the Large
+Hadron Collider in 2012. No excess over the Standard Model expectation is
+found. The results are interpreted under the separate assumptions (i) that the
+top squark decays to a b-quark in addition to an on-shell chargino whose decay
+occurs via a real or virtual W boson, or (ii) that the top squark decays to a
+t-quark and the lightest neutralino. A top squark with a mass between 150 GeV
+and 445 GeV decaying to a b-quark and an on-shell chargino is excluded at 95%
+confidence level for a top squark mass equal to the chargino mass plus 10 GeV,
+in the case of a 1 GeV lightest neutralino. Top squarks with masses between 215
+(90) GeV and 530 (170) GeV decaying to an on-shell (off-shell) t-quark and a
+neutralino are excluded at 95% confidence level for a 1 GeV neutralino."
+BibKey: Aad:2014qaa
+BibTeX: '@article{Aad:2014qaa,
+      author         = "Aad, Georges and others",
+      title          = "{Search for direct top-squark pair production in final
+                        states with two leptons in pp collisions at $\sqrt{s} =$
+                        8TeV with the ATLAS detector}",
+      collaboration  = "ATLAS",
+      journal        = "JHEP",
+      volume         = "1406",
+      pages          = "124",
+      doi            = "10.1007/JHEP06(2014)124",
+      year           = "2014",
+      eprint         = "1403.4853",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-014",
+      SLACcitation   = "%%CITATION = ARXIV:1403.4853;%%",
+}'
+CodingBibKey: 
+CodingBibTeX: 
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity

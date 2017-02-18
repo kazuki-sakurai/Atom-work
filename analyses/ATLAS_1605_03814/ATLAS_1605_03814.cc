@@ -248,7 +248,7 @@ namespace Atom {
 	            if( cut( jets.size(), CUT_GE, 2, "Nj >= 2: 2jm" ) ){            
 	                if( cut( dPhiMin_123, CUT_GT, 0.4, "dPhiMin_123 > 0.4: 2jm" ) ){
 	                	if( cut( jets[1].pT(), CUT_GT, 50., "pTj2 > 50: 2jm" ) ){	                    	
-	                        if( cut( MET/sqrt(H_T), CUT_GT, 8., "MET/sqrt(HT) > 15: 2jm" ) ){
+	                        if( cut( MET/sqrt(H_T), CUT_GT, 15., "MET/sqrt(HT) > 15: 2jm" ) ){
 	                            //fillPlot("meff_inc_2jm", meff_inc);                                                    
 	                            if( cut( meff_inc, CUT_GT, 1600., "meff_inc > 1600: 2jm" ) ){
 	                                pass("2jm");

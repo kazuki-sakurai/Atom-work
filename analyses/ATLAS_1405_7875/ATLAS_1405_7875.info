@@ -1,0 +1,45 @@
+Name: ATLAS_1405_7875
+Year: 2014
+Summary: 'Search for squarks and gluinos with the ATLAS detector in final states  with jets and missing transverse momentum using $\sqrt{s}=8$ TeV  proton--proton collision data'
+Experiment: ATLAS
+Collider: LHC8
+InspireID: 1298722
+References:
+ - arXiv:1405.7875
+ - CERN-PH-EP-2014-093
+ - J. High Energy Phys. 09 (2014), 176
+ - doi:10.1007/jhep09(2014)176
+Status: UNVALIDATED
+Authors:
+ - Kazuki
+Beams: [ p+, p+ ]
+Energies: [ 8000 ]
+Keywords: [ JETS, MET ]
+Luminosity: [ 20.3 / fb, 2.8 percent ]
+Description: "A search for squarks and gluinos in final states containing high-$p_{\\rm T}$ jets, missing transverse momentum and no electrons or muons is presented. The data were recorded in 2012 by the ATLAS experiment in $\\sqrt{s}=8$ TeV proton--proton collisions at the Large Hadron Collider, with a total integrated luminosity of $20.3 \\mathrm{fb}^{-1}$. No significant excess above the Standard Model expectation is observed. Results are interpreted in a variety of simplified and specific supersymmetry-breaking models assuming that $R$-parity is conserved and that the lightest neutralino is the lightest supersymmetric particle. An exclusion limit at the 95% confidence level on the mass of the gluino is set at 1330 GeV for a simplified model incorporating only a gluino and the lightest neutralino. For a simplified model involving the strong production of first- and second-generation squarks, squark masses below 850 GeV (440 GeV) are excluded for a massless lightest neutralino, assuming mass degenerate (single light-flavour) squarks. In mSUGRA/CMSSM models with $\\tan\\beta=30$, $A_0=-2m_0$ and $\\mu> 0$, squarks and gluinos of equal mass are excluded for masses below 1700 GeV. Additional limits are set for non-universal Higgs mass models with gaugino mediation and for simplified models involving the pair production of gluinos, each decaying to a top squark and a top quark, with the top squark decaying to a charm quark and a neutralino. These limits extend the region of supersymmetric parameter space excluded by previous searches with the ATLAS detector."
+BibKey: Aad:2014wea
+BibTeX: '@article{Aad:2014wea,
+      author         = "Aad, Georges and others",
+      title          = "{Search for squarks and gluinos with the ATLAS detector
+                        in final states with jets and missing transverse momentum
+                        using $\\sqrt{s}=8$ TeV proton--proton collision data}",
+      collaboration  = "ATLAS",
+      journal        = "JHEP",
+      volume         = "1409",
+      pages          = "176",
+      doi            = "10.1007/JHEP09(2014)176",
+      year           = "2014",
+      eprint         = "1405.7875",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-093",
+      SLACcitation   = "%%CITATION = ARXIV:1405.7875;%%",
+}'
+CodingBibKey: <Insert here the BibTeX key relative to the implementation of this analysis in Atom>
+CodingBibTeX: <Insert here the BibTeX entry relative to the implementation of this analysis in Atom>
+ToDo:
+  - Fill Keywords (a non-exaustive list can be found in share/Atom-0.9/keyword_list.txt)
+  - Implement analysis
+  - Validate analysis
+  - Add the reference for the implementation of this analysis once done
+  - Fill luminosity error

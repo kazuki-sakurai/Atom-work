@@ -1,0 +1,32 @@
+This file is part of the HepData material provided for the ATLAS publication
+"Search for top squark pair production in final states with one isolated lepton,
+jets, and missing transverse momentum in $\sqrt{s}=8$ TeV pp collisions with the
+ATLAS detector", available at http://hepdata.cedar.ac.uk/view/ins1304456
+
+It contains the following slha files for simplified models with stop pair
+production with different stop decay mode(s) and sparticle masses.
+
+stop-->b+chargino benchmark models
+----------------------------------
+susy_simpl_models_t175_c145_n125.slha -- stop->b+chargino, m(stop1)=175 GeV, m(chargino1)=145 GeV, m(neutralino1)=125 GeV
+susy_simpl_models_t175_c165_n145.slha -- stop->b+chargino, m(stop1)=175 GeV, m(chargino1)=165 GeV, m(neutralino1)=145 GeV
+susy_simpl_models_t180_c174_n087.slha -- stop->b+chargino, m(stop1)=180 GeV, m(chargino1)=174 GeV, m(neutralino1)=87 GeV
+susy_simpl_models_t300_c120_n100.slha -- stop->b+chargino, m(stop1)=300 GeV, m(chargino1)=120 GeV, m(neutralino1)=100 GeV
+susy_simpl_models_t300_c200_n100.slha -- stop->b+chargino, m(stop1)=300 GeV, m(chargino1)=200 GeV, m(neutralino1)=100 GeV
+susy_simpl_models_t350_c100_n050.slha -- stop->b+chargino, m(stop1)=350 GeV, m(chargino1)=100 GeV, m(neutralino1)=50 GeV
+susy_simpl_models_t500_c300_n150.slha -- stop->b+chargino, m(stop1)=500 GeV, m(chargino1)=300 GeV, m(neutralino1)=150 GeV
+susy_simpl_models_t550_c120_n100.slha -- stop->b+chargino, m(stop1)=550 GeV, m(chargino1)=120 GeV, m(neutralino1)=100 GeV
+susy_simpl_models_t550_c300_n150.slha -- stop->b+chargino, m(stop1)=550 GeV, m(chargino1)=300 GeV, m(neutralino1)=150 GeV
+susy_simpl_models_t600_c200_n100.slha -- stop->b+chargino, m(stop1)=600 GeV, m(chargino1)=200 GeV, m(neutralino1)=100 GeV
+
+stop-->t+neutralino benchmark models
+------------------------------------
+susy_simpl_models_Tt_T350_L150.slha -- stop->t+neutralino, m(stop1)=350 GeV, m(neutralino1)=150 GeV
+susy_simpl_models_Tt_T500_L200.slha -- stop->t+neutralino, m(stop1)=500 GeV, m(neutralino1)=200 GeV
+susy_simpl_models_Tt_T700_L1.slha -- stop->t+neutralino, m(stop1)=700 GeV, m(neutralino1)=1 GeV
+
+asymmetric and three-body benchmark models
+------------------------------------------
+susy_simpl_models_Tt_bC1_tN1_550_300_150.slha -- stop,stop->t+neutralino+b+chargino, m(stop1)=550 GeV, m(chargino1)=300 GeV, m(neutralino1)=150 GeV
+susy_simpl_models_Tt_bWN_t200_n050.slha -- stop->b+W+neutralino, m(stop1)=200 GeV, m(neutralino1)=50 GeV
+susy_simpl_models_Tt_bWN_t250_n100.slha -- stop->b+W+neutralino, m(stop1)=250 GeV, m(neutralino1)=100 GeV
